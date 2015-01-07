@@ -1,0 +1,5 @@
+package entitats;
+
+public class Student {
+
+}

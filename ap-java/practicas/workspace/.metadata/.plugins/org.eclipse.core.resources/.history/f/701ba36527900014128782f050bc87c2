@@ -1,0 +1,22 @@
+package studyTool;
+
+import java.util.Scanner;
+
+public class StudyPage {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Entra una paraula: ");
+		String paraula = sc.nextLine();
+		
+		System.out.println("Entra una definicio: ");
+		String definicio = sc.nextLine();
+		
+		System.out.println(paraula + " significa " + definicio);
+		
+		sc.close();
+
+	}
+
+}

@@ -1,0 +1,5 @@
+package entitats;
+
+class Estudiante {
+
+}
