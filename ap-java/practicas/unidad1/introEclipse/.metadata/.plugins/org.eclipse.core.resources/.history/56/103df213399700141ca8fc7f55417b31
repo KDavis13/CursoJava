@@ -1,0 +1,12 @@
+
+public class MiOrdenador {
+
+	public static void main(String[] args) {
+		Ordenador miOrdenador = new Ordenador();
+	    miOrdenador.establecerMarca("Toshiba");
+	    miOrdenador.encenderOrdenador();
+	    miOrdenador.estado();
+
+	}
+
+}

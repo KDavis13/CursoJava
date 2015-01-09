@@ -1,0 +1,60 @@
+
+public class Principal {
+	
+	static String autor1 = "Pepe";
+	static String editorial1 = "editorial X";
+	static String anyo1 = "1985";
+	static String cantidadEjemplares1 = "4";
+	static float coste1 = 9.4f;
+	static String isbn1 = "456D4554F455";
+	
+	static String autor2 = "Paco";
+	static String editorial2 = "editorial Y";
+	static String anyo2 = "1547";
+	static String cantidadEjemplares2 = "2";
+	static float coste2 = 65.4f;
+	static String isbn2 = "916D4554F474";
+	
+	static String autor3 = "Juan";
+	static String editorial3 = "editorial Z";
+	static String anyo3 = "1996";
+	static String cantidadEjemplares3 = "12";
+	static float coste3 = 23.1f;
+	static String isbn3 = "336D4614F955";
+
+	public Principal() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		
+		Libro l1 = new Libro();
+		
+		l1.setAutor(autor1);
+		l1.setEditorial(editorial1);
+		l1.setAnyo(anyo1);
+		l1.setCantidadEjemplares(cantidadEjemplares1);
+		l1.setCoste(coste1);
+		l1.setIsbn(isbn1);
+		
+		Libro l2 = new Libro();
+		
+		l1.setAutor(autor2);
+		l1.setEditorial(editorial2);
+		l1.setAnyo(anyo2);
+		l1.setCantidadEjemplares(cantidadEjemplares2);
+		l1.setCoste(coste2);
+		l1.setIsbn(isbn2);
+		
+		Libro l3 = new Libro();
+		
+		l1.setAutor(autor3);
+		l1.setEditorial(editorial3);
+		l1.setAnyo(anyo3);
+		l1.setCantidadEjemplares(cantidadEjemplares3);
+		l1.setCoste(coste3);
+		l1.setIsbn(isbn3);
+
+	}
+
+}

@@ -1,0 +1,173 @@
+El sensor amb codi 0989-L no existeix
+Sensor no assignat
+
+El sensor amb codi 2567-Y no forma part del sistema g190
+associat a la reparacio 5
+Sensor no reparat
+
+ERROR a l'assignar el servei: 1
+al client: 20587354-T
+Sistema: g389
+Servei no assignat
+El sistema va ser venut anteriorment
+
+
+Nom: Carme
+Cognoms: Perez Font
+DNI: 20304912-W
+Adresa: de les infantes,44
+Telefon: 3459065
+Poblacio: Barcelona
+
+SERVEIS REALITZATS AL CLIENT
+
+SERVEI			SISTEMA	DATA     	PREU
+-------------------------------------------------------------------------------------------------
+Codi VENDA: 1		a523	8/8/2002	1244.41
+Codi VENDA: 2		a789	10/8/2002	1428.45
+
+Nom: Mia
+Cognoms: Teixidor Salis
+DNI: 20587354-T
+Adresa: del Pla,43
+Telefon: 972123432
+Poblacio: Platja d'Aro
+
+SERVEIS REALITZATS AL CLIENT
+
+SERVEI			SISTEMA	DATA     	PREU
+-------------------------------------------------------------------------------------------------
+Codi VENDA: 1		d239	25/9/2002	1471.785
+
+Nom: Carles
+Cognoms: Martinoy Duran
+DNI: 32097253-Q
+Adresa: Ctra de Sarria, 12
+Telefon: 972567843
+Poblacio: Girona
+
+SERVEIS REALITZATS AL CLIENT
+
+SERVEI			SISTEMA	DATA     	PREU
+-------------------------------------------------------------------------------------------------
+Codi VENDA: 3		a793	9/8/2002	1647.8000000000002
+
+Nom: Antonia
+Cognoms: Seisdedos Mari
+DNI: 39098182-H
+Adresa: del Vi, 3, 1,2
+Telefon: 972985643
+Poblacio: Salt
+
+SERVEIS REALITZATS AL CLIENT
+
+SERVEI			SISTEMA	DATA     	PREU
+-------------------------------------------------------------------------------------------------
+Codi VENDA: 1		g190	9/8/2002	1369.6000000000001
+Codi REPARACIO: 2	g190	15/9/2002	42.800000000000004
+TEMPS: 5 minuts
+SENSORS REPARATS
+----------------------------------------
+	SENSOR TACTIL
+	Codi: 0234-L
+	Preu: 30.0
+
+
+Codi REPARACIO: 3	g190	30/9/2002	36.38
+TEMPS: 2 minuts
+SENSORS REPARATS
+----------------------------------------
+	SENSOR TACTIL
+	Codi: 0234-L
+	Preu: 30.0
+
+
+
+Nom: Josep
+Cognoms: Ruldua i Pages
+DNI: 40021432-O
+Adresa: Pla de la Vila, 11
+Telefon: 972984567
+Poblacio: Sarria de Ter
+
+SERVEIS REALITZATS AL CLIENT
+
+SERVEI			SISTEMA	DATA     	PREU
+-------------------------------------------------------------------------------------------------
+Codi VENDA: 1		c184	10/8/2002	1230.5
+
+Nom: Eva
+Cognoms: Serrats Anton
+DNI: 40408815-E
+Adresa: Nou, 35
+Telefon: 972678456
+Poblacio: Palamos
+
+SERVEIS REALITZATS AL CLIENT
+
+SERVEI			SISTEMA	DATA     	PREU
+-------------------------------------------------------------------------------------------------
+Codi VENDA: 1		f345	25/9/2002	1498.0
+
+Nom: Cristina
+Cognoms: Burgas Alemany
+DNI: 40983175-D
+Adresa: Pg del Carme, 43
+Telefon: 972345621
+Poblacio: Girona
+
+SERVEIS REALITZATS AL CLIENT
+
+SERVEI			SISTEMA	DATA     	PREU
+-------------------------------------------------------------------------------------------------
+Codi VENDA: 1		g389	25/9/2002	1145.4350000000002
+Codi REPARACIO: 2	g389	5/10/2002	49.220000000000006
+TEMPS: 3 minuts
+SENSORS REPARATS
+----------------------------------------
+	SENSOR TACTIL
+	Codi: 2345-K
+	Preu: 10.0
+
+	SENSOR TACTIL
+	Codi: 0185-J
+	Preu: 30.0
+
+
+
+Nom: Josep
+Cognoms: Borrat Perez
+DNI: 41934623-F
+Adresa: Pintor Gimeno,1 ,2 4
+Telefon: 972194587
+Poblacio: L'Escala
+
+SERVEIS REALITZATS AL CLIENT
+
+SERVEI			SISTEMA	DATA     	PREU
+-------------------------------------------------------------------------------------------------
+Codi VENDA: 1		b562	10/9/2002	1519.4
+Codi REPARACIO: 2	b562	15/9/2002	139.1
+TEMPS: 5 minuts
+SENSORS REPARATS
+----------------------------------------
+	SENSOR HIBRID
+	Codi: 2567-Y
+	Preu: 120.0
+	Temperatura: 34
+	Radi d'accio: 1.5
+	LED: NORMAL
+
+
+Codi VENDA: 3		a678	16/9/2002	1139.55
+Codi REPARACIO: 4	b562	20/9/2002	139.1
+TEMPS: 5 minuts
+SENSORS REPARATS
+----------------------------------------
+	SENSOR HIBRID
+	Codi: 2567-Y
+	Preu: 120.0
+	Temperatura: 34
+	Radi d'accio: 1.5
+	LED: NORMAL
+

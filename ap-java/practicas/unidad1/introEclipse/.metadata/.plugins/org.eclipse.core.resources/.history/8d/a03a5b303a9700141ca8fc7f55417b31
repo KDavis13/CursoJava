@@ -1,0 +1,98 @@
+public class Ordenador {
+
+	private String marca;
+	private String procesador;
+	private int peso;
+	private boolean encendido = false;
+	private boolean pantalla = false;
+
+	/*
+	 * Ponerse en marcha. Apagarse. Desactivar la presentación en la pantalla.
+	 * Activar la presentación en la pantalla.
+	 */
+
+	// Este método hace que aunque marca sea privada devuelva el contenido de la
+	// variable.
+	public String obtenerMarca() {
+		return marca;
+	}
+
+	// Este método coge asigna a this.narca la marca que se le ha pasdo desde la
+	// otra clase
+
+	public void establecerMarca(String ma) {
+		marca = ma;
+	}
+
+	// Este método hace que aunque peso sea privada devuelva el contenido
+	// de la variable.
+	public String obtenerPeso() {
+		return procesador;
+	}
+
+	// Este método coge asigna a this.narca la marca que se le ha pasdo desde la
+	// otra clase
+
+	public void establecerPeso(int pe) {
+		peso = pe;
+	}
+
+	// Este método hace que aunque procesador sea privada devuelva el contenido
+	// de la variable.
+	public String obtenerProcesador() {
+		return procesador;
+	}
+
+	public void establecerProcesador(String pro) {
+		procesador = pro;
+	}
+
+	// Este método cambia el estado del ordenador a encendido en caso de que
+	// estuviera apagado.
+
+	public void encenderOrdenador() {
+		if (encendido == true) {
+			System.out.println("El ordenador ya está encendido");
+		} else {
+			encendido = true;
+			pantalla = true;
+			System.out.println("El ordenador ha sido encendido");
+		}
+	}
+	
+	// Este método cambia el estado del ordenador a encendido en caso de que
+	// estuviera apagado.
+
+	public void apagarOrdenador() {
+		if (encendido == false) {
+			System.out.println("El ordenador ya está apagado");
+		} else {
+			encendido = false;
+			pantalla = false;
+			System.out.println("El ordenador ha sido apagado");
+		}
+	}
+
+	// Este método recopila los datos y muestra como está actualmente el
+	// ordenador (muestra su estado)
+
+	public void estado() {
+		System.out.print("\nEl estado del ordenador es el siguiente:");
+		System.out.print("\nMarca: " + marca);
+		System.out.print("\nProcesador: " + procesador);
+		System.out.print("\nPeso: " + peso + " kg.");
+
+		if (encendido == true) {
+			System.out.print("\nEl ordenador está encendido");
+		} else
+			System.out.print("\nEl ordenador está apagado");
+
+		if (pantalla == true) {
+			System.out.print("\nLa pantalla está activada");
+		} else
+			System.out.print("\nLa pantalla está desactivada");
+
+		System.out.println("\n");
+	}
+
+}

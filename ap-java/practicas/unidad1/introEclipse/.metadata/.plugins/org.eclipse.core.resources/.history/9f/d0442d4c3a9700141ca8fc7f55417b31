@@ -1,0 +1,18 @@
+
+public class MiOrdenador {
+
+	public static void main(String[] args) {
+		Ordenador miOrdenador = new Ordenador();
+		
+	    miOrdenador.establecerMarca("Toshiba");
+	    miOrdenador.establecerPeso(2);
+	    miOrdenador.establecerProcesador("Intel");
+	    
+	    //miOrdenador.encenderOrdenador();
+	    miOrdenador.estado();
+	    miOrdenador.apagarPantalla();
+	    
+
+	}
+
+}

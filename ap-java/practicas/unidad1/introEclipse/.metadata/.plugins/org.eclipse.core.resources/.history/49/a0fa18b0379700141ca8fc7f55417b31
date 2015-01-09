@@ -1,0 +1,68 @@
+
+public class Ordenador {
+	
+	private String marca;
+	private String procesador;
+	private int peso;
+	private boolean encendido = false;
+	private boolean pantalla = false;
+
+	public static void main(String[] args) {
+		
+		
+	}
+	
+	/* Ponerse en marcha.
+	Apagarse.
+	Desactivar la presentación en la pantalla.
+	Activar la presentación en la pantalla.*/ 
+	
+	public void encenderOrdenador()
+	  {
+	    if (encendido == true)
+	    {
+	      System.out.println("El ordenador ya está encendido");
+	    }
+	    else 
+	    {
+	      encendido = true;
+	      pantalla = true;
+	      System.out.println("El ordenador ha sido encendido");
+	    }
+	  }
+	
+	public void estado()
+	  {
+	    System.out.print("\nEl estado del ordenador es el siguiente:");
+	    System.out.print("\nMarca: " + marca);
+	    System.out.print("\nProcesador: " + procesador);
+	    System.out.print("\nPeso: " + peso + " kg.");
+
+	    if (encendido == true)
+	    {
+	      System.out.print("\nEl ordenador está encendido");
+	    }
+	    else
+	      System.out.print("\nEl ordenador está apagado");
+
+	    if (pantalla == true)
+	    {
+	      System.out.print("\nLa pantalla está activada");
+	    }
+	    else
+	      System.out.print("\nLa pantalla está desactivada");
+
+	    System.out.println("\n");
+	  }
+	
+	public String obtenerMarca()
+	  {
+	    return marca;
+	  }
+
+	  public void establecerMarca(String ma)
+	  {
+	    marca = ma;
+	  }
+
+}
