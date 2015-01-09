@@ -1,0 +1,12 @@
+A partir de la classe Vehicle2 de l'exercici (2), definirem per herència la classe Cotxe, que és una mena de vehicle que porta gent.
+
+· atributs nous:
+	· número de places (enter)
+	· els extres que porta per al confort dels passatgers (una cadena de caràcters, on cada extra va separat dels altres per comes)
+· mètodes:
+	· el constructor de la classe, que tindrà la capçalera següent:
+		Cotxe(String fabricant, String mod, int any, int places, String extres, String prov_matr, int num_matr, String lletres_matr, float consum) on prov_matr és la o les lletres de la matrícula que formen el codi de província, num_matr és el número de la matrícula i lletres_matr són les lletres addicionals que solen portar les matrícules.
+	
+	· per cada atribut nou un mètode d'obtenció del seu valor
+	· un mètode que permeti afegir un nou extra (una cadena de caràcters) als que ja té el cotxe.
+
