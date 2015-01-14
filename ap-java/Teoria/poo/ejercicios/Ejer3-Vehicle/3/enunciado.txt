@@ -1,0 +1,7 @@
+Crear una clase Main que:
+
+· com a arguments en línia de comandes rep totes les dades associades a un vehicle més la quantitat 
+de litres de carburant que té al dipòsit
+
+· Crea un objecte Vehicle (o Vehicle2, és igual), al qual li farà calcular la seva autonomia 
+(el nombre de quilòmetres que pot recórrer amb els litres de carburant que té al dipòsit)
