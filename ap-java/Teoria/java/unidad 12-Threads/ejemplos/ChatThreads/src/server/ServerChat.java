@@ -1,0 +1,49 @@
+package server;
+
+import hilos.HiloLectorRed;
+import hilos.HiloLectorTeclado;
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class ServerChat {
+	public ServerChat() {
+		try {
+			ServerSocket socket = new ServerSocket(35557);
+			System.out.println("Servidor del chat");
+			System.out.println("Esperando que se conecte el cliente");
+
+			Socket cliente = socket.accept();
+			
+			System.out.println("Conectado con cliente "
+					+ cliente.getInetAddress());
+			System.out.println("Para salir escribe q! y return");
+
+			HiloLectorTeclado lt = 
+					new HiloLectorTeclado(cliente);
+			
+			HiloLectorRed lr = 
+					new HiloLectorRed(cliente);
+
+			lt.start();
+			lr.start();
+			try {
+				lr.join();
+				lt.join();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+
+			cliente.close();
+			socket.close();
+			System.out.println("Programa finalizado");
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static void main(String[] args) {
+		new ServerChat();
+	}
+}
