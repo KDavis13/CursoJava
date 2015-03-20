@@ -1,0 +1,21 @@
+package uno;
+
+import java.util.ArrayList;
+import java.util.Collection;
+
+public class TestGen0 {
+	public static void main(String[] args) {
+		Collection<Object> miColec=new ArrayList<Object>();
+		miColec.add(45.8);
+		miColec.add(new java.util.Date());
+		miColec.add(null);
+		miColec.add("Perico");
+
+		imprimirColecc(miColec);
+	}
+
+	static void imprimirColecc(Collection<Object> c) {
+		for (Object o: c)
+			System.out.println(o);
+	}
+}

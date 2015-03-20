@@ -1,0 +1,36 @@
+package conversor;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class TestConversorTemperaturas {
+
+	@Test
+	public void testCelsiusAFahrenheit() throws TemperaturaNoValidaException {
+		// Crear instancia del SUT (Subject Under Test)
+		ConversorTemperaturas conversor = new ConversorTemperaturas();
+		
+		//assertEquels(valor esperado, valor que se obtiene del método testado, margen de error);
+		assertEquals(32, conversor.celsiusAFahrenheit(0), 0);
+	}
+
+	@Test
+	public void testCelsiusAReamur() throws TemperaturaNoValidaException {
+		// Crear instancia del SUT (Subject Under Test)
+		ConversorTemperaturas conversor = new ConversorTemperaturas();
+		
+		//assertEquels(valor esperado, valor que se obtiene del método testado, margen de error);
+		assertEquals(0, conversor.celsiusAReamur(0), 0);
+	}
+	
+	@Test
+	public void testTemperaturaNoValidaFahrenheit() throws TemperaturaNoValidaException {
+
+		ConversorTemperaturas conversor = new ConversorTemperaturas();
+
+		conversor.celsiusAFahrenheit(-400);
+
+	}
+
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.io.DataOutputStream"/>
+<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+<fullyQualifiedTypeName name="java.sql.Array"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="SortidaDades.ImprimeHTML"/>
+<fullyQualifiedTypeName name="SortidaDades.HTML"/>
+<fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+<fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+<fullyQualifiedTypeName name="gestioPeticions.SistemaPeticions"/>
+<fullyQualifiedTypeName name="SortidaDades.Sortida"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="main.Data"/>
+<fullyQualifiedTypeName name="Utils.UtilsStrings"/>
+<fullyQualifiedTypeName name="Utils.UtilsFitxers"/>
+<fullyQualifiedTypeName name="dummies.DummyIdioma"/>
+<fullyQualifiedTypeName name="main.Idioma"/>
+<fullyQualifiedTypeName name="java.io.ObjectInputStream.GetField"/>
+<fullyQualifiedTypeName name="SortidaDades.Imprime"/>
+<fullyQualifiedTypeName name="dummies.DummyFecha"/>
+</qualifiedTypeNameHistroy>

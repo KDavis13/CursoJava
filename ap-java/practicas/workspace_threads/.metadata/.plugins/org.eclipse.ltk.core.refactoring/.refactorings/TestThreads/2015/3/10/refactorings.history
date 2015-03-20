@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;basic.utiles&apos; to &apos;Utiles&apos;&#x0D;&#x0A;- Original project: &apos;TestThreads&apos;&#x0D;&#x0A;- Original element: &apos;basic.utiles&apos;&#x0D;&#x0A;- Renamed element: &apos;basic.Utiles&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;utiles&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;basic{utiles.java[utiles" matchStrategy="1" name="Utiles" qualified="false" references="true" similarDeclarations="false" stamp="1425630536093" textual="false" version="1.0"/>
+</session>

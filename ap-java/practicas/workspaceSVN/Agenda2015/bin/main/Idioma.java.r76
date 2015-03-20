@@ -1,0 +1,197 @@
+package main;
+
+import java.util.Arrays;
+
+import Utils.UtilitatsFitxers;
+import Utils.UtilitatsStrings;
+import dummies.DummyConfig;
+
+public class Idioma {
+	
+		
+	// Atributos
+		private String agenda;
+		private String[] diasSemana;
+		private char[] inicialesSemana;
+		private String[] meses;
+		private String[] otros;
+		private String generado;
+		private String[] estado;
+		private String error;
+		private String MSG = null; 
+			
+		
+		//Getters
+		public String getAgenda() {
+			return agenda;
+		}
+		
+		public String[] getOtros() {
+			return otros;
+		}
+		
+		public String getGenerado() {
+			return generado;
+		}
+		
+		public String[] getEstado() {
+			return estado;
+		}
+		
+		public String getError() {
+			return error;
+		}
+		
+		public String[] getDiasSemana() {
+			return diasSemana;
+		}
+		
+		public char[] getInicialesSemana() {
+			return inicialesSemana;
+		}
+		
+		public String[] getMeses() {
+			return meses;
+		}
+		
+		
+		//Setters
+		private void setAgenda(String agenda) {
+			this.agenda = agenda;
+		}
+		
+		private void setOtros(String[] otros) {
+			this.otros = otros;
+		}
+		
+		private void setGenerado(String generado) {
+			this.generado = generado;
+		}
+		
+		private void setEstado(String[] estado) {
+			this.estado = estado;
+		}
+		
+		private void setError(String error) {
+			this.error = error;
+		}
+		
+		private void setDiasSemana(String[] diasSemana) {
+			this.diasSemana = diasSemana;
+		}
+		
+		private void setInicialesSemana(char[] inicialesSemana) {
+			this.inicialesSemana = inicialesSemana;
+		}
+		
+		private void setMeses(String[] meses) {
+			this.meses = meses;
+		}
+		
+		
+		private boolean validarIdioma(String idiomaAbreviado) throws Exception
+		{
+			String [] vectorIdioma = {"ESP", "CAT", "ENG"}; 
+			for (int i=0; i<vectorIdioma.length; i++){
+				
+				if (vectorIdioma[i].equals(idiomaAbreviado)){
+					return true;
+				}
+			}
+			MSG = "El idioma introducido no está disponible en la base de datos";
+			throw new Exception();
+			
+						
+		}
+		
+		public void informarAtributos(String idioma) {
+			
+			String nomFichero = "internacional."+idioma; 
+			UtilitatsFitxers.llegeixF(nomFichero);
+						 			
+			for (String lineaEntrada : UtilitatsFitxers.llegeixF(nomFichero)) {
+				
+				String[] lineaConIndice  = UtilitatsStrings.separaEnParaules(lineaEntrada,";");
+				
+				for (String lineaDatos : lineaConIndice) {
+					
+					switch (lineaDatos) {
+				      case "001":
+				    	  setAgenda(lineaConIndice[+1]); 
+				    	  break;
+				      case "002":
+				    	  String[] vectorDiasSemana  = 
+				    	  			UtilitatsStrings.separaEnParaules(lineaConIndice[+1],",");
+				    	  setDiasSemana(vectorDiasSemana); 
+				    	  break;
+				      case "003":
+				    	  lineaConIndice[+1] = lineaConIndice[+1].trim();
+				    	  char vectorIniciales[] = lineaConIndice[+1].toCharArray();
+				    	  setInicialesSemana(vectorIniciales);
+				           break;
+				      case "004":
+				    	  String[] vectorMeses  = 
+				    	  			UtilitatsStrings.separaEnParaules(lineaConIndice[+1],",");
+				    	  setMeses(vectorMeses);	
+				           break;
+				      case "005":
+				    	  String[] vectorOtros  = 
+				    	  			UtilitatsStrings.separaEnParaules(lineaConIndice[+1],",");
+				    	  setOtros(vectorOtros);
+				    	  break;
+				      case "006":
+				    	  setGenerado(lineaConIndice[+1]);
+				    	  break;
+				      case "007":
+				    	  String[] vectorEstado  = 
+		    	  				UtilitatsStrings.separaEnParaules(lineaConIndice[+1],",");
+				    	  setEstado(vectorEstado);
+				    	  break;
+				      case "008":
+				    	  setError(lineaConIndice[+1]);	
+				    	  break;
+				      default:
+				           break;
+				    }
+				 }
+			}
+
+		 
+		}
+
+		//Constructor
+		public Idioma(String idioma){
+			
+			try {
+				if (validarIdioma(idioma.toUpperCase())) {
+					informarAtributos(idioma);
+				}
+				
+			} catch (Exception e){
+				SalidaLog.escribirLog(MSG);
+				}
+			
+		}
+		
+
+/*		public static void main(String[] args){
+			
+			
+			Config config = new Config("config.txt");
+			
+			Idioma idioma = new Idioma(config.getIdiomaIn());
+			Idioma idioma2 = new Idioma("Cat");
+			System.out.println(idioma2.getAgenda());
+			System.out.println(Arrays.toString(idioma.getDiasSemana()));
+			System.out.println(Arrays.toString(idioma.getInicialesSemana()));
+			System.out.println(Arrays.toString(idioma.getMeses()));
+			System.out.println(Arrays.toString(idioma.getOtros()));
+			System.out.println(idioma.getGenerado());
+			System.out.println(Arrays.toString(idioma.getEstado()));
+			System.out.println(idioma.getError());
+			
+			
+		}
+
+	*/	
+}

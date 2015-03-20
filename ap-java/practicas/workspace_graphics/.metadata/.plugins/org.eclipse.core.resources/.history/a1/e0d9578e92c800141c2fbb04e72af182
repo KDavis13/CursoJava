@@ -1,0 +1,19 @@
+package conversor;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class TestConversorTemperaturas {
+
+	@Test
+	public void testCelsiusAFahrenheit() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testCelsiusAReamur() {
+		fail("Not yet implemented");
+	}
+
+}

@@ -1,0 +1,170 @@
+package ejercicioCD;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JMenuBar;
+import javax.swing.JMenu;
+import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
+import javax.swing.JSeparator;
+
+import java.awt.event.KeyEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import java.awt.FlowLayout;
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.JTextField;
+import javax.swing.JTextArea;
+import java.awt.event.FocusAdapter;
+import java.awt.event.FocusEvent;
+
+public class CD extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField titulo;
+	private JTextField textField;
+	private JTextField genero;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					CD frame = new CD();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public CD() {
+		setResizable(false);
+		setTitle("CD's prestados");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JMenuBar menuSuperior = new JMenuBar();
+		menuSuperior.setBounds(0, 0, 444, 27);
+		contentPane.add(menuSuperior);
+		
+		JMenu mnArchivo = new JMenu("Archivo");
+		mnArchivo.setMnemonic('a');
+		menuSuperior.add(mnArchivo);
+		
+		JMenuItem mntmAadirRegistro = new JMenuItem("A\u00F1adir registro");
+		mnArchivo.add(mntmAadirRegistro);
+		
+		JMenuItem mntmNewMenuItem = new JMenuItem("Buscar registro");
+		mnArchivo.add(mntmNewMenuItem);
+		
+		JSeparator separator = new JSeparator();
+		mnArchivo.add(separator);
+		
+		JMenuItem mntmNewMenuItem_1 = new JMenuItem("Salir");
+		mntmNewMenuItem_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				int respuesta = JOptionPane.showConfirmDialog(null,
+						"Esta acción cerrará la aplicación, ¿desea continuar?",
+						"Atención",
+						JOptionPane.YES_NO_OPTION);
+
+						if (respuesta != JOptionPane.YES_OPTION) {
+							return;
+						}
+						System.exit(0);
+			}
+		});
+		mnArchivo.add(mntmNewMenuItem_1);
+		
+		JPanel pnlNuevo = new JPanel();
+		pnlNuevo.setBounds(10, 38, 424, 223);
+		contentPane.add(pnlNuevo);
+		pnlNuevo.setLayout(null);
+		
+		JLabel lblTtulo = new JLabel("T\u00EDtulo");
+		lblTtulo.setFont(new Font("Arial", Font.BOLD, 12));
+		lblTtulo.setBounds(10, 11, 81, 15);
+		pnlNuevo.add(lblTtulo);
+		
+		JLabel lblAutor = new JLabel("Autor");
+		lblAutor.setFont(new Font("Arial", Font.BOLD, 12));
+		lblAutor.setBounds(10, 37, 81, 14);
+		pnlNuevo.add(lblAutor);
+		
+		JLabel lblNewLabel = new JLabel("G\u00E9nero");
+		lblNewLabel.setFont(new Font("Arial", Font.BOLD, 12));
+		lblNewLabel.setBounds(10, 62, 81, 14);
+		pnlNuevo.add(lblNewLabel);
+		
+		JLabel lblPrstamo = new JLabel("Pr\u00E9stamo");
+		lblPrstamo.setFont(new Font("Arial", Font.BOLD, 12));
+		lblPrstamo.setBounds(10, 87, 81, 14);
+		pnlNuevo.add(lblPrstamo);
+		
+		JLabel lblCopiright = new JLabel("Copiright 2015");
+		lblCopiright.setBounds(0, 209, 414, 14);
+		pnlNuevo.add(lblCopiright);
+		
+		titulo = new JTextField();
+		titulo.addFocusListener(new FocusAdapter() {
+			@Override
+			public void focusGained(FocusEvent evt) {
+				jtfTituloFocusGained(evt);
+			}
+
+			private void jtfTituloFocusGained(FocusEvent evt) {
+				System.out.println("titulo.focusGained, event="+evt);
+				
+			}
+		});
+		titulo.setBounds(100, 9, 300, 20);
+		pnlNuevo.add(titulo);
+		titulo.setColumns(10);
+		
+		textField = new JTextField();
+		textField.addFocusListener(new FocusAdapter() {
+			@Override
+			public void focusGained(FocusEvent e) {
+			}
+		});
+		textField.setBounds(100, 35, 300, 20);
+		pnlNuevo.add(textField);
+		textField.setColumns(10);
+		
+		genero = new JTextField();
+		genero.addFocusListener(new FocusAdapter() {
+			@Override
+			public void focusGained(FocusEvent e) {
+			}
+		});
+		genero.setBounds(101, 60, 300, 20);
+		pnlNuevo.add(genero);
+		genero.setColumns(10);
+		
+		JTextArea prestamo = new JTextArea();
+		prestamo.addFocusListener(new FocusAdapter() {
+			@Override
+			public void focusGained(FocusEvent e) {
+			}
+		});
+		prestamo.setBounds(101, 87, 300, 100);
+		pnlNuevo.add(prestamo);
+	}
+}

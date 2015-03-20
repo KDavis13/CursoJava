@@ -1,0 +1,44 @@
+package main;
+
+import java.util.List;
+
+import gestioPeticions.Agenda;
+import gestioPeticions.SistemaPeticions;							//aquesta es la v4 del sistema de peticions controleu sobre on es fan els canvis
+import SortidaDades.Sortida;
+import Utils.UtilsFitxers;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		/* **************************************************** */		
+		//Fluxe del programa (aneu anyadint segons aneu terminant)
+		/* **************************************************** */
+		
+		//Carregar el tema dels logs.
+		
+		String[] salas = {"sala1", "sala2"};
+		
+		Config configuracio = new Config("config.txt");
+		
+		//Data fecha = new Data(configuracio.getMes(), configuracio.getAnyo());
+		
+		//Idioma idiomaIn = new Idioma(configuracio.getIdiomaIn());
+		
+		//Idioma idiomaOut = new Idioma(configuracio.getIdiomaOut());
+		
+		SistemaPeticions peticiones = new SistemaPeticions(configuracio);
+		
+		List<Agenda> listaAgendas =peticiones.getLlistatDeAgendes();
+		for (Agenda ag: listaAgendas)
+		{
+			ag.getArrayDiesHores();
+			
+		}
+		//Sortida resultado = new Sortida(getArrayFinal);
+		
+
+		//UtilsFitxers.llegeixF("config.txt");
+	}
+
+}

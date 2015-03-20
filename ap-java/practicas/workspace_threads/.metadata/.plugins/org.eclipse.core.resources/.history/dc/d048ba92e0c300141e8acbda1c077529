@@ -1,0 +1,38 @@
+package uno;
+
+public class Main {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		Thread unThread = Thread.currentThread();
+		System.out.println("Estas en... " + unThread.getName());
+
+		Thread p = ejecutarEnOtroHilo();
+		p.join();
+
+		System.out.println("Estas en... " + unThread.getName());
+		
+		System.out.println("******************************************");
+		System.out.println("programa finalizado");
+
+	}
+
+	private static Thread ejecutarEnOtroHilo() {
+		
+		Thread t = new Thread("Paquillo") {
+			@Override
+			public void run() {
+				System.out.println("Estas en... " + this.getName());
+				System.out.println("Calculando...");
+				for (long i = 0; i < 5_000_000_000L; i++) {
+				}
+				System.out.println("Cálculo finalizado");
+			}
+		};
+		
+		t.start();
+		return t;
+
+	}
+
+}

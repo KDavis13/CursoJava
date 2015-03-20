@@ -1,0 +1,44 @@
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.Properties;
+
+public class TestJDBC {
+
+	private static InputStream is = TestJDBC.class.getResourceAsStream("/db.properties");
+	
+	public static void main(String[] args) {
+		
+		final String url = "jdbc:mysql://localhost:3306/video?user=usuario1&password=usuario1";
+
+		try {
+			String driverEspecifico = getPropiedad("rdbms.driver");
+			Class.forName(driverEspecifico).newInstance();
+			
+			Connection conn = DriverManager.getConnection(url, getPropiedad("rdbms.usuario"), getPropiedad("rdbms.pass"));
+			
+		} catch (InstantiationException | IllegalAccessException
+				| ClassNotFoundException | SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	private static String getPropiedad(String driver) {
+		Properties props = new Properties();
+		
+		
+		try {
+			props.load(is);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return props.getProperty(driver);
+	}
+
+}

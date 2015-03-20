@@ -1,0 +1,32 @@
+package ejercicio3;
+
+/*
+ * Crear una classe ProbarTriangulo que únicament tingui un mètode main per tal de:
+ * 
+ *  crear dos triangles (tri1 i tri2) a partir del default constructor. 
+ *  
+ *  poder dimensionar els triangles (establir les mides dels costats) mitjançant
+ *   mètodes setters. 
+ *   
+ *   mostrar per pantalla el perímetre dels dos triangles.
+ */
+
+public class ProbarTriangulo {
+	
+	public static void main(String[] args) {
+		Triangulo tri1 = new Triangulo();
+		Triangulo tri2 = new Triangulo();
+		
+		tri1.setLado1(5.4);
+		tri1.setLado2(6.7);
+		tri1.setLado3(8.1);
+		
+		tri2.setLado1(2.3);
+		tri2.setLado2(1.5);
+		tri2.setLado3(3.3);
+		
+		System.out.println("El perímetro del triángulo 1 es " + tri1.perimetro());
+		System.out.println("El perímetro del triángulo 2 es " + tri2.perimetro());
+	}
+
+}

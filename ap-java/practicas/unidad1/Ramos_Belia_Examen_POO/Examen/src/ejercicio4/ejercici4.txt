@@ -1,0 +1,8 @@
+ - Per què en POO és tant important diferenciar entre la part privada 
+ d'una classe i la seva part pública?
+ 
+Para hacer el código más simplificado y diferenciar la parte de visible y accesible por todos
+de la parte de implementación de la misma, cuyos métodos no serán usados por otra clase.
+Esto ayuda a que cuando creas una herencia no se tenga que repetir código o no se tenga
+por qué ver dando prioridad a todo aquello que realmente se utilizará de la clase desde
+una externa.

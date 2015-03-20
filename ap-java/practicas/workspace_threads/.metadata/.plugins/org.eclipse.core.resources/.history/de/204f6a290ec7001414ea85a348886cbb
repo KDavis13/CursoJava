@@ -1,0 +1,8 @@
+package uno;
+
+public class Snippet {
+	public static void main(String[] args) {
+		miColecBecarios2
+	}
+}
+

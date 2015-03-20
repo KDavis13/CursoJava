@@ -1,0 +1,103 @@
+package conversor;
+
+import static org.junit.Assert.*;
+
+import java.util.Arrays;
+import java.util.Collection;
+
+//import org.junit.After;
+//import org.junit.Before;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
+
+public class TestConversorTemperaturas {
+
+	public static ConversorTemperaturas conversor;
+
+
+	// Este estiqueta lo que hace es que se se ejecute el siguiente método
+	// SIEMPRE antes de los métodos de test
+	// Si es BeforeClass, lo hace una vez por clase.
+	@BeforeClass
+	public static void creaConversorTemperaturas() {
+		conversor = new ConversorTemperaturas();
+	}
+
+	// Este estiqueta lo que hace es que se se ejecute el siguiente método
+	// SIEMPRE después de los métodos de test
+	// Si es AfterClass, lo hace una vez por clase.
+	@AfterClass
+	public static void destruyeConversorTemperaturas() {
+		conversor = null;
+	}
+
+	@RunWith(Parameterized.class)
+	public static class TestConversorTemperaturasBateria {
+		private double celsius, fahrenheit, reamur, error;
+		private static ConversorTemperaturas conversor;
+
+		public TestConversorTemperaturasBateria(double celsius,
+				double fahrenheit, double reamur, double error) {
+			this.celsius = celsius;
+			this.fahrenheit = fahrenheit;
+			this.reamur = reamur;
+			this.error = error;
+		}
+
+		@Parameters
+		public static Collection<Object[]> datos() {
+			return Arrays.asList(new Object[][] { 
+					{ 0.0, 32.0, 0.0, 0.0 },
+					{ 15, 59.0, 12.0, 0.0 }, 
+					{ 30, 86.0, 24.0, 0.0 },
+					{ 50, 122.0, 40.0, 0.0 }, 
+					{ 90, 194.0, 72.0, 0.0 } });
+		}
+
+		@Test
+		public void testCelsiusAFahrenheit()
+				throws TemperaturaNoValidaException {
+
+			// assertEquels(valor esperado, valor que se obtiene del método
+			// testado,
+			// margen de error);
+			assertEquals(celsius, conversor.celsiusAFahrenheit(fahrenheit), error);
+		}
+
+		@Test
+		public void testCelsiusAReamur() throws TemperaturaNoValidaException {
+			// assertEquels(valor esperado, valor que se obtiene del método
+			// testado,
+			// margen de error);
+			assertEquals(celsius, conversor.celsiusAReamur(0), 0);
+		}
+
+		// Con que está entre parentesis da error, por que salta la excepción
+		// desde
+		// el código productivo.
+		// Entre parentesis se le avisa que que espera esa excepción
+		@Test(expected = TemperaturaNoValidaException.class)
+		public void testTemperaturaNoValidaFahrenheit() throws TemperaturaNoValidaException {
+
+			// Da error por que recibe una excepción desde el código productivo
+			conversor.celsiusAFahrenheit(-400);
+		}
+
+		// Es común ver métodos bis cuando el código es susceptible de lanzar
+		// excepciones. Este es el método recomendado
+		/*
+		 * @Test public void testTemperaturaNoValidaFahrenheitBis() { try {
+		 * conversor.celsiusAFahrenheit(-400);
+		 * 
+		 * //Este fail lo que hace es forzar el fallo del test por que este
+		 * supuesto no debe ser correcto.
+		 * fail("Para temperaturas por encima del cero absoluto el test debe pasar"
+		 * ); } catch (TemperaturaNoValidaException e) { e.printStackTrace(); }
+		 * }
+		 */
+	}
+}

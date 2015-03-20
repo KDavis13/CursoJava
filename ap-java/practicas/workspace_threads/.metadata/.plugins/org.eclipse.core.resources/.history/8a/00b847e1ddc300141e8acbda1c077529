@@ -1,0 +1,19 @@
+package uno;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Calculando...");
+		
+		for(long i = 0;i<5_000_000_000L;i++){
+			//System.out.println(i);
+		}
+		
+		System.out.println("Cálculo finalizado");
+		
+		System.out.println("programa finalizado");
+
+	}
+
+}

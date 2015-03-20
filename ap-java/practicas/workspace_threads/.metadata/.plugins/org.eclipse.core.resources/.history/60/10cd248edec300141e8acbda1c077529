@@ -1,0 +1,32 @@
+package uno;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		ejecutarEnOtroHilo();
+
+		System.out.println("programa finalizado");
+
+	}
+
+	private static void ejecutarEnOtroHilo() {
+		
+		new Runnable() {
+
+			@Override
+			public void run() {
+				System.out.println("Calculando...");
+
+				for (long i = 0; i < 5_000_000_000L; i++) {
+				}
+
+				System.out.println("Cálculo finalizado");
+				
+			}
+			
+		};
+
+	}
+
+}

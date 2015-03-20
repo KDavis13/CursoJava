@@ -1,0 +1,167 @@
+package practica3;
+
+import java.sql.*;
+
+/**
+ * Ejemplo de uso de JDBC: -Se establece la cadena de conexión con la base de
+ * datos Libros -Se obtienen todos los libros del autor cuyo codigo=5 -Se
+ * muestran los datos por pantalla
+ */
+public class ConsultaStatement {
+
+	static Statement sentenciaSQL;
+
+	public static void main(String[] args) {
+		try {
+			Conexion.setURL("jdbc:mysql://localhost:3306/Libros?user=usuario1&password=usuario1");
+			sentenciaSQL = Conexion.getConexion().createStatement();
+
+			/*
+			 * String codigo="5";
+			 * 
+			 * StringBuffer sb = new StringBuffer();
+			 * 
+			 * sb.append(
+			 * "SELECT Autores.nombre, Libros.titulo FROM AutorLibro,Autores,Libros"
+			 * );
+			 * sb.append(" WHERE ( (Autores.CodigoAutor = AutorLibro.CodAutor)"
+			 * ); sb.append(" AND (Libros.CodigoLibro = AutorLibro.CodLibro)");
+			 * sb.append(" AND (Autores.CodigoAutor = "); sb.append(codigo);
+			 * sb.append("))");
+			 */
+
+			String sql = "select * from libros where titulo like '%Java%'";
+
+			ResultSet res = lanzarSelect(sql);
+
+			mostrarSelect(res);
+
+			getNuevoID("autores", "CodigoAutor");
+
+			// Preparar inserción:
+			grabarFila("p");
+
+			Conexion.desconecta();
+
+		} catch (SQLException e) {
+			System.out.println("SQLException: " + e.getMessage());
+			System.out.println("SQLState: " + e.getSQLState());
+			System.out.println("VendorError: " + e.getErrorCode());
+		}
+	}
+
+	/*
+	 * EJERCICIO 2 APARTADO A
+	 * 
+	 * Cread un método que permita ejecutar cualquier SELECT y ubicar aquí el
+	 * código que actualmente utilizamos para crear y ejecutar los SELECT. Este
+	 * método debe recibir un String con el SELECT a ejecutar y debe devolver un
+	 * ResultSet:
+	 */
+
+	private static ResultSet lanzarSelect(String select) {
+		// System.out.println(select.toString());
+
+		ResultSet res = null;
+		try {
+			res = sentenciaSQL.executeQuery(select.toString());
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		return res;
+	}
+
+	/*
+	 * EJERCICIO 2 APARTADO B
+	 * 
+	 * Cread un método llamado mostrarSelect() que recibiendo un objeto
+	 * ResultSet sea capaz de imprimir por pantalla todos los campos y todas las
+	 * filas existentes en un ResultSet.:
+	 */
+
+	private static void mostrarSelect(ResultSet res) throws SQLException {
+		ResultSetMetaData resMD = res.getMetaData();
+
+		res.beforeFirst();
+		while (res.next()) {
+			System.out.println(resMD.getColumnName(1) + "    "
+					+ resMD.getColumnName(2) + "                 "
+					+ resMD.getColumnName(3));
+			System.out.println(res.getString(1) + "              "
+					+ res.getString(2) + "        " + res.getString(3));
+			System.out.println(resMD.getColumnName(4) + "               "
+					+ resMD.getColumnName(5));
+			System.out.println(res.getString(4) + "      " + res.getString(5));
+			System.out
+					.println("---------------------------------------------------------------------");
+		}
+
+	}
+
+	/*
+	 * EJERCICIO 3 APARTADO A
+	 * 
+	 * Cread un método llamado getNuevoID() que en función del nombre de la
+	 * tabla y del nombre del campo clave suministrado devuelva el siguiente
+	 * valor para ese campo. Asumimos que el campo para el cual hay que
+	 * conseguir el siguiente valor será siempre de tipo int:
+	 */
+
+	private static int getNuevoID(String tabla, String ID) throws SQLException {
+
+		String T = tabla;
+		String I = ID;
+
+		String sql = "Select " + I + " from " + T;
+
+		int idFinal = 0;
+
+		ResultSet res = lanzarSelect(sql);
+
+		while (res.next()) {
+			idFinal = res.getInt(I);
+		}
+
+		return ++idFinal;
+	}
+
+	/*
+	 * EJERCICIO 3 APARTADO B
+	 * 
+	 * Cread un método llamado grabarFila() que permita ejecutar una sentencia
+	 * SQL de inserción o de actualización sobre cualquier tabla. Para ello debe
+	 * recibir un String que represente la orden y devolver un entero con el
+	 * valor de las filas que han sido afectadas:
+	 */
+
+	private static int grabarFila(String orden) {
+		String sql = orden;
+		int filasAfectadas;
+		// Prepara la inserción
+		PreparedStatement ps = prepararStatement(Conexion.getConexion(), sql);
+
+		try {
+			filasAfectadas = sentenciaSQL.executeUpdate(sql);
+			System.out.println("Filas afectadas: " + filasAfectadas);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		return filasAfectadas;
+	}
+
+	private static PreparedStatement prepararStatement(Connection conn, String sql) {
+		StringBuilder sb = new StringBuilder();
+
+		sb.append(sql);
+
+		PreparedStatement ps = null;
+		try {
+			ps = conn.prepareStatement(sb.toString());
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return ps;
+	}
+}

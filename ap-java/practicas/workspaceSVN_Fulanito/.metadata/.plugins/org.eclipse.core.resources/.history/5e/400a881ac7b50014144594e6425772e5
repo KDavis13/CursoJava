@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE jasperReport PUBLIC "-//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+
+
+<jasperReport name="segundoInforme"
+				pageWidth="595"
+				pageHeight="842"
+				leftMargin="20"
+				rightMargin="20"
+				topMargin="20"
+				bottomMargin="20">
+
+
+<!-- Esto son los parametros que recibirá el xml -->
+<parameter name="P_INSTITUCION" class="java.lang.String"/>
+<parameter name="P_CURSO_ANY" class="java.lang.String"/>
+<parameter name="P_CURSO_NOM" class="java.lang.String"/>
+
+
+<!-- Esto es el titulo de la página, al ser "title" solo se imprimirá una vez -->
+<title>
+	<band height="50">
+		<textField> <!-- Esto es un textfiled por que es un elemento dinámico -->
+			<reportElement x="0" y="0" width="530" height="30" /> <!-- Esto setea el campo  -->
+			
+			<textElement><!-- Esto setea la fuente -->
+				<font pdfFontName="Helvetica-Bold" size="20" isBold="true"/>
+			</textElement>
+			
+			<textFieldExpression class="java.lang.String"> <!-- Esto define el tipo de parametro que va a entrar -->
+				<![CDATA[$P{P_INSTITUCION}]]><!-- Con $P le decimos que es un parámetro y entre corchetes hay que poner el nombre del parametro que hayamos definido antes -->
+			</textFieldExpression>
+		
+		</textField>
+		
+		<line direction="TopDown"><!-- Esto es una linea horizontal para hacer bonito -->
+			<reportElement x="0" y="29" width="530" height="0" />
+		</line>
+		
+	</band>
+</title>
+
+</jasperReport>

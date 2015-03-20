@@ -1,0 +1,39 @@
+package uno;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Thread unThread = Thread.currentThread();
+		System.out.println(unThread.getName());
+
+		ejecutarEnOtroHilo();
+
+		System.out.println("programa finalizado");
+
+	}
+
+	private static void ejecutarEnOtroHilo() {
+		
+		Thread t = new Thread() {
+
+			@Override
+			public void run() {
+				
+				System.out.println("Calculando...");
+
+				for (long i = 0; i < 5_000_000_000L; i++) {
+				}
+
+				System.out.println("Cálculo finalizado");
+				
+			}
+			
+		};
+		
+		t.start();
+		System.out.println(t.getName());
+
+	}
+
+}

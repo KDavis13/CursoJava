@@ -1,0 +1,10 @@
+package callback1.db;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+public interface ProcesadorFilas {
+	
+	void procesarFila(ResultSet rs) throws SQLException;
+
+}

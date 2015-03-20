@@ -1,0 +1,8 @@
+package basic;
+
+public class utiles {
+	public void imprimir(){
+		Thread unThread = Thread.currentThread();
+		System.out.println(unThread.getName());
+	}
+}

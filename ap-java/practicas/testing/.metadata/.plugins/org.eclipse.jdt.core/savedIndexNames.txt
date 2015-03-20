@@ -1,0 +1,8 @@
+INDEX VERSION 1.127+C:\Users\poo\ap-java\Practicas\testing\.metadata\.plugins\org.eclipse.jdt.core
+3436513848.index
+2056917515.index
+1900431027.index
+1524203676.index
+2422690071.index
+3774087140.index
+2532078830.index

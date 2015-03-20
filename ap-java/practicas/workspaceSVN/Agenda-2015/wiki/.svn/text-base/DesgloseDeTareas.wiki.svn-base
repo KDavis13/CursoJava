@@ -1,0 +1,65 @@
+*1. Crear e instanciar log. → Lluis*
+
+Crear 	archivo de log
+
+Tener 	método writeError() que recibe un string y que guarde en el log los 	errores.
+
+
+*2. Crear Enum con Salas → Lluis*
+
+
+*3. Crear Obejeto Config.* (Envía la dirección del fichero y devuelve Objeto Config) → Lluis
+	
+Crear 	Objeto Config
+	
+		
+Objeto config
+Atributos:mes, anyo, idiomaIn, idiomaOut.
+Constructor 	recibe dirección del fichero.
+CreaStreamBuffer del fichero.
+readLine()-> para coger Mes y Año y llama a método que setea mes y año.
+readLine() -> Coge el idiomaIn y idimoaOut y llama a método que setea los idiomas.
+	
+
+*4. Clases de almacenamiento → Albert*
+
+Crear 	Objeto Fecha 
+
+Objeto Fecha.
+Atributos: Año, Mes, semanas, diaInicial (día de la semana), número de días.
+Constructor() Recibe objeto Config 
+Coge la fecha del objeto config Setea atributos
+
+Crear 	Objeto Idioma → Albert
+
+Objeto Idioma
+Atributos: Array String diasSemana, String mes, String agenda, Array String inicialesSemana.
+Cosntructor() Recibe objeto Config
+Coge el idiomaIn e IdiomaOut de config.
+Setea 	las variables en el idioma Out
+
+*5. Leer peticiones. → Eduard* (Recibe la dirección del fichero y devuelve un Array de Obejeto Petición por sala) 
+
+Leer 	fichero de peticiones y crear ArrayList con cada petición
+
+Dividir el Array en tantos Arrays como salas hayan
+
+Ordenar cada Array por la actividad del tipo de evento.
+
+Crear 	objeto por cada actividad
+
+Objeto Actividad
+Atributos: Nombre, Horario, Día, Fecha, Sala…
+Relenamos 	 el array con las peticiones para que no hayan coincidencias
+
+	
+*6. Crear archivos → Belia*
+
+Recoger objeto Idioma y Fecha
+
+crear bucle por tantas salas
+
+Crear Fichero
+
+Rellenar con html base (el head, con el css bla bla…)
+Bucle para generar tablas y rellenarlas (una tabla por semana)

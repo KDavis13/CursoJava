@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+
+<jasperReport name="tercerInforme" 
+				pageWidth="595" 
+				pageHeight="842" 
+				leftMargin="20" 
+				rightMargin="20" 
+				topMargin="20" 
+				bottomMargin="20">
+
+<parameter name="P_INSTITUCION" class="java.lang.String"/>
+<parameter name="P_ID_CURSO" class="java.lang.String"/>
+<parameter name="LOGO_URL" class="java.lang.String"/>
+
+<queryString>
+
+<![CDATA[SELECT c.id_curso AS ID_CURSO, 
+							c.nombre_curso AS NOMBRE_CURSO,  
+							m.fecha_inicio AS FECHA, 
+							m.id_matricula AS MATRICULA, 
+							a.id_alumno AS ID_ALUMNO, 
+							a.nombre_alumno AS NOMBRE_ALUMNO 
+							
+							FROM Matriculas m 
+							INNER JOIN Alumnos a 
+							ON m.id_alumno=a.id_alumno 
+							INNER JOIN Cursos c 
+							ON c.id_curso=m.id_curso 
+							WHERE c.id_curso=$P{P_ID_CURSO}]]>
+</queryString>
+
+<field name="ID_CURSO" class="java.lang.String"/>
+<field name="NOMBRE_CURSO" class="java.lang.String"/>
+<field name="FECHA" class="java.util.Date"/>
+<field name="MATRICULA" class="java.util.Integer"/>
+<field name="ID_ALUMNO" class="java.lang.String"/>
+<field name="NOMBRE_ALUMNO" class="java.lang.String"/>
+
+
+<background>
+	<band height="41">
+		<image>
+			<reportElement x="500" y="0" width="33" height="38"/>
+			<imageExpression class="java.lang.String">
+				<![CDATA[$P{LOGO_URL}]]>
+			</imageExpression>
+		</image>
+	</band
+></background>
+
+
+
+
+</jasperReport>

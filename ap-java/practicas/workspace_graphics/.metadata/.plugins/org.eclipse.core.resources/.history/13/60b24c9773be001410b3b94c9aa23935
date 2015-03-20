@@ -1,0 +1,3 @@
+rdbms.driver=com.mysql.jdbc.Driver
+rdbms.usuario=usuario1
+rdbms.pass=usuario1

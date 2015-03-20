@@ -1,0 +1,190 @@
+package SortidaDades;
+
+import main.Data;
+import main.Idioma;
+import dummies.DummyFecha;
+import dummies.DummyIdioma;
+
+public class Imprime implements HTML {
+
+        // Atributos
+        private static String[][] dades;
+        public static Idioma idiomaIn;
+        public static Idioma idiomaOut;
+        private static Data fecha;
+        private static String nombre;
+
+        // Constructor
+        public Imprime(String[][] array, Idioma idiomaInn,
+                        Idioma idiomaOutn, Data fechan, String nombren) {
+
+                idiomaIn = idiomaInn;
+                idiomaOut = idiomaOutn;
+                fecha = fechan;
+                dades = array;
+                nombre = nombren;
+        }
+
+        // Este metodo devuelve el inicio del HTML y los titulos. -->metodo
+        // terminado
+        public static String configuraArchivoHTML() {
+                StringBuffer resultado = new StringBuffer();
+
+                resultado.append(HTML.generaInicioHTML(nombre));
+                resultado.append(HTML.generaTitulos(traduceMes(fecha.getMes()-1),
+                                idiomaOut.getAgenda(), fecha.getAny()));
+
+                return resultado.toString();
+        }
+
+        // Método que llama a gestionar datos, pero devuelve String con todas las
+        // tablas -->Terminado
+        public static String generaTablas() {
+                StringBuffer resultado = new StringBuffer();
+
+                resultado.append(gestionDatos());
+
+                return resultado.toString();
+        }
+
+        // metodo que gestiona el Array inicial y llama a la funcion que genera las
+        // tablas --> Terminado
+        public static String gestionDatos() {
+
+                int diaInicial = fecha.getDiaInicial();
+                int diaFinal = fecha.getDiaSemana(fecha.getDias());
+
+                int diasAnadidos = (diaInicial + (Data.NUMERO_DIAS_SEMANA - (diaFinal + 1)));
+                int diasTotales = fecha.getDias() + diasAnadidos;
+
+                String[][] arrayFinal = generaArrayBueno(diasTotales);
+
+                return gestionTablas(arrayFinal);
+        }
+
+        // Este metodo recibe el Array Final y hace las diferentes gestiones con el
+        // HTML para devolver las tablas finales.
+        public static String gestionTablas(String[][] arrayFinal) {
+
+                StringBuffer resultado = new StringBuffer();
+                String[][] datosPorTabla = new String[Data.NUMERO_DIAS_SEMANA][Data.HORAS];
+                String[] dias = new String[Data.NUMERO_DIAS_SEMANA];
+                int contadorInterno = 0;
+                int cont = 1;
+
+                for (int x = 0; x < arrayFinal.length; x++) {
+                	
+                        if (contadorInterno < datosPorTabla.length) {
+
+                        	for (int y = 0; y < arrayFinal[x].length; y++) {
+                        		datosPorTabla[contadorInterno][y] = arrayFinal[x][y];
+                        	}
+                        	
+                            
+                            if(x < fecha.getDiaInicial() || x > (fecha.getDias() + (fecha.getDiaInicial() -1))){
+                            	dias[contadorInterno] = " ";
+                            }else {
+                            	dias[contadorInterno] = String.valueOf(cont);
+                            	cont++;
+                            }
+                            
+                            contadorInterno++;
+                            
+
+                        } else {
+                        	contadorInterno = 0;
+                        	
+                        	resultado.append(HTML.generaTabla(datosPorTabla,
+                                    idiomaOut.getDiasSemana(), dias));
+
+                        	for (int y = 0; y < arrayFinal[x].length; y++) {
+                        		datosPorTabla[contadorInterno][y] = arrayFinal[x][y];
+                        	}
+                        	
+                        	//i < diaInicial || i > ((diaInicial + diasMes) - 1)
+                        	
+                        	if(x < fecha.getDiaInicial() || x > (fecha.getDias() + (fecha.getDiaInicial() -1))){
+                            	dias[contadorInterno] = " ";
+                            }else {
+                            	dias[contadorInterno] = String.valueOf(cont);
+                            	cont++;
+                            }
+                        	
+                        	contadorInterno++;
+                        } 
+                        
+                        if((x+1) == arrayFinal.length){
+                        	resultado.append(HTML.generaTabla(datosPorTabla,
+                                    idiomaOut.getDiasSemana(), dias));
+                        }
+                }
+
+                return resultado.toString();
+        }
+
+        // Método que genera el Array con los días del mes, traducidos y además
+        // llena los días adicionales con espacios en blanco.
+        private static String[][] generaArrayBueno(int diasTotales) {//int dias totales es el numero de dias mas los adicionales.
+
+                String[][] arrayFinal = new String[diasTotales][Data.HORAS];
+
+                int diaInicial = fecha.getDiaInicial();
+                int diasMes = fecha.getDias();
+                
+                System.out.println(fecha.getMes());
+                System.out.println(fecha.getDias());
+                System.out.println(diasTotales);
+                System.out.println(arrayFinal.length);
+                System.out.println(diaInicial);
+
+                String cerradoIn = idiomaIn.getEstado()[0];
+                String cerradoOut = idiomaIn.getEstado()[0];
+                String abiertoOut = idiomaIn.getEstado()[1];
+                
+
+                for (int i = 0; i < arrayFinal.length; i++) {
+                        for (int j = 0; j < arrayFinal[i].length; j++) {
+                        	
+                                if (i < diaInicial || i > ((diaInicial + diasMes) - 1)) {
+                                	
+                                        arrayFinal[i][j] = " ";
+                                        System.out.println(diaInicial-i);
+                                } else {
+                                        if (dades[(i - diaInicial)][j].equals(cerradoIn)) {
+                                                arrayFinal[i][j] = cerradoOut;
+                                        } else {
+                                                if (dades[(i - diaInicial)].equals(null)) {
+                                                        arrayFinal[i][j] = abiertoOut;
+                                                } else {
+                                                        arrayFinal[i][j] = dades[(i - diaInicial)][j];
+                                                }
+                                        }
+
+                                }
+                        }
+                }
+                return arrayFinal;
+        }
+
+        // metodo que finaliza proporciona el final del HTML -->Metodo terminado.
+        public static String finalizarHTML() {
+                StringBuffer resultado = new StringBuffer();
+
+                resultado.append(HTML.saltoLinea);
+                resultado.append(idiomaOut.getGenerado() + " No-name-team");
+                resultado.append(HTML.cierraDocument);
+
+                return resultado.toString();
+        }
+
+        /* ************************************************************** */
+        // M�todos de traducci�n
+        /* ************************************************************** */
+
+        // M�todo que devuelve el mes en el idioma de salida
+        private static String traduceMes(int mes) {
+                String[] meses = idiomaOut.getMeses();
+
+                return meses[mes];
+        }
+}

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="1" timestamp="1426237562416" analysisTimestamp="1426237561558" release="">
+  <Project projectName="TestJuniorAndSenior">
+    <Jar>C:\Users\poo\ap-java\Practicas\testing\TestJuniorAndSenior\bin</Jar>
+    <AuxClasspathEntry>C:\Users\poo\ap-java\Practicas\testing\TestJuniorAndSenior\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\poo\ap-java\Instalables\jdk\Java\jdk1.8.0_25\jre\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\poo\ap-java\Practicas\testing\TestJuniorAndSenior\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE" first="1">
+    <Class classname="JuniorClass">
+      <SourceLine classname="JuniorClass" sourcefile="JuniorClass.java" sourcepath="JuniorClass.java"/>
+    </Class>
+    <Method classname="JuniorClass" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="JuniorClass" start="26" end="27" startBytecode="0" endBytecode="52" sourcefile="JuniorClass.java" sourcepath="JuniorClass.java"/>
+    </Method>
+    <Method classname="JuniorClass" name="&lt;init&gt;" signature="()V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="JuniorClass" start="15" end="17" startBytecode="0" endBytecode="60" sourcefile="JuniorClass.java" sourcepath="JuniorClass.java"/>
+    </Method>
+    <SourceLine classname="JuniorClass" start="26" end="26" startBytecode="3" endBytecode="3" sourcefile="JuniorClass.java" sourcepath="JuniorClass.java"/>
+    <SourceLine classname="JuniorClass" start="26" end="26" startBytecode="3" endBytecode="3" sourcefile="JuniorClass.java" sourcepath="JuniorClass.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="1">
+    <Class classname="JuniorClass">
+      <SourceLine classname="JuniorClass" sourcefile="JuniorClass.java" sourcepath="JuniorClass.java"/>
+    </Class>
+    <Field classname="JuniorClass" name="name" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="JuniorClass" sourcefile="JuniorClass.java" sourcepath="JuniorClass.java"/>
+    </Field>
+    <SourceLine classname="JuniorClass" start="16" end="16" startBytecode="7" endBytecode="7" sourcefile="JuniorClass.java" sourcepath="JuniorClass.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE" first="1">
+    <Class classname="SeniorClass">
+      <SourceLine classname="SeniorClass" sourcefile="JuniorClass.java" sourcepath="JuniorClass.java"/>
+    </Class>
+    <Method classname="SeniorClass" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="SeniorClass" start="2" end="4" startBytecode="0" endBytecode="59" sourcefile="JuniorClass.java" sourcepath="JuniorClass.java"/>
+    </Method>
+    <Method classname="SeniorClass" name="toString" signature="()Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="SeniorClass" start="7" end="7" startBytecode="0" endBytecode="44" sourcefile="JuniorClass.java" sourcepath="JuniorClass.java"/>
+    </Method>
+    <SourceLine classname="SeniorClass" start="3" end="3" startBytecode="5" endBytecode="5" sourcefile="JuniorClass.java" sourcepath="JuniorClass.java"/>
+    <SourceLine classname="SeniorClass" start="3" end="3" startBytecode="5" endBytecode="5" sourcefile="JuniorClass.java" sourcepath="JuniorClass.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Fri, 13 Mar 2015 10:05:51 +0100" total_classes="2" referenced_classes="11" total_bugs="3" total_size="18" num_packages="1" java_version="1.8.0_25" vm_version="25.25-b02" cpu_seconds="2.04" clock_seconds="1.25" peak_mbytes="453.62" alloc_mbytes="455.50" gc_seconds="0.02" priority_2="3">
+    <PackageStats package="" total_bugs="3" total_types="2" total_size="18" priority_2="3">
+      <ClassStats class="JuniorClass" sourceFile="JuniorClass.java" interface="false" size="11" bugs="2" priority_2="2"/>
+      <ClassStats class="SeniorClass" sourceFile="JuniorClass.java" interface="false" size="7" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="259" invocations="304" avgMicrosecondsPerInvocation="853" maxMicrosecondsPerInvocation="27553" standardDeviationMircosecondsPerInvocation="2269"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="194" invocations="2" avgMicrosecondsPerInvocation="97497" maxMicrosecondsPerInvocation="157166" standardDeviationMircosecondsPerInvocation="59669"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="61" invocations="306" avgMicrosecondsPerInvocation="200" maxMicrosecondsPerInvocation="18571" standardDeviationMircosecondsPerInvocation="1063"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="43" invocations="11" avgMicrosecondsPerInvocation="3969" maxMicrosecondsPerInvocation="23833" standardDeviationMircosecondsPerInvocation="7107"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="42" invocations="62" avgMicrosecondsPerInvocation="680" maxMicrosecondsPerInvocation="3877" standardDeviationMircosecondsPerInvocation="687"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="33" invocations="11" avgMicrosecondsPerInvocation="3027" maxMicrosecondsPerInvocation="12301" standardDeviationMircosecondsPerInvocation="4007"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1426237562416" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

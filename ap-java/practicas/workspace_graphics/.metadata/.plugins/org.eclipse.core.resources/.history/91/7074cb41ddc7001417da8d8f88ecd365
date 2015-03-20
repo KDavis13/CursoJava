@@ -1,0 +1,18 @@
+package entidades;
+
+import javax.persistence.*;
+//Clase que representa la entidad 'Estudiante'
+@Entity
+@Table(name = "Alumnos")
+public class Estudiante {
+
+	@Id
+	private int id;
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+}

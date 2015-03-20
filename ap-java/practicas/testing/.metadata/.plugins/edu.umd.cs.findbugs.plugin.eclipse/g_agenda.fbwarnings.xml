@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="1" timestamp="1426238095231" analysisTimestamp="1426238089817" release="">
+  <Project projectName="g_agenda">
+    <Jar>C:\Users\poo\ap-java\Teoria\tec-emp\analisis estatico del codigo\FindBugs\g_agenda\bin</Jar>
+    <AuxClasspathEntry>C:\Users\poo\ap-java\Teoria\tec-emp\analisis estatico del codigo\FindBugs\g_agenda\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\poo\ap-java\Programas\eclipse\plugins\org.junit_4.11.0.v201303080030\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\poo\ap-java\Programas\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\poo\ap-java\Instalables\jdk\Java\jdk1.8.0_25\jre\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\poo\ap-java\Teoria\tec-emp\analisis estatico del codigo\FindBugs\g_agenda\test</SrcDir>
+    <SrcDir>C:\Users\poo\ap-java\Teoria\tec-emp\analisis estatico del codigo\FindBugs\g_agenda\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" first="1">
+    <Class classname="entidades.Actividad">
+      <SourceLine classname="entidades.Actividad" sourcefile="Actividad.java" sourcepath="entidades/Actividad.java"/>
+    </Class>
+    <Method classname="entidades.Actividad" name="getFechaFinal" signature="()Ljava/util/Date;" isStatic="false">
+      <SourceLine classname="entidades.Actividad" start="49" end="49" startBytecode="0" endBytecode="46" sourcefile="Actividad.java" sourcepath="entidades/Actividad.java"/>
+    </Method>
+    <Field classname="entidades.Actividad" name="fechaFinal" signature="Ljava/util/Date;" isStatic="false">
+      <SourceLine classname="entidades.Actividad" sourcefile="Actividad.java" sourcepath="entidades/Actividad.java"/>
+    </Field>
+    <SourceLine classname="entidades.Actividad" start="49" end="49" startBytecode="4" endBytecode="4" sourcefile="Actividad.java" sourcepath="entidades/Actividad.java"/>
+    <SourceLine classname="entidades.Actividad" start="49" end="49" startBytecode="4" endBytecode="4" sourcefile="Actividad.java" sourcepath="entidades/Actividad.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" first="1">
+    <Class classname="entidades.Actividad">
+      <SourceLine classname="entidades.Actividad" sourcefile="Actividad.java" sourcepath="entidades/Actividad.java"/>
+    </Class>
+    <Method classname="entidades.Actividad" name="getFechaInicio" signature="()Ljava/util/Date;" isStatic="false">
+      <SourceLine classname="entidades.Actividad" start="41" end="41" startBytecode="0" endBytecode="46" sourcefile="Actividad.java" sourcepath="entidades/Actividad.java"/>
+    </Method>
+    <Field classname="entidades.Actividad" name="fechaInicio" signature="Ljava/util/Date;" isStatic="false">
+      <SourceLine classname="entidades.Actividad" sourcefile="Actividad.java" sourcepath="entidades/Actividad.java"/>
+    </Field>
+    <SourceLine classname="entidades.Actividad" start="41" end="41" startBytecode="4" endBytecode="4" sourcefile="Actividad.java" sourcepath="entidades/Actividad.java"/>
+    <SourceLine classname="entidades.Actividad" start="41" end="41" startBytecode="4" endBytecode="4" sourcefile="Actividad.java" sourcepath="entidades/Actividad.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" first="1">
+    <Class classname="entidades.Actividad">
+      <SourceLine classname="entidades.Actividad" sourcefile="Actividad.java" sourcepath="entidades/Actividad.java"/>
+    </Class>
+    <Method classname="entidades.Actividad" name="&lt;init&gt;" signature="(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;Ljava/util/Date;Ljava/lang/String;Ljava/util/ArrayList;)V" isStatic="false">
+      <SourceLine classname="entidades.Actividad" start="14" end="22" startBytecode="0" endBytecode="185" sourcefile="Actividad.java" sourcepath="entidades/Actividad.java"/>
+    </Method>
+    <Field classname="entidades.Actividad" name="fechaFinal" signature="Ljava/util/Date;" isStatic="false">
+      <SourceLine classname="entidades.Actividad" sourcefile="Actividad.java" sourcepath="entidades/Actividad.java"/>
+    </Field>
+    <LocalVariable name="fechaFinal" register="4" pc="22" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="entidades.Actividad" start="19" end="19" startBytecode="22" endBytecode="22" sourcefile="Actividad.java" sourcepath="entidades/Actividad.java"/>
+    <SourceLine classname="entidades.Actividad" start="19" end="19" startBytecode="22" endBytecode="22" sourcefile="Actividad.java" sourcepath="entidades/Actividad.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" first="1">
+    <Class classname="entidades.Actividad">
+      <SourceLine classname="entidades.Actividad" sourcefile="Actividad.java" sourcepath="entidades/Actividad.java"/>
+    </Class>
+    <Method classname="entidades.Actividad" name="&lt;init&gt;" signature="(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;Ljava/util/Date;Ljava/lang/String;Ljava/util/ArrayList;)V" isStatic="false">
+      <SourceLine classname="entidades.Actividad" start="14" end="22" startBytecode="0" endBytecode="185" sourcefile="Actividad.java" sourcepath="entidades/Actividad.java"/>
+    </Method>
+    <Field classname="entidades.Actividad" name="fechaInicio" signature="Ljava/util/Date;" isStatic="false">
+      <SourceLine classname="entidades.Actividad" sourcefile="Actividad.java" sourcepath="entidades/Actividad.java"/>
+    </Field>
+    <LocalVariable name="fechaInicio" register="3" pc="16" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="entidades.Actividad" start="18" end="18" startBytecode="16" endBytecode="16" sourcefile="Actividad.java" sourcepath="entidades/Actividad.java"/>
+    <SourceLine classname="entidades.Actividad" start="18" end="18" startBytecode="16" endBytecode="16" sourcefile="Actividad.java" sourcepath="entidades/Actividad.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" first="1">
+    <Class classname="entidades.Actividad">
+      <SourceLine classname="entidades.Actividad" sourcefile="Actividad.java" sourcepath="entidades/Actividad.java"/>
+    </Class>
+    <Method classname="entidades.Actividad" name="setFechaFinal" signature="(Ljava/util/Date;)V" isStatic="false">
+      <SourceLine classname="entidades.Actividad" start="53" end="54" startBytecode="0" endBytecode="61" sourcefile="Actividad.java" sourcepath="entidades/Actividad.java"/>
+    </Method>
+    <Field classname="entidades.Actividad" name="fechaFinal" signature="Ljava/util/Date;" isStatic="false">
+      <SourceLine classname="entidades.Actividad" sourcefile="Actividad.java" sourcepath="entidades/Actividad.java"/>
+    </Field>
+    <LocalVariable name="fechaFinal" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="entidades.Actividad" start="53" end="53" startBytecode="2" endBytecode="2" sourcefile="Actividad.java" sourcepath="entidades/Actividad.java"/>
+    <SourceLine classname="entidades.Actividad" start="53" end="53" startBytecode="2" endBytecode="2" sourcefile="Actividad.java" sourcepath="entidades/Actividad.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" first="1">
+    <Class classname="entidades.Actividad">
+      <SourceLine classname="entidades.Actividad" sourcefile="Actividad.java" sourcepath="entidades/Actividad.java"/>
+    </Class>
+    <Method classname="entidades.Actividad" name="setFechaInicio" signature="(Ljava/util/Date;)V" isStatic="false">
+      <SourceLine classname="entidades.Actividad" start="45" end="46" startBytecode="0" endBytecode="61" sourcefile="Actividad.java" sourcepath="entidades/Actividad.java"/>
+    </Method>
+    <Field classname="entidades.Actividad" name="fechaInicio" signature="Ljava/util/Date;" isStatic="false">
+      <SourceLine classname="entidades.Actividad" sourcefile="Actividad.java" sourcepath="entidades/Actividad.java"/>
+    </Field>
+    <LocalVariable name="fechaInicio" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="entidades.Actividad" start="45" end="45" startBytecode="2" endBytecode="2" sourcefile="Actividad.java" sourcepath="entidades/Actividad.java"/>
+    <SourceLine classname="entidades.Actividad" start="45" end="45" startBytecode="2" endBytecode="2" sourcefile="Actividad.java" sourcepath="entidades/Actividad.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="entradaDatos.Config">
+      <SourceLine classname="entradaDatos.Config" sourcefile="Config.java" sourcepath="entradaDatos/Config.java"/>
+    </Class>
+    <Method classname="entradaDatos.Config" name="leerDatos" signature="()V" isStatic="false">
+      <SourceLine classname="entradaDatos.Config" start="56" end="94" startBytecode="0" endBytecode="456" sourcefile="Config.java" sourcepath="entradaDatos/Config.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="58" end="59" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="entradaDatos.Config" start="57" end="57" startBytecode="11" endBytecode="11" sourcefile="Config.java" sourcepath="entradaDatos/Config.java"/>
+    <SourceLine classname="entradaDatos.Config" start="57" end="57" startBytecode="11" endBytecode="11" sourcefile="Config.java" sourcepath="entradaDatos/Config.java"/>
+  </BugInstance>
+  <BugInstance type="DM_GC" priority="1" rank="16" abbrev="Dm" category="PERFORMANCE" first="1">
+    <Class classname="entradaDatos.Config">
+      <SourceLine classname="entradaDatos.Config" sourcefile="Config.java" sourcepath="entradaDatos/Config.java"/>
+    </Class>
+    <Method classname="entradaDatos.Config" name="tancaFitxer" signature="(Ljava/io/BufferedReader;)V" isStatic="false">
+      <SourceLine classname="entradaDatos.Config" start="101" end="113" startBytecode="0" endBytecode="152" sourcefile="Config.java" sourcepath="entradaDatos/Config.java"/>
+    </Method>
+    <SourceLine classname="entradaDatos.Config" start="105" end="105" startBytecode="10" endBytecode="10" sourcefile="Config.java" sourcepath="entradaDatos/Config.java"/>
+  </BugInstance>
+  <BugInstance type="NP_DEREFERENCE_OF_READLINE_VALUE" priority="2" rank="15" abbrev="NP" category="STYLE" first="1">
+    <Class classname="entradaDatos.Config">
+      <SourceLine classname="entradaDatos.Config" sourcefile="Config.java" sourcepath="entradaDatos/Config.java"/>
+    </Class>
+    <Method classname="entradaDatos.Config" name="leerDatos" signature="()V" isStatic="false">
+      <SourceLine classname="entradaDatos.Config" start="56" end="94" startBytecode="0" endBytecode="456" sourcefile="Config.java" sourcepath="entradaDatos/Config.java"/>
+    </Method>
+    <LocalVariable name="liniaFitxer" register="1" pc="87" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="entradaDatos.Config" start="77" end="77" startBytecode="89" endBytecode="89" sourcefile="Config.java" sourcepath="entradaDatos/Config.java"/>
+    <SourceLine classname="entradaDatos.Config" start="77" end="77" startBytecode="89" endBytecode="89" sourcefile="Config.java" sourcepath="entradaDatos/Config.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="entradaDatos.Idioma">
+      <SourceLine classname="entradaDatos.Idioma" sourcefile="Idioma.java" sourcepath="entradaDatos/Idioma.java"/>
+    </Class>
+    <Method classname="entradaDatos.Idioma" name="&lt;init&gt;" signature="(Ljava/lang/String;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="entradaDatos.Idioma" start="60" end="135" startBytecode="0" endBytecode="1442" sourcefile="Idioma.java" sourcepath="entradaDatos/Idioma.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="72" end="73" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="entradaDatos.Idioma" start="63" end="63" startBytecode="39" endBytecode="39" sourcefile="Idioma.java" sourcepath="entradaDatos/Idioma.java"/>
+    <SourceLine classname="entradaDatos.Idioma" start="63" end="63" startBytecode="39" endBytecode="39" sourcefile="Idioma.java" sourcepath="entradaDatos/Idioma.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="entradaDatos.IdiomaTest">
+      <SourceLine classname="entradaDatos.IdiomaTest" sourcefile="IdiomaTest.java" sourcepath="entradaDatos/IdiomaTest.java"/>
+    </Class>
+    <Method classname="entradaDatos.IdiomaTest" name="testIdiomaNoFile" signature="()V" isStatic="false">
+      <SourceLine classname="entradaDatos.IdiomaTest" start="95" end="99" startBytecode="0" endBytecode="8" sourcefile="IdiomaTest.java" sourcepath="entradaDatos/IdiomaTest.java"/>
+    </Method>
+    <LocalVariable name="id" register="2" pc="14" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="entradaDatos.IdiomaTest" start="97" end="97" startBytecode="13" endBytecode="13" sourcefile="IdiomaTest.java" sourcepath="entradaDatos/IdiomaTest.java"/>
+    <SourceLine classname="entradaDatos.IdiomaTest" start="97" end="97" startBytecode="13" endBytecode="13" sourcefile="IdiomaTest.java" sourcepath="entradaDatos/IdiomaTest.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="id"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="entradaDatos.Peticions">
+      <SourceLine classname="entradaDatos.Peticions" sourcefile="Peticions.java" sourcepath="entradaDatos/Peticions.java"/>
+    </Class>
+    <Method classname="entradaDatos.Peticions" name="getData" signature="()Lentidades/Agenda;" isStatic="false">
+      <SourceLine classname="entradaDatos.Peticions" start="46" end="83" startBytecode="0" endBytecode="461" sourcefile="Peticions.java" sourcepath="entradaDatos/Peticions.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="72" end="73" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="entradaDatos.Peticions" start="49" end="49" startBytecode="20" endBytecode="20" sourcefile="Peticions.java" sourcepath="entradaDatos/Peticions.java"/>
+    <SourceLine classname="entradaDatos.Peticions" start="49" end="49" startBytecode="20" endBytecode="20" sourcefile="Peticions.java" sourcepath="entradaDatos/Peticions.java"/>
+  </BugInstance>
+  <BugInstance type="DM_GC" priority="1" rank="16" abbrev="Dm" category="PERFORMANCE" first="1">
+    <Class classname="entradaDatos.Peticions">
+      <SourceLine classname="entradaDatos.Peticions" sourcefile="Peticions.java" sourcepath="entradaDatos/Peticions.java"/>
+    </Class>
+    <Method classname="entradaDatos.Peticions" name="cerrarFichero" signature="(Ljava/io/BufferedReader;)V" isStatic="false">
+      <SourceLine classname="entradaDatos.Peticions" start="89" end="101" startBytecode="0" endBytecode="152" sourcefile="Peticions.java" sourcepath="entradaDatos/Peticions.java"/>
+    </Method>
+    <SourceLine classname="entradaDatos.Peticions" start="93" end="93" startBytecode="10" endBytecode="10" sourcefile="Peticions.java" sourcepath="entradaDatos/Peticions.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="entradaDatos.PeticionsTest">
+      <SourceLine classname="entradaDatos.PeticionsTest" sourcefile="PeticionsTest.java" sourcepath="entradaDatos/PeticionsTest.java"/>
+    </Class>
+    <Method classname="entradaDatos.PeticionsTest" name="testArchivoKO" signature="()V" isStatic="false">
+      <SourceLine classname="entradaDatos.PeticionsTest" start="40" end="45" startBytecode="0" endBytecode="5" sourcefile="PeticionsTest.java" sourcepath="entradaDatos/PeticionsTest.java"/>
+    </Method>
+    <LocalVariable name="a" register="1" pc="12" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="entradaDatos.PeticionsTest" start="43" end="43" startBytecode="11" endBytecode="11" sourcefile="PeticionsTest.java" sourcepath="entradaDatos/PeticionsTest.java"/>
+    <SourceLine classname="entradaDatos.PeticionsTest" start="43" end="43" startBytecode="11" endBytecode="11" sourcefile="PeticionsTest.java" sourcepath="entradaDatos/PeticionsTest.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="a"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="procesadores.EscribirLog">
+      <SourceLine classname="procesadores.EscribirLog" sourcefile="EscribirLog.java" sourcepath="procesadores/EscribirLog.java"/>
+    </Class>
+    <Method classname="procesadores.EscribirLog" name="escribir" signature="(Ljava/lang/String;Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="procesadores.EscribirLog" start="12" end="26" startBytecode="0" endBytecode="381" sourcefile="EscribirLog.java" sourcepath="procesadores/EscribirLog.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/lang/String;Z)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter" start="78" end="79" startBytecode="0" endBytecode="41" sourcefile="FileWriter.java" sourcepath="java/io/FileWriter.java"/>
+    </Method>
+    <SourceLine classname="procesadores.EscribirLog" start="14" end="14" startBytecode="27" endBytecode="27" sourcefile="EscribirLog.java" sourcepath="procesadores/EscribirLog.java"/>
+    <SourceLine classname="procesadores.EscribirLog" start="14" end="14" startBytecode="27" endBytecode="27" sourcefile="EscribirLog.java" sourcepath="procesadores/EscribirLog.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="procesadores.ProcesarLineaTest">
+      <SourceLine classname="procesadores.ProcesarLineaTest" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    </Class>
+    <Method classname="procesadores.ProcesarLineaTest" name="comprobarCantidadBad" signature="()V" isStatic="false">
+      <SourceLine classname="procesadores.ProcesarLineaTest" start="45" end="51" startBytecode="0" endBytecode="10" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    </Method>
+    <LocalVariable name="actividad" register="3" pc="17" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="procesadores.ProcesarLineaTest" start="49" end="49" startBytecode="16" endBytecode="16" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    <SourceLine classname="procesadores.ProcesarLineaTest" start="49" end="49" startBytecode="16" endBytecode="16" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="actividad"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="procesadores.ProcesarLineaTest">
+      <SourceLine classname="procesadores.ProcesarLineaTest" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    </Class>
+    <Method classname="procesadores.ProcesarLineaTest" name="comprobarCantidadFranjas" signature="()V" isStatic="false">
+      <SourceLine classname="procesadores.ProcesarLineaTest" start="120" end="125" startBytecode="0" endBytecode="10" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    </Method>
+    <LocalVariable name="actividad" register="3" pc="17" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="procesadores.ProcesarLineaTest" start="124" end="124" startBytecode="16" endBytecode="16" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    <SourceLine classname="procesadores.ProcesarLineaTest" start="124" end="124" startBytecode="16" endBytecode="16" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="actividad"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="procesadores.ProcesarLineaTest">
+      <SourceLine classname="procesadores.ProcesarLineaTest" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    </Class>
+    <Method classname="procesadores.ProcesarLineaTest" name="comprobarFechaFinMalFormada" signature="()V" isStatic="false">
+      <SourceLine classname="procesadores.ProcesarLineaTest" start="82" end="87" startBytecode="0" endBytecode="10" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    </Method>
+    <LocalVariable name="actividad" register="3" pc="17" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="procesadores.ProcesarLineaTest" start="86" end="86" startBytecode="16" endBytecode="16" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    <SourceLine classname="procesadores.ProcesarLineaTest" start="86" end="86" startBytecode="16" endBytecode="16" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="actividad"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="procesadores.ProcesarLineaTest">
+      <SourceLine classname="procesadores.ProcesarLineaTest" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    </Class>
+    <Method classname="procesadores.ProcesarLineaTest" name="comprobarFechaFinMalFormada2" signature="()V" isStatic="false">
+      <SourceLine classname="procesadores.ProcesarLineaTest" start="91" end="96" startBytecode="0" endBytecode="10" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    </Method>
+    <LocalVariable name="actividad" register="3" pc="17" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="procesadores.ProcesarLineaTest" start="95" end="95" startBytecode="16" endBytecode="16" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    <SourceLine classname="procesadores.ProcesarLineaTest" start="95" end="95" startBytecode="16" endBytecode="16" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="actividad"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="procesadores.ProcesarLineaTest">
+      <SourceLine classname="procesadores.ProcesarLineaTest" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    </Class>
+    <Method classname="procesadores.ProcesarLineaTest" name="comprobarFechaIniFin" signature="()V" isStatic="false">
+      <SourceLine classname="procesadores.ProcesarLineaTest" start="55" end="60" startBytecode="0" endBytecode="10" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    </Method>
+    <LocalVariable name="actividad" register="3" pc="17" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="procesadores.ProcesarLineaTest" start="59" end="59" startBytecode="16" endBytecode="16" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    <SourceLine classname="procesadores.ProcesarLineaTest" start="59" end="59" startBytecode="16" endBytecode="16" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="actividad"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="procesadores.ProcesarLineaTest">
+      <SourceLine classname="procesadores.ProcesarLineaTest" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    </Class>
+    <Method classname="procesadores.ProcesarLineaTest" name="comprobarFechaIniMalFormada" signature="()V" isStatic="false">
+      <SourceLine classname="procesadores.ProcesarLineaTest" start="64" end="69" startBytecode="0" endBytecode="10" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    </Method>
+    <LocalVariable name="actividad" register="3" pc="17" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="procesadores.ProcesarLineaTest" start="68" end="68" startBytecode="16" endBytecode="16" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    <SourceLine classname="procesadores.ProcesarLineaTest" start="68" end="68" startBytecode="16" endBytecode="16" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="actividad"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="procesadores.ProcesarLineaTest">
+      <SourceLine classname="procesadores.ProcesarLineaTest" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    </Class>
+    <Method classname="procesadores.ProcesarLineaTest" name="comprobarFechaIniMalFormada2" signature="()V" isStatic="false">
+      <SourceLine classname="procesadores.ProcesarLineaTest" start="73" end="78" startBytecode="0" endBytecode="10" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    </Method>
+    <LocalVariable name="actividad" register="3" pc="17" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="procesadores.ProcesarLineaTest" start="77" end="77" startBytecode="16" endBytecode="16" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    <SourceLine classname="procesadores.ProcesarLineaTest" start="77" end="77" startBytecode="16" endBytecode="16" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="actividad"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="procesadores.ProcesarLineaTest">
+      <SourceLine classname="procesadores.ProcesarLineaTest" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    </Class>
+    <Method classname="procesadores.ProcesarLineaTest" name="comprobarFranja" signature="()V" isStatic="false">
+      <SourceLine classname="procesadores.ProcesarLineaTest" start="100" end="105" startBytecode="0" endBytecode="10" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    </Method>
+    <LocalVariable name="actividad" register="3" pc="17" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="procesadores.ProcesarLineaTest" start="104" end="104" startBytecode="16" endBytecode="16" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    <SourceLine classname="procesadores.ProcesarLineaTest" start="104" end="104" startBytecode="16" endBytecode="16" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="actividad"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="procesadores.ProcesarLineaTest">
+      <SourceLine classname="procesadores.ProcesarLineaTest" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    </Class>
+    <Method classname="procesadores.ProcesarLineaTest" name="comprobarFranja2" signature="()V" isStatic="false">
+      <SourceLine classname="procesadores.ProcesarLineaTest" start="109" end="114" startBytecode="0" endBytecode="10" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    </Method>
+    <LocalVariable name="actividad" register="3" pc="17" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="procesadores.ProcesarLineaTest" start="113" end="113" startBytecode="16" endBytecode="16" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    <SourceLine classname="procesadores.ProcesarLineaTest" start="113" end="113" startBytecode="16" endBytecode="16" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="actividad"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="procesadores.ProcesarLineaTest">
+      <SourceLine classname="procesadores.ProcesarLineaTest" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    </Class>
+    <Method classname="procesadores.ProcesarLineaTest" name="comprobarMascaraHoras" signature="()V" isStatic="false">
+      <SourceLine classname="procesadores.ProcesarLineaTest" start="130" end="135" startBytecode="0" endBytecode="10" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    </Method>
+    <LocalVariable name="actividad" register="3" pc="17" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="procesadores.ProcesarLineaTest" start="134" end="134" startBytecode="16" endBytecode="16" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    <SourceLine classname="procesadores.ProcesarLineaTest" start="134" end="134" startBytecode="16" endBytecode="16" sourcefile="ProcesarLineaTest.java" sourcepath="procesadores/ProcesarLineaTest.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="actividad"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="procesadores.Utils">
+      <SourceLine classname="procesadores.Utils" sourcefile="Utils.java" sourcepath="procesadores/Utils.java"/>
+    </Class>
+    <Method classname="procesadores.Utils" name="generaEspacioHTML" signature="(Lentidades/Agenda;IILjava/lang/String;)V" isStatic="true">
+      <SourceLine classname="procesadores.Utils" start="29" end="164" startBytecode="0" endBytecode="1424" sourcefile="Utils.java" sourcepath="procesadores/Utils.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter" start="63" end="64" startBytecode="0" endBytecode="40" sourcefile="FileWriter.java" sourcepath="java/io/FileWriter.java"/>
+    </Method>
+    <SourceLine classname="procesadores.Utils" start="31" end="31" startBytecode="35" endBytecode="35" sourcefile="Utils.java" sourcepath="procesadores/Utils.java"/>
+    <SourceLine classname="procesadores.Utils" start="31" end="31" startBytecode="35" endBytecode="35" sourcefile="Utils.java" sourcepath="procesadores/Utils.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Fri, 13 Mar 2015 10:14:43 +0100" total_classes="43" referenced_classes="103" total_bugs="26" total_size="1328" num_packages="7" java_version="1.8.0_25" vm_version="25.25-b02" cpu_seconds="10.51" clock_seconds="5.43" peak_mbytes="486.14" alloc_mbytes="455.50" gc_seconds="0.23" priority_2="18" priority_1="8">
+    <PackageStats package="entidades" total_bugs="6" total_types="3" total_size="98" priority_2="6">
+      <ClassStats class="entidades.Actividad" sourceFile="Actividad.java" interface="false" size="51" bugs="6" priority_2="6"/>
+      <ClassStats class="entidades.Agenda" sourceFile="Agenda.java" interface="false" size="35" bugs="0"/>
+      <ClassStats class="entidades.FranjaHoraria" sourceFile="FranjaHoraria.java" interface="false" size="12" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="entidades.interfaces" total_bugs="0" total_types="1" total_size="2">
+      <ClassStats class="entidades.interfaces.IColisionResolver" sourceFile="IColisionResolver.java" interface="true" size="2" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="entradaDatos" total_bugs="8" total_types="8" total_size="531" priority_2="2" priority_1="6">
+      <ClassStats class="entradaDatos.Config" sourceFile="Config.java" interface="false" size="68" bugs="3" priority_2="1" priority_1="2"/>
+      <ClassStats class="entradaDatos.ConfigTest" sourceFile="ConfigTest.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="entradaDatos.Idioma" sourceFile="Idioma.java" interface="false" size="249" bugs="1" priority_1="1"/>
+      <ClassStats class="entradaDatos.IdiomaTest" sourceFile="IdiomaTest.java" interface="false" size="66" bugs="1" priority_1="1"/>
+      <ClassStats class="entradaDatos.Idiomas" sourceFile="Idiomas.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="entradaDatos.IdiomasTest" sourceFile="IdiomasTest.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="entradaDatos.Peticions" sourceFile="Peticions.java" interface="false" size="56" bugs="2" priority_1="2"/>
+      <ClassStats class="entradaDatos.PeticionsTest" sourceFile="PeticionsTest.java" interface="false" size="19" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="entradaDatos.excepciones" total_bugs="0" total_types="14" total_size="70">
+      <ClassStats class="entradaDatos.excepciones.ArchivoConfigException" sourceFile="ArchivoConfigException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="entradaDatos.excepciones.ArchivoException" sourceFile="ArchivoException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="entradaDatos.excepciones.ArchivoIdiomaException" sourceFile="ArchivoIdiomaException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="entradaDatos.excepciones.ArchivoPeticionesException" sourceFile="ArchivoPeticionesException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="entradaDatos.excepciones.FalloAbrirArchivoConfigException" sourceFile="FalloAbrirArchivoConfigException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="entradaDatos.excepciones.FalloAbrirArchivoIdiomaException" sourceFile="FalloAbrirArchivoIdiomaException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="entradaDatos.excepciones.FalloAbrirArchivoPeticionesException" sourceFile="FalloAbrirArchivoPeticionesException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="entradaDatos.excepciones.FalloCerrarArchivoConfigException" sourceFile="FalloCerrarArchivoConfigException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="entradaDatos.excepciones.FalloCerrarArchivoIdiomaException" sourceFile="FalloCerrarArchivoIdiomaException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="entradaDatos.excepciones.FalloCerrarArchivoPeticionesException" sourceFile="FalloCerrarArchivoPeticionesException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="entradaDatos.excepciones.FalloLeerArchivoConfigException" sourceFile="FalloLeerArchivoConfigException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="entradaDatos.excepciones.FalloLeerArchivoIdiomaException" sourceFile="FalloLeerArchivoIdiomaException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="entradaDatos.excepciones.FalloLeerArchivoPeticionesException" sourceFile="FalloLeerArchivoPeticionesException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="entradaDatos.excepciones.MesIncorrectoArchivoConfigException" sourceFile="MesIncorrectoArchivoConfigException.java" interface="false" size="5" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="principal" total_bugs="0" total_types="1" total_size="20">
+      <ClassStats class="principal.Principal" sourceFile="Principal.java" interface="false" size="20" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="procesadores" total_bugs="12" total_types="9" total_size="572" priority_2="10" priority_1="2">
+      <ClassStats class="procesadores.EscribirLog" sourceFile="EscribirLog.java" interface="false" size="14" bugs="1" priority_1="1"/>
+      <ClassStats class="procesadores.ProcesarActividad" sourceFile="ProcesarActividad.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="procesadores.ProcesarActividadTest" sourceFile="ProcesarActividadTest.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="procesadores.ProcesarLinea" sourceFile="ProcesarLinea.java" interface="false" size="143" bugs="0"/>
+      <ClassStats class="procesadores.ProcesarLineaTest" sourceFile="ProcesarLineaTest.java" interface="false" size="66" bugs="10" priority_2="10"/>
+      <ClassStats class="procesadores.ResolverPreferenciaPrimero" sourceFile="ResolverPreferenciaPrimero.java" interface="false" size="126" bugs="0"/>
+      <ClassStats class="procesadores.ResolverPreferenciaPrimeroTest" sourceFile="ResolverPreferenciaPrimeroTest.java" interface="false" size="69" bugs="0"/>
+      <ClassStats class="procesadores.Utils" sourceFile="Utils.java" interface="false" size="93" bugs="1" priority_1="1"/>
+      <ClassStats class="procesadores.UtilsTest" sourceFile="UtilsTest.java" interface="false" size="20" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="procesadores.excepciones" total_bugs="0" total_types="7" total_size="35">
+      <ClassStats class="procesadores.excepciones.CantidadEntradaIncorrectaException" sourceFile="CantidadEntradaIncorrectaException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="procesadores.excepciones.CantidadHorasIncorrectaException" sourceFile="CantidadHorasIncorrectaException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="procesadores.excepciones.ComprobacionFechaException" sourceFile="ComprobacionFechaException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="procesadores.excepciones.FechaMalFormadaException" sourceFile="FechaMalFormadaException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="procesadores.excepciones.FranjaHorariaException" sourceFile="FranjaHorariaException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="procesadores.excepciones.LineaIncorrectaException" sourceFile="LineaIncorrectaException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="procesadores.excepciones.PatronDeDiasIncorrectoException" sourceFile="PatronDeDiasIncorrectoException.java" interface="false" size="5" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="362" invocations="43" avgMicrosecondsPerInvocation="8426" maxMicrosecondsPerInvocation="252966" standardDeviationMircosecondsPerInvocation="39562"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="279" invocations="2" avgMicrosecondsPerInvocation="139555" maxMicrosecondsPerInvocation="158170" standardDeviationMircosecondsPerInvocation="18615"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="276" invocations="179" avgMicrosecondsPerInvocation="1546" maxMicrosecondsPerInvocation="101597" standardDeviationMircosecondsPerInvocation="8381"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="273" invocations="684" avgMicrosecondsPerInvocation="399" maxMicrosecondsPerInvocation="56710" standardDeviationMircosecondsPerInvocation="2239"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="248" invocations="103" avgMicrosecondsPerInvocation="2410" maxMicrosecondsPerInvocation="106154" standardDeviationMircosecondsPerInvocation="10615"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="240" invocations="188" avgMicrosecondsPerInvocation="1277" maxMicrosecondsPerInvocation="87292" standardDeviationMircosecondsPerInvocation="6789"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="233" invocations="179" avgMicrosecondsPerInvocation="1305" maxMicrosecondsPerInvocation="92352" standardDeviationMircosecondsPerInvocation="7481"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="231" invocations="403" avgMicrosecondsPerInvocation="574" maxMicrosecondsPerInvocation="51993" standardDeviationMircosecondsPerInvocation="3304"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="222" invocations="188" avgMicrosecondsPerInvocation="1184" maxMicrosecondsPerInvocation="78026" standardDeviationMircosecondsPerInvocation="6019"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="216" invocations="179" avgMicrosecondsPerInvocation="1208" maxMicrosecondsPerInvocation="63968" standardDeviationMircosecondsPerInvocation="5325"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="191" invocations="179" avgMicrosecondsPerInvocation="1070" maxMicrosecondsPerInvocation="99597" standardDeviationMircosecondsPerInvocation="7545"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="161" invocations="103" avgMicrosecondsPerInvocation="1563" maxMicrosecondsPerInvocation="48472" standardDeviationMircosecondsPerInvocation="5133"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUnrelatedTypesInGenericContainer" totalMilliseconds="159" invocations="43" avgMicrosecondsPerInvocation="3700" maxMicrosecondsPerInvocation="123914" standardDeviationMircosecondsPerInvocation="18960"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="145" invocations="43" avgMicrosecondsPerInvocation="3388" maxMicrosecondsPerInvocation="132181" standardDeviationMircosecondsPerInvocation="19881"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.MethodReturnCheck" totalMilliseconds="129" invocations="43" avgMicrosecondsPerInvocation="3010" maxMicrosecondsPerInvocation="98514" standardDeviationMircosecondsPerInvocation="15013"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindReturnRef" totalMilliseconds="90" invocations="43" avgMicrosecondsPerInvocation="2114" maxMicrosecondsPerInvocation="71479" standardDeviationMircosecondsPerInvocation="10790"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUninitializedGet" totalMilliseconds="86" invocations="43" avgMicrosecondsPerInvocation="2001" maxMicrosecondsPerInvocation="84606" standardDeviationMircosecondsPerInvocation="12746"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="83" invocations="115" avgMicrosecondsPerInvocation="728" maxMicrosecondsPerInvocation="19312" standardDeviationMircosecondsPerInvocation="2246"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="80" invocations="686" avgMicrosecondsPerInvocation="117" maxMicrosecondsPerInvocation="2369" standardDeviationMircosecondsPerInvocation="120"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="74" invocations="43" avgMicrosecondsPerInvocation="1739" maxMicrosecondsPerInvocation="48422" standardDeviationMircosecondsPerInvocation="7289"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FormatStringChecker" totalMilliseconds="56" invocations="43" avgMicrosecondsPerInvocation="1304" maxMicrosecondsPerInvocation="46537" standardDeviationMircosecondsPerInvocation="6994"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="51" invocations="63" avgMicrosecondsPerInvocation="823" maxMicrosecondsPerInvocation="20497" standardDeviationMircosecondsPerInvocation="3132"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="46" invocations="180" avgMicrosecondsPerInvocation="256" maxMicrosecondsPerInvocation="12147" standardDeviationMircosecondsPerInvocation="1010"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="44" invocations="43" avgMicrosecondsPerInvocation="1031" maxMicrosecondsPerInvocation="26995" standardDeviationMircosecondsPerInvocation="4113"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueRangeAnalysisFactory" totalMilliseconds="43" invocations="180" avgMicrosecondsPerInvocation="241" maxMicrosecondsPerInvocation="17221" standardDeviationMircosecondsPerInvocation="1433"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="39" invocations="179" avgMicrosecondsPerInvocation="219" maxMicrosecondsPerInvocation="6403" standardDeviationMircosecondsPerInvocation="793"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1426238095231" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

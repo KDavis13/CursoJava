@@ -1,0 +1,26 @@
+package server;
+
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.util.Scanner;
+
+public class ServerChat {
+
+private boolean continuar;
+
+public ServerChat() {
+continuar=true;
+try {
+ServerSocket socket = new ServerSocket(35557);
+System.out.println ("Servidor del chat por turnos");
+System.out.println ("Esperando que se conecte el cliente");
+            
+Socket cliente = socket.accept();
+            System.out.println ("Conectado con cliente " + cliente.getInetAddress());
+            System.out.println ("Para salir escribe q! y return");
+            
+            DataInputStream bufferEntrada=
+            new DataInputStream(cliente.getInputStream());

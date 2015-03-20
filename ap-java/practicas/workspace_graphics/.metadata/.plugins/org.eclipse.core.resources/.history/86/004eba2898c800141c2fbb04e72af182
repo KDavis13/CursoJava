@@ -1,0 +1,64 @@
+package conversor;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class TestConversorTemperaturas {
+	
+	private ConversorTemperaturas conversor;
+	
+	//Este estiqueta lo que hace es que se se ejecute el siguiente método SIEMPRE antes de los métodos de test
+	@Before
+	public void creaConversorTemperaturas() {
+		conversor = new ConversorTemperaturas();
+	}	
+	
+	//Este estiqueta lo que hace es que se se ejecute el siguiente método SIEMPRE después de los métodos de test
+	@After
+	public void destruyeConversorTemperaturas() {
+		conversor = null;
+	}
+	
+	@Test
+	public void testCelsiusAFahrenheit() throws TemperaturaNoValidaException {
+
+		// assertEquels(valor esperado, valor que se obtiene del método testado,
+		// margen de error);
+		assertEquals(32, conversor.celsiusAFahrenheit(0), 0);
+	}
+
+	@Test
+	public void testCelsiusAReamur() throws TemperaturaNoValidaException {
+		// assertEquels(valor esperado, valor que se obtiene del método testado,
+		// margen de error);
+		assertEquals(0, conversor.celsiusAReamur(0), 0);
+	}
+
+	
+	// Con que está entre parentesis da error, por que salta la excepción desde
+	// el código productivo.
+	// Entre parentesis se le avisa que que espera esa excepción
+	@Test(expected = TemperaturaNoValidaException.class)
+	public void testTemperaturaNoValidaFahrenheit() throws TemperaturaNoValidaException {
+
+		// Da error por que recibe una excepción desde el código productivo
+		conversor.celsiusAFahrenheit(-400);
+	}
+
+	
+	//Es común ver métodos bis cuando el código es susceptible de lanzar excepciones. Este es el método recomendado
+	@Test
+	public void testTemperaturaNoValidaFahrenheitBis() {
+		try {
+			conversor.celsiusAFahrenheit(-400);
+			
+			//Este fail lo que hace es forzar el fallo del test por que este supuesto no debe ser correcto.
+			fail("Para temperaturas por encima del cero absoluto el test debe pasar");
+		} catch (TemperaturaNoValidaException e) {
+			e.printStackTrace();
+		}
+	}
+}

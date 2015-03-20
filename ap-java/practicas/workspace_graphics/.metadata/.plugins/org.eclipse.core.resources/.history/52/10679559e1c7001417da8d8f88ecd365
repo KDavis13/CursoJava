@@ -1,0 +1,48 @@
+package entidades;
+
+import javax.persistence.*;
+
+//Clase que representa la entidad 'Estudiante'
+@Entity  //Necesario para indicar que se corresponde con una tabla
+
+@Table(name = "Alumnos")  //Solo es necesario cuando no te da la gana 
+						  //o no te dejan que la tabla se llame igual que la clase
+
+public class Estudiante {
+
+	@Id //Esto indica que el int id será la clave primaria
+	private int id;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	//Es muy parecido al @Table, para cuando quieras que el nombre 
+	//del atributo no coincida con el campo de la tabla (pero que referencien lo mismo)
+	
+	@Column(name = "nombre", length = 100, nullable = false) 
+	// Con la linea anterior mapeamos nom con el campo nombre
+	private String nom;
+
+	public String getNom() {
+		return nom;
+	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	private String curso;
+
+	public String getCurso() {
+		return curso;
+	}
+
+	public void setCurso(String curso) {
+		this.curso = curso;
+	}
+}

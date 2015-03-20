@@ -1,0 +1,50 @@
+package persistencia;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+import javax.persistence.TypedQuery;
+
+import entidades.Estudiante;
+
+public class JpaManagement {
+	
+	private static EntityManagerFactory emf =  Persistence.createEntityManagerFactory("UPEstudiantes");;
+	private static EntityManager em = emf.createEntityManager();;
+
+	
+	public static void crearEntidad(Estudiante estudiante) {
+		EntityTransaction tx = em.getTransaction();
+		
+		try {
+			tx.begin();
+			em.persist(estudiante);
+			tx.commit();
+			
+			System.out.println("Estudiante creado" + estudiante);
+		}
+		catch (Exception e) {
+			tx.rollback();
+			e.printStackTrace();
+			System.out.println("Petó D:");
+		}
+	}
+	public List<Estudiante> getEntidades() {
+		TypedQuery<Estudiante> query = em.createNamedQuery("lookingForMaría", Estudiante.class);
+		
+		query.setParameter(1, 2);
+		query.setParameter(2, "María");
+		
+		return query.getResultList();
+	}
+	
+	public void cerrarRecursos() {
+		em.close();
+		emf.close();
+	}
+
+
+}

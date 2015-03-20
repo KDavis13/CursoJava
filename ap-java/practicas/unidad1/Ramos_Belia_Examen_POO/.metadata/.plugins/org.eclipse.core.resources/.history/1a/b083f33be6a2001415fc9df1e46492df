@@ -1,0 +1,9 @@
+package ejercicio5;
+
+public class NoEquilateroEscaleno extends Exception {
+
+	public NoEquilateroEscaleno(String string) {
+		// TODO Auto-generated constructor stub
+	}
+
+}

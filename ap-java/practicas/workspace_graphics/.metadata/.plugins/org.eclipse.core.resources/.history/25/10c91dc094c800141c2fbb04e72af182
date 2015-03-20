@@ -1,0 +1,24 @@
+package conversor;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class TestConversorTemperaturas {
+
+	@Test
+	public void testCelsiusAFahrenheit() throws TemperaturaNoValidaException {
+		// Crear instancia del SUT (Subject Under Test)
+		ConversorTemperaturas conversor = new ConversorTemperaturas();
+
+		// assertEquals(expected, real, delta);
+		//assertEquels(valor esperado, valor que se obtiene del método testado, margen de error);
+		assertEquals(32, conversor.celsiusAFahrenheit(0), 0);
+	}
+
+	@Test
+	public void testCelsiusAReamur() {
+		fail("Not yet implemented");
+	}
+
+}

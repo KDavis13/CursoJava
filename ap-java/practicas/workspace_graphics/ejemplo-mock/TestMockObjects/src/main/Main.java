@@ -1,0 +1,21 @@
+package main;
+
+import servicios.GestorContenidos;
+import sistema.UtilesFichero;
+
+public class Main {
+
+	public static void main(String[] args) {
+		UtilesFichero util = new UtilesFichero();
+		GestorContenidos gestor =
+				new GestorContenidos(util);
+		
+		String msj = "Todo va bien.";
+		
+		gestor.guardar("pepe", "epep", 
+			"mensajes.txt", msj);
+		
+		System.out.println("Programa finalizado.");
+	}
+
+}

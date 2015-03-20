@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+
+<jasperReport name="tercerInforme" 
+				pageWidth="595" 
+				pageHeight="842" 
+				leftMargin="20" 
+				rightMargin="20" 
+				topMargin="20" 
+				bottomMargin="20">
+
+<parameter name="P_INSTITUCION" class="java.lang.String"/>
+<parameter name="P_ID_CURSO" class="java.lang.String"/>
+<parameter name="LOGO_URL" class="java.lang.String"/>
+
+</jasperReport>

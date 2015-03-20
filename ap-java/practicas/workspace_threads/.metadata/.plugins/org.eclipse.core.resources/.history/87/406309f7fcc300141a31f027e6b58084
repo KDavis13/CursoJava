@@ -1,0 +1,26 @@
+
+package cliente;
+
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.net.Socket;
+import java.net.UnknownHostException;
+import java.util.Scanner;
+
+public class ClienteChat {
+private boolean continuar;
+
+public ClienteChat() {
+continuar=true;
+try {
+Socket socket = new Socket ("localhost", 35557);
+System.out.println ("conectado al servidor");
+System.out.println ("Bienvenido al chat por turnos (para salir escribe q! y return)");
+
+DataOutputStream bufferSalida = 
+new DataOutputStream (socket.getOutputStream());
+DataInputStream bufferEntrada=
+            new DataInputStream(socket.getInputStream());
+            
+while (continuar) {

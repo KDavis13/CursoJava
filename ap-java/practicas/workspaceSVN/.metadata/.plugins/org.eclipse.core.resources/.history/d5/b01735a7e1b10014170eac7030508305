@@ -1,0 +1,90 @@
+package SortidaDades;
+
+import dummies.DummyFecha;
+import dummies.DummyIdioma;
+
+public class Imprime implements HTML {
+	
+	//Atributos
+	
+	private static String[][] dades;
+	private static DummyIdioma idiomaIn;
+	private static DummyIdioma idiomaOut;
+	private static DummyFecha fecha;
+	private static String nombre;
+	
+	private static String resultadoFinal;
+	private static StringBuffer archivo;
+	
+	public String getResultadoFinal(){
+		return this.resultadoFinal;
+		
+	}
+	
+	
+	//Constructor
+	public Imprime(String[][] array, DummyIdioma idiomaInn, 
+			  DummyIdioma idiomaOutn, DummyFecha fechan, String nombren) {
+		
+		idiomaIn = idiomaInn;
+		idiomaOut = idiomaOutn;
+		fecha = fechan;
+		dades = array;
+		nombre = nombren;
+		
+		resultadoFinal = imprimir(array,idiomaInn,idiomaOutn,fechan, nombre);
+	}
+	
+	
+	public static String imprimir(String[][] array, DummyIdioma idiomaInn, 
+								  DummyIdioma idiomaOutn, DummyFecha fechan, String nombre){
+		
+		archivo =  new StringBuffer();//Importante para que no se acumulen los HTML
+		configuraArchivoHTML();
+		
+		return archivo.toString();
+	}
+	
+
+
+	//Método que setea datos y los configura
+	private static void configuraArchivoHTML() {
+		/*archivo.append(HTML.cabecera);
+		archivo.append(idiomaOut.getAgenda());
+		archivo.append(HTML.titulos);
+		archivo.append("Noviembre " + fecha.getAny());
+		archivo.append(HTML.cierraTitulos);
+		archivo.append(HTML.cierraDocument);*/
+
+		//Definitivo
+		archivo.append(HTML.creaCabecera(nombre)); //Crea la cabecera del HTML, incluye el título del archivo en el tab y el CSS
+		
+		archivo.append(HTML.setTitulos(traduceMes(fecha.getMes()), idiomaOut.getAgenda(), fecha.getAny()));// Crea los títulos.
+	
+		archivo.append(generaTablas());
+		
+		archivo.append(idiomaOut.getGenerado() + " No-name-team");
+		archivo.append(HTML.cierraDocument);
+	}
+
+
+	private static String traduceMes(int mes){
+		String[] meses = idiomaOut.getMeses();
+		
+		return meses[mes];
+	}
+	
+	private static String generaTablas() {
+		StringBuffer resultado = new StringBuffer();
+		
+		int numTablas = fecha.getSemanas();
+		
+		for(int i = 0; i<numTablas ;i++){
+			resultado.append("Soy una tabla");
+		}
+		
+		
+		return resultado.toString();
+	}
+
+}

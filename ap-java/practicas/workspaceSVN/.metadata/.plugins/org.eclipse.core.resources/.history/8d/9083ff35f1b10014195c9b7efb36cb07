@@ -1,0 +1,125 @@
+package SortidaDades;
+
+public interface HTML {
+	
+	String saltoLinea = "</br>";
+	
+	String abreHTML = "<!DOCTYPE html><html><head><title>";
+	
+	String cabecera = "</title><meta charset='UTF-8'><meta name='viewport' " + 
+					  " content='width=device-width, initial-scale=1.0'>";
+					  
+	String css = "<style>body {background-color: white;font-family: Arial;" +
+				 "}h1 {text-align: center;font-size: 24px;}h3 {text-align: center;" +
+				 "font-size: 18px;text-decoration: underline;}table {width:1000px;" +
+				 "border-collapse: collapse;margin: 20px auto;}td {border: 1px solid black;" +
+				 "text-align: center;}tr:first-child td { border-bottom:1px solid black;}" +
+				 ".cabecera td {background-color: #C2DFFF; border:none;font-weight: bold;}" +            
+				 ".cabecera:first-child td{background-color: #A0CFEC;}td:first-child {" +
+				 "background-color: #C2DFFF;border-left: none;font-weight: bold;}" + 
+				 "td:last-child {border-right: none;}.tancat {background-color: darkgrey;}"
+				 + ".lliure {background-color: #64E986; }.ocupat {background-color: #E66C50;}" +
+				 "</style></head><body><h1>";
+	
+	String titulos = "</h1><h3>";
+	String cierraTitulos = "</h3>";
+	
+	String abreTabla = "<table>";
+	String cierraTabla = "</table>";
+	
+	String abreTr = "<tr>";
+	String cierraTr = "</tr>";
+	
+	String abreTrCab = "<tr class='cabecera'>";
+	
+	String abreTd = "<td>";
+	String abreTdTancat = "<td class='tancat'>";
+	String abreTdLliure = "<td class='lliure'>";
+	String abreTdOcupate = "<td class='ocupat'>";
+	String cierraTd = "</td>";
+
+	String cierraDocument = "</body></html>";
+	
+	
+	//Devuelve Strinf con la cabecera del html ( hasta <h1> )
+	public static String creaCabecera(String titulo){
+		StringBuffer resultado = new StringBuffer();
+		
+		resultado.append(abreHTML);
+		resultado.append(titulo);
+		resultado.append(cabecera);
+		resultado.append(css);
+		
+		return resultado.toString();
+	}
+	
+	//Devuelve los titulos ( cierra los títulos y rellena )
+	public static String setTitulos(String mes, String agenda, int any){
+		StringBuffer resultado = new StringBuffer();
+		
+		resultado.append(agenda);
+		resultado.append(titulos);
+		resultado.append(mes + " " + any);
+		resultado.append(cierraTitulos);
+		return resultado.toString();
+	}
+	
+	
+	//Cierra el documento HTML
+	public static String cierraHTML(){
+		StringBuffer resultado = new StringBuffer();
+		
+		resultado.append(cierraDocument);
+		
+		return resultado.toString();
+	}
+	
+	
+	//Genera la cabecera de la tabla (de momento solo el primer TR)
+	public static String generarCabecera(String[] diasSemana){
+		StringBuffer resultado = new StringBuffer();
+		
+		resultado.append(abreTrCab);
+		
+		for(int i = 0; i <= diasSemana.length; i++){
+			
+			if(i == 0){
+				resultado.append(abreTd);
+				resultado.append("");
+				resultado.append(cierraTd);
+			} else{
+				resultado.append(abreTd);
+				resultado.append(diasSemana[i]);
+				resultado.append(cierraTd);
+			}
+		}
+		
+		resultado.append(cierraTr);
+		
+		return resultado.toString();
+	}
+	
+	//Genera TR y los rellena con el Array que pide
+	public static String generarFila(String[] diasSemana){
+		StringBuffer resultado = new StringBuffer();
+		
+		resultado.append(abreTr);
+		
+		for(int i = 0; i < 9; i++){
+			
+			if(i == 0){
+				resultado.append(abreTd);
+				resultado.append("Hora");
+				resultado.append(cierraTd);
+			} else {
+				resultado.append(abreTd);
+				resultado.append(diasSemana[i]);
+				resultado.append(cierraTd);
+			}			
+		}
+		
+		resultado.append(cierraTr);
+		
+		return resultado.toString();
+	}
+}

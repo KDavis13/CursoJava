@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE jasperReport PUBLIC "-//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+
+<jasperReport name="segundoInforme"
+				pageWidth="595"
+				pageHeight="842"
+				leftMargin="20"
+				rightMargin="20"
+				topMargin="20"
+				bottomMargin="20">
+
+
+
+<parameter name="P_INSTITUCION" class="java.lang.String"/>
+<parameter name="P_CURSO_ANY" class="java.lang.String"/>
+<parameter name="P_CURSO_NOM" class="java.lang.String"/>
+
+<title>
+	<band height="50">
+		<!-- AQUI DECLARAMOS EL CONTENIDO -->
+	</band>
+</title>
+
+</jasperReport>

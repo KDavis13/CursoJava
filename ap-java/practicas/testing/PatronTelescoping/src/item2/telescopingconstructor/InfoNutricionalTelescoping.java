@@ -1,0 +1,82 @@
+package item2.telescopingconstructor;
+
+/* Patrón Telescoping constructor
+ * 
+ * No escala bien cuando el contructor requiere 
+ * muchos parámetros opcionales */
+
+public class InfoNutricionalTelescoping {
+
+	// Hacemos que los atributos sólo se puedan establecer
+	// en la creación del objeto (los hacemos final)
+	private final int cantidad; // (mL) requerido
+	private final int unidades; // (por envase) requerido
+	private final int calorias; // (kcal) requerido
+	
+	// ^ Los de arriba son obligatorios v Los de abajo son opcionales.
+	
+	private final int grasas; // (g) opcional
+	private final int sodio; // (mg) opcional
+	private final int potasio; // (mg) opcional
+	private final int carbohidratos; // (g) opcional
+
+	/*
+	 * Este constructor es invocado cuando se crea el objeto sólo con los campos
+	 * requeridos. Notad como invoca en cascada al constructor que recibe los
+	 * tres parámetros requeridos más uno opcional
+	 */
+	// Constructor num 1
+	public InfoNutricionalTelescoping(int cantidad, int unidades, int calorias) {
+		// mediante 'this' llamamos a otro constructor
+		this(cantidad, unidades, calorias, 0);
+	}
+
+	// Constructor num 2
+	public InfoNutricionalTelescoping(int cantidad, int unidades, int calorias,
+			int grasas) {
+
+		// Se pasa el control al contructor que recibe los tres
+		// parámetros obligatorios más dos opcionales
+		this(cantidad, unidades, calorias, grasas, 0);
+	}
+
+	// Constructor num 3
+	public InfoNutricionalTelescoping(int cantidad, int unidades, int calorias,
+			int grasas, int sodio) {
+
+		// Se pasa el control al contructor que recibe los tres
+		// parámetros obligatorios más tres opcionales
+		this(cantidad, unidades, calorias, grasas, sodio, 0);
+	}
+
+	// Constructor num 4
+	public InfoNutricionalTelescoping(int cantidad, int unidades, int calorias,
+			int grasas, int sodio, int potasio) {
+
+		// Se pasa el control al contructor que recibe los tres
+		// parámetros obligatorios más cuatro opcionales
+		this(cantidad, unidades, calorias, grasas, sodio, potasio, 0);
+	}
+
+	// Constructor que realiza el volvado de los parámetros en los atributos
+	// Constructor num 5
+	public InfoNutricionalTelescoping(int cantidad, int unidades, int calorias,
+			int grasas, int sodio, int potasio, int carbohidratos) {
+		this.cantidad = cantidad;
+		this.unidades = unidades;
+		this.calorias = calorias;
+		this.grasas = grasas;
+		this.sodio = sodio;
+		this.potasio = potasio;
+		this.carbohidratos = carbohidratos;
+	}
+
+	public static void main(String[] args) {
+		InfoNutricionalTelescoping cocacola;
+		InfoNutricionalTelescoping orchata;
+		// Llamada al constructor num 4
+		cocacola = new InfoNutricionalTelescoping(240, 8, 100, 0, 35, 27);
+		// Llamada al constructor num 2
+		orchata = new InfoNutricionalTelescoping(305, 9, 115, 4);
+	}
+}

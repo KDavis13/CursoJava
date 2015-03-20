@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CommitComments>	<CommitComment>ahora tal cual está funciona, aunque faltaría por afinar las colisiones, y arreglar el tema de que no pete cuando pones fechas</CommitComment>
+	<CommitComment>En teoría ya está todo integrado y está todo funcionando con todo, aunque está petando la agenda D:</CommitComment>
+	<CommitComment>arreglado los colorines</CommitComment>
+	<CommitComment>arreglando cosas y métodos</CommitComment>
+	<CommitComment>Ahora imprime algo D:</CommitComment>
+	<CommitComment>subido ultimo código de Sortida.java</CommitComment>
+	<CommitComment>añadido el código bueno de Imprime.java</CommitComment>
+	<CommitComment>ultima version que no había querido commitearse</CommitComment>
+	<CommitComment>Modificado DummyIdioma para que contemple un nuevo parametro &quot;Disponible&quot; para cuando esa hora est´´a la sala abierta y además no está ocupada por ninguna actividad.
+Modificado principal añadiendo un array con las Salas, además cuando se instancia SistemaPeticions recibe el array de las salas
+Modificaciones en Imprime.java</CommitComment>
+	<CommitComment>Cambiado el nombre del método diaSemana a getDiaSemana.
+Copiado el método getDiaSemana a DummyFecha.</CommitComment>
+</CommitComments>

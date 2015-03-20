@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/128/trunk/Agenda2015/src/gestioPeticions
+END
+MainDummy.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/121/trunk/Agenda2015/src/gestioPeticions/MainDummy.java
+END
+SistemaPeticions.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/128/trunk/Agenda2015/src/gestioPeticions/SistemaPeticions.java
+END
+OrdenadorPerPrioritats.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/126/trunk/Agenda2015/src/gestioPeticions/OrdenadorPerPrioritats.java
+END
+ServeisPeticio.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/129/trunk/Agenda2015/src/gestioPeticions/ServeisPeticio.java
+END
+Agenda.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/126/trunk/Agenda2015/src/gestioPeticions/Agenda.java
+END
+Peticio.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/121/trunk/Agenda2015/src/gestioPeticions/Peticio.java
+END
+Sala.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/121/trunk/Agenda2015/src/gestioPeticions/Sala.java
+END
+ExceptionVarPeticions.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/121/trunk/Agenda2015/src/gestioPeticions/ExceptionVarPeticions.java
+END

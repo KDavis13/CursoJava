@@ -1,0 +1,22 @@
+*********iniciant sistema de peticions**********
+El mes tiene que ser válido, introduzca un valor entre 1 y 12
+El mes tiene que ser válido, introduzca un valor entre 1 y 12
+El mes tiene que ser válido, introduzca un valor entre 1 y 12
+El mes tiene que ser válido, introduzca un valor entre 1 y 12
+El mes tiene que ser válido, introduzca un valor entre 1 y 12
+El mes tiene que ser válido, introduzca un valor entre 1 y 12
+El mes tiene que ser válido, introduzca un valor entre 1 y 12
+El mes tiene que ser válido, introduzca un valor entre 1 y 12
+El mes tiene que ser válido, introduzca un valor entre 1 y 12
+El mes tiene que ser válido, introduzca un valor entre 1 y 12
+El mes tiene que ser válido, introduzca un valor entre 1 y 12
+El mes tiene que ser válido, introduzca un valor entre 1 y 12
+El mes tiene que ser válido, introduzca un valor entre 1 y 12
+1-Tancat-Sala1 no ha estat possible per conflictes amb una altra reserva o una mascara de dies i rang de dades incorrecte
+2-Tancat-Sala1 no ha estat possible per conflictes amb una altra reserva o una mascara de dies i rang de dades incorrecte
+5-ReunioPerl-Sala1 no ha estat possible per conflictes amb una altra reserva o una mascara de dies i rang de dades incorrecte
+6-ReunioJava-Sala1 no ha estat possible per conflictes amb una altra reserva o una mascara de dies i rang de dades incorrecte
+7-ReunioJava-Sala1 no ha estat possible per conflictes amb una altra reserva o una mascara de dies i rang de dades incorrecte
+8-ReunioJava-Sala1 no ha estat possible per conflictes amb una altra reserva o una mascara de dies i rang de dades incorrecte
+9-ReunioJava-Sala2 no ha estat possible per conflictes amb una altra reserva o una mascara de dies i rang de dades incorrecte
+10-ReunioJava-Sala2 no ha estat possible per conflictes amb una altra reserva o una mascara de dies i rang de dades incorrecte

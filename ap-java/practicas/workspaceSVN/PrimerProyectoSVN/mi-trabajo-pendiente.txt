@@ -1,0 +1,2 @@
+Crear la base de datos
+Crear plan de proyecto con el MSProject

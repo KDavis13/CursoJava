@@ -1,0 +1,51 @@
+#labels Algorithm,sorting,lists
+se m'han ocurregut 2 maneres:
+
+
+opció1) 
+*******************************************************
+mapa<int,String>
+*******************************************************
+key   = és la posició de l'element de la llista<Peticio> o Peticio.getId
+value = és el tipos de activitat.  Peticio.getTiposActiviat
+
+passos:
+
+0) creem llistaOrdenada<P> buida
+1) recorrem el mapa
+2) recollim k,v
+  2.1) recorrem llistaDesordenada<P>
+  2.2) comparem k,v amb l'element de llistaDesordenada<P>
+  2.3) ha aparegut p.tiposActivitat==value(del mapa) ???
+        2.3.1) NO ? --> seguim recorrent la llistaDesordenada
+               SÍ ? --> afegim P a llistaOrdenada<P>
+  2.4) bucle acaba quan s'han recorregut tots els elements de llistaDesordenada
+3) bucle acaba quan s'han recorregut tots els elements value del mapa
+
+
+opció2)
+*******************************************************
+llista<string>
+*******************************************************
+string = és el tipos d'activitats diferents
+
+passos:
+
+0) creem llistaOrdenada<P> buida
+1) creem llista<String> buida
+2) recorrem llistaDesordenada<P>
+  2.1) llista<String> està buida?   
+        SI?  --> afegim element P a llistaOrdenada
+        NO?  --> comprovem si l'element tipos activitat està a llista<String>?
+                  SI?  --> no l'afegim ja que no volem que contingui duplicats
+                  NO?  --> afegim la nova ocurrencia d'activitat a llista<String>
+3) un cop acabat de recorrer la llistaDesordenada<P>, tindrem tots els tiposActivitats, diferents i no repetits en l'ordre d'arribada.
+
+4) nou bucle --> recorrem llista<String>
+  4.1)  recorrem llistaDesordada<P>
+       4.1.2)   llistaDesordenada<P>.getTiposActivitat == llista<String> ????
+                   SI?   -->  afegeix P a llistaOrdenada<P>
+                   NO?   -->  salta i segueix recorrent
+       4.1.3)   finalitza quan llistaDesordenada<P> esta recorreguda completament
+4.2) finalitza quan llista<String> està recorreguda completament
+   

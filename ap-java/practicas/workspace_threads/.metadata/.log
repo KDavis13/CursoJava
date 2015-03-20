@@ -1,0 +1,317 @@
+!SESSION 2015-03-06 09:22:29.198 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2015-03-06 09:22:38.769
+!MESSAGE Exception while setting up logging:org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.eclipse.m2e.logback.configuration.LogHelper.logJavaProperties(LogHelper.java:26)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.loadConfiguration(LogPlugin.java:189)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:144)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-03-06 09:22:53.092
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-03-06 09:22:53.092
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'Z:\'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-03-06 12:26:38.257
+!MESSAGE An internal error occurred during: "Initializing Quick Diff".
+!STACK 0
+java.lang.OutOfMemoryError: Java heap space
+	at java.util.Arrays.copyOf(Arrays.java:3181)
+	at java.util.ArrayList.grow(ArrayList.java:261)
+	at java.util.ArrayList.ensureExplicitCapacity(ArrayList.java:235)
+	at java.util.ArrayList.ensureCapacityInternal(ArrayList.java:227)
+	at java.util.ArrayList.add(ArrayList.java:458)
+	at org.eclipse.jface.text.ListLineTracker.createLines(ListLineTracker.java:309)
+	at org.eclipse.jface.text.ListLineTracker.set(ListLineTracker.java:348)
+	at org.eclipse.jface.text.AbstractLineTracker.set(AbstractLineTracker.java:202)
+	at org.eclipse.jface.text.Document.<init>(Document.java:64)
+	at org.eclipse.ui.internal.texteditor.quickdiff.DocumentLineDiffer$2.createUnprotectedCopy(DocumentLineDiffer.java:752)
+	at org.eclipse.ui.internal.texteditor.quickdiff.DocumentLineDiffer$2.run(DocumentLineDiffer.java:601)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2015-03-06 12:26:46.795 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2015-03-06 12:26:52.769
+!MESSAGE Exception while setting up logging:org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.eclipse.m2e.logback.configuration.LogHelper.logJavaProperties(LogHelper.java:26)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.loadConfiguration(LogPlugin.java:189)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:144)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+!SESSION 2015-03-06 12:29:20.555 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2015-03-06 12:29:25.641
+!MESSAGE Exception while setting up logging:org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.eclipse.m2e.logback.configuration.LogHelper.logJavaProperties(LogHelper.java:26)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.loadConfiguration(LogPlugin.java:189)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:144)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-03-06 12:29:58.047
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-03-06 12:29:58.047
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'Z:\'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-03-06 12:30:42.814 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2015-03-06 12:30:49.553
+!MESSAGE Exception while setting up logging:org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.eclipse.m2e.logback.configuration.LogHelper.logJavaProperties(LogHelper.java:26)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.loadConfiguration(LogPlugin.java:189)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:144)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+!SESSION 2015-03-06 12:33:58.987 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2015-03-06 12:34:07.555
+!MESSAGE Exception while setting up logging:org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.eclipse.m2e.logback.configuration.LogHelper.logJavaProperties(LogHelper.java:26)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.loadConfiguration(LogPlugin.java:189)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:144)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+!SESSION 2015-03-06 12:42:35.101 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -clean -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.update.configurator 4 0 2015-03-06 12:43:08.324
+!MESSAGE Unable to find feature.xml in directory: C:\Users\poo\ap-java\Programas\eclipse\features\org.tigris.subversion.subclipse_1.0.6.jar
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-03-06 12:43:13.537
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\poo\ap-java\Programas\eclipse\plugins\org.tigris.subversion.subclipse_1.0.5.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-03-06 12:43:13.677
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\poo\ap-java\Programas\eclipse\features\org.tigris.subversion.subclipse_1.0.6.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-03-06 12:43:13.896
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\poo\ap-java\Programas\eclipse\plugins\org.tigris.subversion.subclipse_1.0.5.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-03-06 12:43:13.911
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\poo\ap-java\Programas\eclipse\features\org.tigris.subversion.subclipse_1.0.6.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-03-06 12:43:14.114
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\poo\ap-java\Programas\eclipse\plugins\org.tigris.subversion.subclipse_1.0.5.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-03-06 12:43:14.114
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\poo\ap-java\Programas\eclipse\features\org.tigris.subversion.subclipse_1.0.6.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-03-06 12:43:14.317
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\poo\ap-java\Programas\eclipse\plugins\org.tigris.subversion.subclipse_1.0.5.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-03-06 12:43:14.317
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\poo\ap-java\Programas\eclipse\features\org.tigris.subversion.subclipse_1.0.6.jar.
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2015-03-06 12:43:24.265
+!MESSAGE Exception while setting up logging:org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.eclipse.m2e.logback.configuration.LogHelper.logJavaProperties(LogHelper.java:26)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.loadConfiguration(LogPlugin.java:189)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:144)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+!SESSION 2015-03-06 12:44:05.078 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -clean -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.update.configurator 4 0 2015-03-06 12:44:17.856
+!MESSAGE Unable to find feature.xml in directory: C:\Users\poo\ap-java\Programas\eclipse\features\org.tigris.subversion.subclipse_1.0.6.jar
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-03-06 12:44:19.946
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\poo\ap-java\Programas\eclipse\plugins\org.tigris.subversion.subclipse_1.0.5.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-03-06 12:44:19.946
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\poo\ap-java\Programas\eclipse\features\org.tigris.subversion.subclipse_1.0.6.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-03-06 12:44:20.165
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\poo\ap-java\Programas\eclipse\plugins\org.tigris.subversion.subclipse_1.0.5.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-03-06 12:44:20.165
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\poo\ap-java\Programas\eclipse\features\org.tigris.subversion.subclipse_1.0.6.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-03-06 12:44:20.929
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\poo\ap-java\Programas\eclipse\plugins\org.tigris.subversion.subclipse_1.0.5.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-03-06 12:44:20.929
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\poo\ap-java\Programas\eclipse\features\org.tigris.subversion.subclipse_1.0.6.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-03-06 12:44:21.116
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\poo\ap-java\Programas\eclipse\plugins\org.tigris.subversion.subclipse_1.0.5.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-03-06 12:44:21.116
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\poo\ap-java\Programas\eclipse\features\org.tigris.subversion.subclipse_1.0.6.jar.
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2015-03-06 12:44:24.938
+!MESSAGE Exception while setting up logging:org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.eclipse.m2e.logback.configuration.LogHelper.logJavaProperties(LogHelper.java:26)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.loadConfiguration(LogPlugin.java:189)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:144)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-03-06 12:44:35.376
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-03-06 12:44:35.376
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'Z:\'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-03-09 08:38:30.740 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2015-03-09 08:38:54.547
+!MESSAGE Exception while setting up logging:org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.eclipse.m2e.logback.configuration.LogHelper.logJavaProperties(LogHelper.java:26)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.loadConfiguration(LogPlugin.java:189)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:144)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-03-09 08:39:20.139
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-03-09 08:39:20.155
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'Z:\'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-03-10 08:47:44.732 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2015-03-10 08:48:23.182
+!MESSAGE Exception while setting up logging:org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.eclipse.m2e.logback.configuration.LogHelper.logJavaProperties(LogHelper.java:26)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.loadConfiguration(LogPlugin.java:189)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:144)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-03-10 08:48:48.128
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-03-10 08:48:48.128
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'Z:\'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.

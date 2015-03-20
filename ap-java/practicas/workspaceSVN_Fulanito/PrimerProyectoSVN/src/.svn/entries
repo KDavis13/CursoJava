@@ -1,0 +1,31 @@
+8
+
+dir
+4
+http://localhost:8086/svn/repoEjemplo/trunk/PrimerProyectoSVN/src
+http://localhost:8086/svn/repoEjemplo
+
+
+
+2015-02-06T08:57:19.223050Z
+4
+belia
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+ed386c98-6390-0649-af0b-5e65ae7cab7a
+
+main
+dir
+

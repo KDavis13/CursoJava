@@ -1,0 +1,52 @@
+8
+
+dir
+4
+http://localhost:8086/svn/repoEjemplo/trunk/PrimerProyectoSVN/src/main
+http://localhost:8086/svn/repoEjemplo
+
+
+
+2015-02-06T08:57:19.223050Z
+4
+belia
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+ed386c98-6390-0649-af0b-5e65ae7cab7a
+
+Alumno.java
+file
+
+
+
+
+2015-02-06T09:14:35.041000Z
+505b1fc4b7c5deaeca25adf6fba4ddf4
+2015-02-06T08:57:19.223050Z
+4
+belia
+
+PrimeraClaseSVN.java
+file
+
+
+
+
+2015-02-06T08:39:54.546000Z
+847e2083a3a48ae5a1eb8b11958a3fec
+2015-02-06T08:29:31.701804Z
+3
+belia
+

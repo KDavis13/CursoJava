@@ -1,0 +1,23 @@
+package main;
+
+import persistencia.JpaManagement;
+import entidades.Estudiante;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		JpaManagement jpa = new JpaManagement();
+		
+		Estudiante estudiante1 = new Estudiante("Benito", 1, "Filología coreana 5");
+		JpaManagement.crearEntidad(estudiante1);
+		
+		Estudiante estudiante2 = new Estudiante("María", 2, "Filología alenana 5");
+		JpaManagement.crearEntidad(estudiante2);
+		
+		jpa.cerrarRecursos();
+		System.out.println("programa finalizado");
+		
+	}
+
+}

@@ -1,0 +1,1295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="1" timestamp="1426238279940" analysisTimestamp="1426238270393" release="">
+  <Project projectName="Agenda-2015">
+    <Jar>C:\Users\poo\ap-java\Practicas\workspaceSVN\Agenda-2015\bin</Jar>
+    <AuxClasspathEntry>C:\Users\poo\ap-java\Practicas\workspaceSVN\Agenda-2015\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\poo\ap-java\Instalables\jdk\Java\jdk1.8.0_25\jre\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\poo\ap-java\Practicas\workspaceSVN\Agenda-2015\trunk\Agenda2015\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="MS_OOI_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="SortidaDades.HTML">
+      <SourceLine classname="SortidaDades.HTML" sourcefile="HTML.java" sourcepath="SortidaDades/HTML.java"/>
+    </Class>
+    <Field classname="SortidaDades.HTML" name="horas" signature="[Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="SortidaDades.HTML" sourcefile="HTML.java" sourcepath="SortidaDades/HTML.java"/>
+    </Field>
+    <SourceLine classname="SortidaDades.HTML" start="43" end="43" startBytecode="143" endBytecode="143" sourcefile="HTML.java" sourcepath="SortidaDades/HTML.java"/>
+  </BugInstance>
+  <BugInstance type="EC_ARRAY_AND_NONARRAY" priority="1" rank="1" abbrev="EC" category="CORRECTNESS" first="1">
+    <Class classname="SortidaDades.Imprime">
+      <SourceLine classname="SortidaDades.Imprime" sourcefile="Imprime.java" sourcepath="SortidaDades/Imprime.java"/>
+    </Class>
+    <Method classname="SortidaDades.Imprime" name="generaArrayBueno" signature="(I)[[Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="SortidaDades.Imprime" start="132" end="162" startBytecode="0" endBytecode="105" sourcefile="Imprime.java" sourcepath="SortidaDades/Imprime.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String" start="111" end="3128" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Type>
+    <Type descriptor="[Ljava/lang/String;" role="TYPE_EXPECTED"/>
+    <String value="free" role="STRING_CONSTANT"/>
+    <SourceLine classname="SortidaDades.Imprime" start="152" end="152" startBytecode="133" endBytecode="133" sourcefile="Imprime.java" sourcepath="SortidaDades/Imprime.java"/>
+    <SourceLine classname="SortidaDades.Imprime" start="152" end="152" startBytecode="133" endBytecode="133" sourcefile="Imprime.java" sourcepath="SortidaDades/Imprime.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="SortidaDades.Imprime">
+      <SourceLine classname="SortidaDades.Imprime" sourcefile="Imprime.java" sourcepath="SortidaDades/Imprime.java"/>
+    </Class>
+    <Field classname="SortidaDades.Imprime" name="idiomaIn" signature="Lmain/Idioma;" isStatic="true">
+      <SourceLine classname="SortidaDades.Imprime" sourcefile="Imprime.java" sourcepath="SortidaDades/Imprime.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="SortidaDades.Imprime">
+      <SourceLine classname="SortidaDades.Imprime" sourcefile="Imprime.java" sourcepath="SortidaDades/Imprime.java"/>
+    </Class>
+    <Field classname="SortidaDades.Imprime" name="idiomaOut" signature="Lmain/Idioma;" isStatic="true">
+      <SourceLine classname="SortidaDades.Imprime" sourcefile="Imprime.java" sourcepath="SortidaDades/Imprime.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" first="1">
+    <Class classname="SortidaDades.Imprime">
+      <SourceLine classname="SortidaDades.Imprime" sourcefile="Imprime.java" sourcepath="SortidaDades/Imprime.java"/>
+    </Class>
+    <Method classname="SortidaDades.Imprime" name="&lt;init&gt;" signature="([[Ljava/lang/String;Lmain/Idioma;Lmain/Idioma;Lmain/Data;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="SortidaDades.Imprime" start="22" end="29" startBytecode="0" endBytecode="142" sourcefile="Imprime.java" sourcepath="SortidaDades/Imprime.java"/>
+    </Method>
+    <Field classname="SortidaDades.Imprime" name="dades" signature="[[Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="SortidaDades.Imprime" sourcefile="Imprime.java" sourcepath="SortidaDades/Imprime.java"/>
+    </Field>
+    <SourceLine classname="SortidaDades.Imprime" start="27" end="27" startBytecode="18" endBytecode="18" sourcefile="Imprime.java" sourcepath="SortidaDades/Imprime.java"/>
+    <SourceLine classname="SortidaDades.Imprime" start="27" end="27" startBytecode="18" endBytecode="18" sourcefile="Imprime.java" sourcepath="SortidaDades/Imprime.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" first="1">
+    <Class classname="SortidaDades.Imprime">
+      <SourceLine classname="SortidaDades.Imprime" sourcefile="Imprime.java" sourcepath="SortidaDades/Imprime.java"/>
+    </Class>
+    <Method classname="SortidaDades.Imprime" name="&lt;init&gt;" signature="([[Ljava/lang/String;Lmain/Idioma;Lmain/Idioma;Lmain/Data;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="SortidaDades.Imprime" start="22" end="29" startBytecode="0" endBytecode="142" sourcefile="Imprime.java" sourcepath="SortidaDades/Imprime.java"/>
+    </Method>
+    <Field classname="SortidaDades.Imprime" name="fecha" signature="Lmain/Data;" isStatic="true">
+      <SourceLine classname="SortidaDades.Imprime" sourcefile="Imprime.java" sourcepath="SortidaDades/Imprime.java"/>
+    </Field>
+    <SourceLine classname="SortidaDades.Imprime" start="26" end="26" startBytecode="14" endBytecode="14" sourcefile="Imprime.java" sourcepath="SortidaDades/Imprime.java"/>
+    <SourceLine classname="SortidaDades.Imprime" start="26" end="26" startBytecode="14" endBytecode="14" sourcefile="Imprime.java" sourcepath="SortidaDades/Imprime.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" first="1">
+    <Class classname="SortidaDades.Imprime">
+      <SourceLine classname="SortidaDades.Imprime" sourcefile="Imprime.java" sourcepath="SortidaDades/Imprime.java"/>
+    </Class>
+    <Method classname="SortidaDades.Imprime" name="&lt;init&gt;" signature="([[Ljava/lang/String;Lmain/Idioma;Lmain/Idioma;Lmain/Data;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="SortidaDades.Imprime" start="22" end="29" startBytecode="0" endBytecode="142" sourcefile="Imprime.java" sourcepath="SortidaDades/Imprime.java"/>
+    </Method>
+    <Field classname="SortidaDades.Imprime" name="idiomaIn" signature="Lmain/Idioma;" isStatic="true">
+      <SourceLine classname="SortidaDades.Imprime" sourcefile="Imprime.java" sourcepath="SortidaDades/Imprime.java"/>
+    </Field>
+    <SourceLine classname="SortidaDades.Imprime" start="24" end="24" startBytecode="5" endBytecode="5" sourcefile="Imprime.java" sourcepath="SortidaDades/Imprime.java"/>
+    <SourceLine classname="SortidaDades.Imprime" start="24" end="24" startBytecode="5" endBytecode="5" sourcefile="Imprime.java" sourcepath="SortidaDades/Imprime.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" first="1">
+    <Class classname="SortidaDades.Imprime">
+      <SourceLine classname="SortidaDades.Imprime" sourcefile="Imprime.java" sourcepath="SortidaDades/Imprime.java"/>
+    </Class>
+    <Method classname="SortidaDades.Imprime" name="&lt;init&gt;" signature="([[Ljava/lang/String;Lmain/Idioma;Lmain/Idioma;Lmain/Data;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="SortidaDades.Imprime" start="22" end="29" startBytecode="0" endBytecode="142" sourcefile="Imprime.java" sourcepath="SortidaDades/Imprime.java"/>
+    </Method>
+    <Field classname="SortidaDades.Imprime" name="idiomaOut" signature="Lmain/Idioma;" isStatic="true">
+      <SourceLine classname="SortidaDades.Imprime" sourcefile="Imprime.java" sourcepath="SortidaDades/Imprime.java"/>
+    </Field>
+    <SourceLine classname="SortidaDades.Imprime" start="25" end="25" startBytecode="9" endBytecode="9" sourcefile="Imprime.java" sourcepath="SortidaDades/Imprime.java"/>
+    <SourceLine classname="SortidaDades.Imprime" start="25" end="25" startBytecode="9" endBytecode="9" sourcefile="Imprime.java" sourcepath="SortidaDades/Imprime.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" first="1">
+    <Class classname="SortidaDades.Imprime">
+      <SourceLine classname="SortidaDades.Imprime" sourcefile="Imprime.java" sourcepath="SortidaDades/Imprime.java"/>
+    </Class>
+    <Method classname="SortidaDades.Imprime" name="&lt;init&gt;" signature="([[Ljava/lang/String;Lmain/Idioma;Lmain/Idioma;Lmain/Data;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="SortidaDades.Imprime" start="22" end="29" startBytecode="0" endBytecode="142" sourcefile="Imprime.java" sourcepath="SortidaDades/Imprime.java"/>
+    </Method>
+    <Field classname="SortidaDades.Imprime" name="nombre" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="SortidaDades.Imprime" sourcefile="Imprime.java" sourcepath="SortidaDades/Imprime.java"/>
+    </Field>
+    <SourceLine classname="SortidaDades.Imprime" start="28" end="28" startBytecode="23" endBytecode="23" sourcefile="Imprime.java" sourcepath="SortidaDades/Imprime.java"/>
+    <SourceLine classname="SortidaDades.Imprime" start="28" end="28" startBytecode="23" endBytecode="23" sourcefile="Imprime.java" sourcepath="SortidaDades/Imprime.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="SortidaDades.Sortida">
+      <SourceLine classname="SortidaDades.Sortida" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    </Class>
+    <Method classname="SortidaDades.Sortida" name="&lt;init&gt;" signature="(Lmain/Idioma;Lmain/Idioma;Lmain/Data;[[Ljava/lang/String;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="SortidaDades.Sortida" start="56" end="90" startBytecode="0" endBytecode="65" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    </Method>
+    <LocalVariable name="texto" register="6" pc="96" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="SortidaDades.Sortida" start="75" end="75" startBytecode="94" endBytecode="94" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    <SourceLine classname="SortidaDades.Sortida" start="75" end="75" startBytecode="94" endBytecode="94" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="texto"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_NEXTINT_VIA_NEXTDOUBLE" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" first="1">
+    <Class classname="SortidaDades.Sortida">
+      <SourceLine classname="SortidaDades.Sortida" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    </Class>
+    <Method classname="SortidaDades.Sortida" name="resultado" signature="()Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="SortidaDades.Sortida" start="130" end="142" startBytecode="0" endBytecode="152" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    </Method>
+    <SourceLine classname="SortidaDades.Sortida" start="130" end="130" startBytecode="7" endBytecode="7" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    <SourceLine classname="SortidaDades.Sortida" start="130" end="130" startBytecode="7" endBytecode="7" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE" first="1">
+    <Class classname="SortidaDades.Sortida">
+      <SourceLine classname="SortidaDades.Sortida" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    </Class>
+    <Method classname="SortidaDades.Sortida" name="&lt;init&gt;" signature="(Lmain/Idioma;Lmain/Idioma;Lmain/Data;[[Ljava/lang/String;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="SortidaDades.Sortida" start="56" end="90" startBytecode="0" endBytecode="331" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    </Method>
+    <Field classname="SortidaDades.Sortida" name="contSalas" signature="I" isStatic="true">
+      <SourceLine classname="SortidaDades.Sortida" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    </Field>
+    <SourceLine classname="SortidaDades.Sortida" start="57" end="57" startBytecode="9" endBytecode="9" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    <SourceLine classname="SortidaDades.Sortida" start="57" end="57" startBytecode="9" endBytecode="9" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE" first="1">
+    <Class classname="SortidaDades.Sortida">
+      <SourceLine classname="SortidaDades.Sortida" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    </Class>
+    <Method classname="SortidaDades.Sortida" name="&lt;init&gt;" signature="(Lmain/Idioma;Lmain/Idioma;Lmain/Data;[[Ljava/lang/String;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="SortidaDades.Sortida" start="56" end="90" startBytecode="0" endBytecode="331" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    </Method>
+    <Field classname="SortidaDades.Sortida" name="dades" signature="[[Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="SortidaDades.Sortida" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    </Field>
+    <SourceLine classname="SortidaDades.Sortida" start="63" end="63" startBytecode="26" endBytecode="26" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    <SourceLine classname="SortidaDades.Sortida" start="63" end="63" startBytecode="26" endBytecode="26" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE" first="1">
+    <Class classname="SortidaDades.Sortida">
+      <SourceLine classname="SortidaDades.Sortida" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    </Class>
+    <Method classname="SortidaDades.Sortida" name="&lt;init&gt;" signature="(Lmain/Idioma;Lmain/Idioma;Lmain/Data;[[Ljava/lang/String;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="SortidaDades.Sortida" start="56" end="90" startBytecode="0" endBytecode="331" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    </Method>
+    <Field classname="SortidaDades.Sortida" name="fecha" signature="Lmain/Data;" isStatic="true">
+      <SourceLine classname="SortidaDades.Sortida" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    </Field>
+    <SourceLine classname="SortidaDades.Sortida" start="61" end="61" startBytecode="21" endBytecode="21" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    <SourceLine classname="SortidaDades.Sortida" start="61" end="61" startBytecode="21" endBytecode="21" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE" first="1">
+    <Class classname="SortidaDades.Sortida">
+      <SourceLine classname="SortidaDades.Sortida" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    </Class>
+    <Method classname="SortidaDades.Sortida" name="&lt;init&gt;" signature="(Lmain/Idioma;Lmain/Idioma;Lmain/Data;[[Ljava/lang/String;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="SortidaDades.Sortida" start="56" end="90" startBytecode="0" endBytecode="331" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    </Method>
+    <Field classname="SortidaDades.Sortida" name="idiomaIn" signature="Lmain/Idioma;" isStatic="true">
+      <SourceLine classname="SortidaDades.Sortida" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    </Field>
+    <SourceLine classname="SortidaDades.Sortida" start="59" end="59" startBytecode="13" endBytecode="13" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    <SourceLine classname="SortidaDades.Sortida" start="59" end="59" startBytecode="13" endBytecode="13" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE" first="1">
+    <Class classname="SortidaDades.Sortida">
+      <SourceLine classname="SortidaDades.Sortida" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    </Class>
+    <Method classname="SortidaDades.Sortida" name="&lt;init&gt;" signature="(Lmain/Idioma;Lmain/Idioma;Lmain/Data;[[Ljava/lang/String;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="SortidaDades.Sortida" start="56" end="90" startBytecode="0" endBytecode="331" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    </Method>
+    <Field classname="SortidaDades.Sortida" name="idiomaOut" signature="Lmain/Idioma;" isStatic="true">
+      <SourceLine classname="SortidaDades.Sortida" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    </Field>
+    <SourceLine classname="SortidaDades.Sortida" start="60" end="60" startBytecode="17" endBytecode="17" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    <SourceLine classname="SortidaDades.Sortida" start="60" end="60" startBytecode="17" endBytecode="17" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE" first="1">
+    <Class classname="SortidaDades.Sortida">
+      <SourceLine classname="SortidaDades.Sortida" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    </Class>
+    <Method classname="SortidaDades.Sortida" name="&lt;init&gt;" signature="(Lmain/Idioma;Lmain/Idioma;Lmain/Data;[[Ljava/lang/String;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="SortidaDades.Sortida" start="56" end="90" startBytecode="0" endBytecode="331" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    </Method>
+    <Field classname="SortidaDades.Sortida" name="nombre" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="SortidaDades.Sortida" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    </Field>
+    <SourceLine classname="SortidaDades.Sortida" start="68" end="68" startBytecode="37" endBytecode="37" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    <SourceLine classname="SortidaDades.Sortida" start="68" end="68" startBytecode="37" endBytecode="37" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE" first="1">
+    <Class classname="SortidaDades.Sortida">
+      <SourceLine classname="SortidaDades.Sortida" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    </Class>
+    <Method classname="SortidaDades.Sortida" name="&lt;init&gt;" signature="(Lmain/Idioma;Lmain/Idioma;Lmain/Data;[[Ljava/lang/String;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="SortidaDades.Sortida" start="56" end="90" startBytecode="0" endBytecode="331" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    </Method>
+    <Field classname="SortidaDades.Sortida" name="salas" signature="[Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="SortidaDades.Sortida" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    </Field>
+    <SourceLine classname="SortidaDades.Sortida" start="66" end="66" startBytecode="32" endBytecode="32" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    <SourceLine classname="SortidaDades.Sortida" start="66" end="66" startBytecode="32" endBytecode="32" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE" first="1">
+    <Class classname="SortidaDades.Sortida">
+      <SourceLine classname="SortidaDades.Sortida" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    </Class>
+    <Method classname="SortidaDades.Sortida" name="&lt;init&gt;" signature="(Lmain/Idioma;Lmain/Idioma;Lmain/Data;[[Ljava/lang/String;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="SortidaDades.Sortida" start="56" end="90" startBytecode="0" endBytecode="331" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    </Method>
+    <Field classname="SortidaDades.Sortida" name="salida" signature="LUtils/FicheroSortida;" isStatic="true">
+      <SourceLine classname="SortidaDades.Sortida" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    </Field>
+    <SourceLine classname="SortidaDades.Sortida" start="73" end="73" startBytecode="75" endBytecode="75" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+    <SourceLine classname="SortidaDades.Sortida" start="73" end="73" startBytecode="75" endBytecode="75" sourcefile="Sortida.java" sourcepath="SortidaDades/Sortida.java"/>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="Utils.FicheroSortida">
+      <SourceLine classname="Utils.FicheroSortida" sourcefile="FicheroSortida.java" sourcepath="Utils/FicheroSortida.java"/>
+    </Class>
+    <Method classname="Utils.FicheroSortida" name="FicheroEscritura" signature="(Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Utils.FicheroSortida" start="13" end="17" startBytecode="0" endBytecode="111" sourcefile="FicheroSortida.java" sourcepath="Utils/FicheroSortida.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Utils.UtilsFitxers">
+      <SourceLine classname="Utils.UtilsFitxers" sourcefile="UtilsFitxers.java" sourcepath="Utils/UtilsFitxers.java"/>
+    </Class>
+    <Method classname="Utils.UtilsFitxers" name="llegeixF" signature="(Ljava/lang/String;)Ljava/util/List;" isStatic="true">
+      <SourceLine classname="Utils.UtilsFitxers" start="26" end="62" startBytecode="0" endBytecode="509" sourcefile="UtilsFitxers.java" sourcepath="Utils/UtilsFitxers.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="72" end="73" startBytecode="0" endBytecode="40" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="Utils.UtilsFitxers" start="34" end="34" startBytecode="28" endBytecode="28" sourcefile="UtilsFitxers.java" sourcepath="Utils/UtilsFitxers.java"/>
+    <SourceLine classname="Utils.UtilsFitxers" start="34" end="34" startBytecode="28" endBytecode="28" sourcefile="UtilsFitxers.java" sourcepath="Utils/UtilsFitxers.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="Utils.UtilsStrings">
+      <SourceLine classname="Utils.UtilsStrings" sourcefile="UtilsStrings.java" sourcepath="Utils/UtilsStrings.java"/>
+    </Class>
+    <Method classname="Utils.UtilsStrings" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Utils.UtilsStrings" start="112" end="133" startBytecode="0" endBytecode="87" sourcefile="UtilsStrings.java" sourcepath="Utils/UtilsStrings.java"/>
+    </Method>
+    <LocalVariable name="any" register="5" pc="151" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="Utils.UtilsStrings" start="128" end="128" startBytecode="149" endBytecode="149" sourcefile="UtilsStrings.java" sourcepath="Utils/UtilsStrings.java"/>
+    <SourceLine classname="Utils.UtilsStrings" start="128" end="128" startBytecode="149" endBytecode="149" sourcefile="UtilsStrings.java" sourcepath="Utils/UtilsStrings.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="any"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.TWO_STORES_MULTIPLE_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="Utils.UtilsStrings">
+      <SourceLine classname="Utils.UtilsStrings" sourcefile="UtilsStrings.java" sourcepath="Utils/UtilsStrings.java"/>
+    </Class>
+    <Method classname="Utils.UtilsStrings" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Utils.UtilsStrings" start="112" end="133" startBytecode="0" endBytecode="87" sourcefile="UtilsStrings.java" sourcepath="Utils/UtilsStrings.java"/>
+    </Method>
+    <LocalVariable name="idiomaIn" register="7" pc="164" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="Utils.UtilsStrings" start="130" end="130" startBytecode="162" endBytecode="162" sourcefile="UtilsStrings.java" sourcepath="Utils/UtilsStrings.java"/>
+    <SourceLine classname="Utils.UtilsStrings" start="130" end="130" startBytecode="162" endBytecode="162" sourcefile="UtilsStrings.java" sourcepath="Utils/UtilsStrings.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="idiomaIn"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.TWO_STORES_MULTIPLE_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="Utils.UtilsStrings">
+      <SourceLine classname="Utils.UtilsStrings" sourcefile="UtilsStrings.java" sourcepath="Utils/UtilsStrings.java"/>
+    </Class>
+    <Method classname="Utils.UtilsStrings" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Utils.UtilsStrings" start="112" end="133" startBytecode="0" endBytecode="87" sourcefile="UtilsStrings.java" sourcepath="Utils/UtilsStrings.java"/>
+    </Method>
+    <LocalVariable name="idiomaOut" register="8" pc="169" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="Utils.UtilsStrings" start="131" end="131" startBytecode="167" endBytecode="167" sourcefile="UtilsStrings.java" sourcepath="Utils/UtilsStrings.java"/>
+    <SourceLine classname="Utils.UtilsStrings" start="131" end="131" startBytecode="167" endBytecode="167" sourcefile="UtilsStrings.java" sourcepath="Utils/UtilsStrings.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="idiomaOut"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.TWO_STORES_MULTIPLE_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="Utils.UtilsStrings">
+      <SourceLine classname="Utils.UtilsStrings" sourcefile="UtilsStrings.java" sourcepath="Utils/UtilsStrings.java"/>
+    </Class>
+    <Method classname="Utils.UtilsStrings" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Utils.UtilsStrings" start="112" end="133" startBytecode="0" endBytecode="87" sourcefile="UtilsStrings.java" sourcepath="Utils/UtilsStrings.java"/>
+    </Method>
+    <LocalVariable name="mes" register="6" pc="159" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="Utils.UtilsStrings" start="129" end="129" startBytecode="157" endBytecode="157" sourcefile="UtilsStrings.java" sourcepath="Utils/UtilsStrings.java"/>
+    <SourceLine classname="Utils.UtilsStrings" start="129" end="129" startBytecode="157" endBytecode="157" sourcefile="UtilsStrings.java" sourcepath="Utils/UtilsStrings.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="mes"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" first="1">
+    <Class classname="dummies.DummyIdioma">
+      <SourceLine classname="dummies.DummyIdioma" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    </Class>
+    <Method classname="dummies.DummyIdioma" name="getDiasSemana" signature="()[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="dummies.DummyIdioma" start="40" end="40" startBytecode="0" endBytecode="46" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    </Method>
+    <Field classname="dummies.DummyIdioma" name="diasSemana" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="dummies.DummyIdioma" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    </Field>
+    <SourceLine classname="dummies.DummyIdioma" start="40" end="40" startBytecode="4" endBytecode="4" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    <SourceLine classname="dummies.DummyIdioma" start="40" end="40" startBytecode="4" endBytecode="4" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" first="1">
+    <Class classname="dummies.DummyIdioma">
+      <SourceLine classname="dummies.DummyIdioma" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    </Class>
+    <Method classname="dummies.DummyIdioma" name="getEstado" signature="()[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="dummies.DummyIdioma" start="32" end="32" startBytecode="0" endBytecode="46" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    </Method>
+    <Field classname="dummies.DummyIdioma" name="estado" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="dummies.DummyIdioma" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    </Field>
+    <SourceLine classname="dummies.DummyIdioma" start="32" end="32" startBytecode="4" endBytecode="4" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    <SourceLine classname="dummies.DummyIdioma" start="32" end="32" startBytecode="4" endBytecode="4" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" first="1">
+    <Class classname="dummies.DummyIdioma">
+      <SourceLine classname="dummies.DummyIdioma" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    </Class>
+    <Method classname="dummies.DummyIdioma" name="getInicialesSemana" signature="()[C" isStatic="false">
+      <SourceLine classname="dummies.DummyIdioma" start="44" end="44" startBytecode="0" endBytecode="46" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    </Method>
+    <Field classname="dummies.DummyIdioma" name="inicialesSemana" signature="[C" isStatic="false">
+      <SourceLine classname="dummies.DummyIdioma" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    </Field>
+    <SourceLine classname="dummies.DummyIdioma" start="44" end="44" startBytecode="4" endBytecode="4" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    <SourceLine classname="dummies.DummyIdioma" start="44" end="44" startBytecode="4" endBytecode="4" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" first="1">
+    <Class classname="dummies.DummyIdioma">
+      <SourceLine classname="dummies.DummyIdioma" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    </Class>
+    <Method classname="dummies.DummyIdioma" name="getMeses" signature="()[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="dummies.DummyIdioma" start="48" end="48" startBytecode="0" endBytecode="46" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    </Method>
+    <Field classname="dummies.DummyIdioma" name="meses" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="dummies.DummyIdioma" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    </Field>
+    <SourceLine classname="dummies.DummyIdioma" start="48" end="48" startBytecode="4" endBytecode="4" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    <SourceLine classname="dummies.DummyIdioma" start="48" end="48" startBytecode="4" endBytecode="4" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" first="1">
+    <Class classname="dummies.DummyIdioma">
+      <SourceLine classname="dummies.DummyIdioma" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    </Class>
+    <Method classname="dummies.DummyIdioma" name="getOtros" signature="()[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="dummies.DummyIdioma" start="24" end="24" startBytecode="0" endBytecode="46" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    </Method>
+    <Field classname="dummies.DummyIdioma" name="otros" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="dummies.DummyIdioma" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    </Field>
+    <SourceLine classname="dummies.DummyIdioma" start="24" end="24" startBytecode="4" endBytecode="4" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    <SourceLine classname="dummies.DummyIdioma" start="24" end="24" startBytecode="4" endBytecode="4" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" first="1">
+    <Class classname="dummies.DummyIdioma">
+      <SourceLine classname="dummies.DummyIdioma" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    </Class>
+    <Method classname="dummies.DummyIdioma" name="setDiasSemana" signature="([Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="dummies.DummyIdioma" start="74" end="75" startBytecode="0" endBytecode="61" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    </Method>
+    <Field classname="dummies.DummyIdioma" name="diasSemana" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="dummies.DummyIdioma" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    </Field>
+    <LocalVariable name="diasSemana" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="dummies.DummyIdioma" start="74" end="74" startBytecode="2" endBytecode="2" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    <SourceLine classname="dummies.DummyIdioma" start="74" end="74" startBytecode="2" endBytecode="2" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" first="1">
+    <Class classname="dummies.DummyIdioma">
+      <SourceLine classname="dummies.DummyIdioma" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    </Class>
+    <Method classname="dummies.DummyIdioma" name="setEstado" signature="([Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="dummies.DummyIdioma" start="66" end="67" startBytecode="0" endBytecode="61" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    </Method>
+    <Field classname="dummies.DummyIdioma" name="estado" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="dummies.DummyIdioma" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    </Field>
+    <LocalVariable name="estado" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="dummies.DummyIdioma" start="66" end="66" startBytecode="2" endBytecode="2" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    <SourceLine classname="dummies.DummyIdioma" start="66" end="66" startBytecode="2" endBytecode="2" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" first="1">
+    <Class classname="dummies.DummyIdioma">
+      <SourceLine classname="dummies.DummyIdioma" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    </Class>
+    <Method classname="dummies.DummyIdioma" name="setInicialesSemana" signature="([C)V" isStatic="false">
+      <SourceLine classname="dummies.DummyIdioma" start="78" end="79" startBytecode="0" endBytecode="61" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    </Method>
+    <Field classname="dummies.DummyIdioma" name="inicialesSemana" signature="[C" isStatic="false">
+      <SourceLine classname="dummies.DummyIdioma" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    </Field>
+    <LocalVariable name="inicialesSemana" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="dummies.DummyIdioma" start="78" end="78" startBytecode="2" endBytecode="2" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    <SourceLine classname="dummies.DummyIdioma" start="78" end="78" startBytecode="2" endBytecode="2" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" first="1">
+    <Class classname="dummies.DummyIdioma">
+      <SourceLine classname="dummies.DummyIdioma" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    </Class>
+    <Method classname="dummies.DummyIdioma" name="setMeses" signature="([Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="dummies.DummyIdioma" start="82" end="83" startBytecode="0" endBytecode="61" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    </Method>
+    <Field classname="dummies.DummyIdioma" name="meses" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="dummies.DummyIdioma" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    </Field>
+    <LocalVariable name="meses" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="dummies.DummyIdioma" start="82" end="82" startBytecode="2" endBytecode="2" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    <SourceLine classname="dummies.DummyIdioma" start="82" end="82" startBytecode="2" endBytecode="2" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" first="1">
+    <Class classname="dummies.DummyIdioma">
+      <SourceLine classname="dummies.DummyIdioma" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    </Class>
+    <Method classname="dummies.DummyIdioma" name="setOtros" signature="([Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="dummies.DummyIdioma" start="58" end="59" startBytecode="0" endBytecode="61" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    </Method>
+    <Field classname="dummies.DummyIdioma" name="otros" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="dummies.DummyIdioma" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    </Field>
+    <LocalVariable name="otros" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="dummies.DummyIdioma" start="58" end="58" startBytecode="2" endBytecode="2" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+    <SourceLine classname="dummies.DummyIdioma" start="58" end="58" startBytecode="2" endBytecode="2" sourcefile="DummyIdioma.java" sourcepath="dummies/DummyIdioma.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" first="1">
+    <Class classname="gestioPeticions.Agenda">
+      <SourceLine classname="gestioPeticions.Agenda" sourcefile="Agenda.java" sourcepath="gestioPeticions/Agenda.java"/>
+    </Class>
+    <Method classname="gestioPeticions.Agenda" name="getArrayDiesHores" signature="()[[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="gestioPeticions.Agenda" start="103" end="103" startBytecode="0" endBytecode="46" sourcefile="Agenda.java" sourcepath="gestioPeticions/Agenda.java"/>
+    </Method>
+    <Field classname="gestioPeticions.Agenda" name="arrayDiesHores" signature="[[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="gestioPeticions.Agenda" sourcefile="Agenda.java" sourcepath="gestioPeticions/Agenda.java"/>
+    </Field>
+    <SourceLine classname="gestioPeticions.Agenda" start="103" end="103" startBytecode="4" endBytecode="4" sourcefile="Agenda.java" sourcepath="gestioPeticions/Agenda.java"/>
+    <SourceLine classname="gestioPeticions.Agenda" start="103" end="103" startBytecode="4" endBytecode="4" sourcefile="Agenda.java" sourcepath="gestioPeticions/Agenda.java"/>
+  </BugInstance>
+  <BugInstance type="ES_COMPARING_PARAMETER_STRING_WITH_EQ" priority="1" rank="14" abbrev="ES" category="BAD_PRACTICE" first="1">
+    <Class classname="gestioPeticions.Agenda">
+      <SourceLine classname="gestioPeticions.Agenda" sourcefile="Agenda.java" sourcepath="gestioPeticions/Agenda.java"/>
+    </Class>
+    <Method classname="gestioPeticions.Agenda" name="comprovarDisponibilitat" signature="(IILjava/lang/String;)Z" isStatic="false">
+      <SourceLine classname="gestioPeticions.Agenda" start="78" end="85" startBytecode="0" endBytecode="22" sourcefile="Agenda.java" sourcepath="gestioPeticions/Agenda.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String" start="111" end="3128" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Type>
+    <LocalVariable name="tiposActivitatReserva" register="3" pc="27" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="gestioPeticions.Agenda" start="81" end="81" startBytecode="28" endBytecode="28" sourcefile="Agenda.java" sourcepath="gestioPeticions/Agenda.java"/>
+    <SourceLine classname="gestioPeticions.Agenda" start="81" end="81" startBytecode="28" endBytecode="28" sourcefile="Agenda.java" sourcepath="gestioPeticions/Agenda.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.RefComparisonWarningProperty.STATIC_AND_PARAMETER_IN_PUBLIC_METHOD" value="true"/>
+  </BugInstance>
+  <BugInstance type="SS_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SS" category="PERFORMANCE" first="1">
+    <Class classname="gestioPeticions.Agenda">
+      <SourceLine classname="gestioPeticions.Agenda" sourcefile="Agenda.java" sourcepath="gestioPeticions/Agenda.java"/>
+    </Class>
+    <Field classname="gestioPeticions.Agenda" name="HORES" signature="I" isStatic="false">
+      <SourceLine classname="gestioPeticions.Agenda" sourcefile="Agenda.java" sourcepath="gestioPeticions/Agenda.java"/>
+    </Field>
+    <SourceLine classname="gestioPeticions.Agenda" start="9" end="9" startBytecode="7" endBytecode="7" sourcefile="Agenda.java" sourcepath="gestioPeticions/Agenda.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="gestioPeticions.Agenda">
+      <SourceLine classname="gestioPeticions.Agenda" sourcefile="Agenda.java" sourcepath="gestioPeticions/Agenda.java"/>
+    </Class>
+    <Field classname="gestioPeticions.Agenda" name="tiposActivitatReserva" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="gestioPeticions.Agenda" sourcefile="Agenda.java" sourcepath="gestioPeticions/Agenda.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="gestioPeticions.MainDummy">
+      <SourceLine classname="gestioPeticions.MainDummy" sourcefile="MainDummy.java" sourcepath="gestioPeticions/MainDummy.java"/>
+    </Class>
+    <Method classname="gestioPeticions.MainDummy" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="gestioPeticions.MainDummy" start="17" end="34" startBytecode="0" endBytecode="21" sourcefile="MainDummy.java" sourcepath="gestioPeticions/MainDummy.java"/>
+    </Method>
+    <LocalVariable name="peticiones" register="3" pc="34" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="gestioPeticions.MainDummy" start="28" end="28" startBytecode="33" endBytecode="33" sourcefile="MainDummy.java" sourcepath="gestioPeticions/MainDummy.java"/>
+    <SourceLine classname="gestioPeticions.MainDummy" start="28" end="28" startBytecode="33" endBytecode="33" sourcefile="MainDummy.java" sourcepath="gestioPeticions/MainDummy.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="peticiones"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="gestioPeticions.MainDummy">
+      <SourceLine classname="gestioPeticions.MainDummy" sourcefile="MainDummy.java" sourcepath="gestioPeticions/MainDummy.java"/>
+    </Class>
+    <Method classname="gestioPeticions.MainDummy" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="gestioPeticions.MainDummy" start="17" end="34" startBytecode="0" endBytecode="21" sourcefile="MainDummy.java" sourcepath="gestioPeticions/MainDummy.java"/>
+    </Method>
+    <LocalVariable name="salas" register="1" pc="15" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="gestioPeticions.MainDummy" start="17" end="17" startBytecode="14" endBytecode="14" sourcefile="MainDummy.java" sourcepath="gestioPeticions/MainDummy.java"/>
+    <SourceLine classname="gestioPeticions.MainDummy" start="17" end="17" startBytecode="14" endBytecode="14" sourcefile="MainDummy.java" sourcepath="gestioPeticions/MainDummy.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="salas"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_OBJECT" priority="2" rank="17" abbrev="UC" category="STYLE" first="1">
+    <Class classname="gestioPeticions.MainDummy">
+      <SourceLine classname="gestioPeticions.MainDummy" sourcefile="MainDummy.java" sourcepath="gestioPeticions/MainDummy.java"/>
+    </Class>
+    <Method classname="gestioPeticions.MainDummy" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="gestioPeticions.MainDummy" start="17" end="34" startBytecode="0" endBytecode="118" sourcefile="MainDummy.java" sourcepath="gestioPeticions/MainDummy.java"/>
+    </Method>
+    <String value="salas"/>
+    <Type descriptor="[Ljava/lang/String;"/>
+    <SourceLine classname="gestioPeticions.MainDummy" start="17" end="17" startBytecode="1" endBytecode="1" sourcefile="MainDummy.java" sourcepath="gestioPeticions/MainDummy.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="gestioPeticions.OrdenadorPerPrioritats">
+      <SourceLine classname="gestioPeticions.OrdenadorPerPrioritats" sourcefile="OrdenadorPerPrioritats.java" sourcepath="gestioPeticions/OrdenadorPerPrioritats.java"/>
+    </Class>
+    <Method classname="gestioPeticions.OrdenadorPerPrioritats" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="gestioPeticions.OrdenadorPerPrioritats" start="72" end="110" startBytecode="0" endBytecode="86" sourcefile="OrdenadorPerPrioritats.java" sourcepath="gestioPeticions/OrdenadorPerPrioritats.java"/>
+    </Method>
+    <LocalVariable name="config" register="5" pc="219" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="gestioPeticions.OrdenadorPerPrioritats" start="101" end="101" startBytecode="217" endBytecode="217" sourcefile="OrdenadorPerPrioritats.java" sourcepath="gestioPeticions/OrdenadorPerPrioritats.java"/>
+    <SourceLine classname="gestioPeticions.OrdenadorPerPrioritats" start="101" end="101" startBytecode="217" endBytecode="217" sourcefile="OrdenadorPerPrioritats.java" sourcepath="gestioPeticions/OrdenadorPerPrioritats.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="config"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="gestioPeticions.OrdenadorPerPrioritats">
+      <SourceLine classname="gestioPeticions.OrdenadorPerPrioritats" sourcefile="OrdenadorPerPrioritats.java" sourcepath="gestioPeticions/OrdenadorPerPrioritats.java"/>
+    </Class>
+    <Method classname="gestioPeticions.OrdenadorPerPrioritats" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="gestioPeticions.OrdenadorPerPrioritats" start="72" end="110" startBytecode="0" endBytecode="86" sourcefile="OrdenadorPerPrioritats.java" sourcepath="gestioPeticions/OrdenadorPerPrioritats.java"/>
+    </Method>
+    <LocalVariable name="llistaPrioritzada" register="4" pc="123" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="gestioPeticions.OrdenadorPerPrioritats" start="90" end="90" startBytecode="121" endBytecode="121" sourcefile="OrdenadorPerPrioritats.java" sourcepath="gestioPeticions/OrdenadorPerPrioritats.java"/>
+    <SourceLine classname="gestioPeticions.OrdenadorPerPrioritats" start="90" end="90" startBytecode="121" endBytecode="121" sourcefile="OrdenadorPerPrioritats.java" sourcepath="gestioPeticions/OrdenadorPerPrioritats.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.KILLED_BY_SUBSEQUENT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="llistaPrioritzada"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DMI_INVOKING_TOSTRING_ON_ARRAY" priority="1" rank="8" abbrev="USELESS_STRING" category="CORRECTNESS" first="1">
+    <Class classname="gestioPeticions.Peticio">
+      <SourceLine classname="gestioPeticions.Peticio" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Class>
+    <Method classname="gestioPeticions.Peticio" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="gestioPeticions.Peticio" start="91" end="91" startBytecode="0" endBytecode="133" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Method>
+    <Field classname="gestioPeticions.Peticio" name="diaFi" signature="[I" isStatic="false" role="FIELD_VALUE_OF">
+      <SourceLine classname="gestioPeticions.Peticio" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Field>
+    <SourceLine classname="gestioPeticions.Peticio" start="91" end="91" startBytecode="61" endBytecode="61" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    <SourceLine classname="gestioPeticions.Peticio" start="91" end="91" startBytecode="61" endBytecode="61" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+  </BugInstance>
+  <BugInstance type="DMI_INVOKING_TOSTRING_ON_ARRAY" priority="1" rank="8" abbrev="USELESS_STRING" category="CORRECTNESS" first="1">
+    <Class classname="gestioPeticions.Peticio">
+      <SourceLine classname="gestioPeticions.Peticio" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Class>
+    <Method classname="gestioPeticions.Peticio" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="gestioPeticions.Peticio" start="91" end="91" startBytecode="0" endBytecode="133" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Method>
+    <Field classname="gestioPeticions.Peticio" name="diaIni" signature="[I" isStatic="false" role="FIELD_VALUE_OF">
+      <SourceLine classname="gestioPeticions.Peticio" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Field>
+    <SourceLine classname="gestioPeticions.Peticio" start="91" end="91" startBytecode="49" endBytecode="49" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    <SourceLine classname="gestioPeticions.Peticio" start="91" end="91" startBytecode="49" endBytecode="49" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+  </BugInstance>
+  <BugInstance type="DMI_INVOKING_TOSTRING_ON_ARRAY" priority="1" rank="8" abbrev="USELESS_STRING" category="CORRECTNESS" first="1">
+    <Class classname="gestioPeticions.Peticio">
+      <SourceLine classname="gestioPeticions.Peticio" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Class>
+    <Method classname="gestioPeticions.Peticio" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="gestioPeticions.Peticio" start="91" end="91" startBytecode="0" endBytecode="133" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Method>
+    <Field classname="gestioPeticions.Peticio" name="maskDies" signature="[C" isStatic="false" role="FIELD_VALUE_OF">
+      <SourceLine classname="gestioPeticions.Peticio" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Field>
+    <SourceLine classname="gestioPeticions.Peticio" start="91" end="91" startBytecode="68" endBytecode="68" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    <SourceLine classname="gestioPeticions.Peticio" start="91" end="91" startBytecode="68" endBytecode="68" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+  </BugInstance>
+  <BugInstance type="DMI_INVOKING_TOSTRING_ON_ARRAY" priority="1" rank="8" abbrev="USELESS_STRING" category="CORRECTNESS" first="1">
+    <Class classname="gestioPeticions.Peticio">
+      <SourceLine classname="gestioPeticions.Peticio" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Class>
+    <Method classname="gestioPeticions.Peticio" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="gestioPeticions.Peticio" start="91" end="91" startBytecode="0" endBytecode="133" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Method>
+    <Field classname="gestioPeticions.Peticio" name="maskHores" signature="[[I" isStatic="false" role="FIELD_VALUE_OF">
+      <SourceLine classname="gestioPeticions.Peticio" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Field>
+    <SourceLine classname="gestioPeticions.Peticio" start="91" end="91" startBytecode="80" endBytecode="80" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    <SourceLine classname="gestioPeticions.Peticio" start="91" end="91" startBytecode="80" endBytecode="80" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" first="1">
+    <Class classname="gestioPeticions.Peticio">
+      <SourceLine classname="gestioPeticions.Peticio" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Class>
+    <Method classname="gestioPeticions.Peticio" name="getDiaFi" signature="()[I" isStatic="false">
+      <SourceLine classname="gestioPeticions.Peticio" start="85" end="85" startBytecode="0" endBytecode="46" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Method>
+    <Field classname="gestioPeticions.Peticio" name="diaFi" signature="[I" isStatic="false">
+      <SourceLine classname="gestioPeticions.Peticio" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Field>
+    <SourceLine classname="gestioPeticions.Peticio" start="85" end="85" startBytecode="4" endBytecode="4" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    <SourceLine classname="gestioPeticions.Peticio" start="85" end="85" startBytecode="4" endBytecode="4" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" first="1">
+    <Class classname="gestioPeticions.Peticio">
+      <SourceLine classname="gestioPeticions.Peticio" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Class>
+    <Method classname="gestioPeticions.Peticio" name="getDiaIni" signature="()[I" isStatic="false">
+      <SourceLine classname="gestioPeticions.Peticio" start="82" end="82" startBytecode="0" endBytecode="46" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Method>
+    <Field classname="gestioPeticions.Peticio" name="diaIni" signature="[I" isStatic="false">
+      <SourceLine classname="gestioPeticions.Peticio" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Field>
+    <SourceLine classname="gestioPeticions.Peticio" start="82" end="82" startBytecode="4" endBytecode="4" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    <SourceLine classname="gestioPeticions.Peticio" start="82" end="82" startBytecode="4" endBytecode="4" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" first="1">
+    <Class classname="gestioPeticions.Peticio">
+      <SourceLine classname="gestioPeticions.Peticio" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Class>
+    <Method classname="gestioPeticions.Peticio" name="getMaskDies" signature="()[C" isStatic="false">
+      <SourceLine classname="gestioPeticions.Peticio" start="73" end="73" startBytecode="0" endBytecode="46" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Method>
+    <Field classname="gestioPeticions.Peticio" name="maskDies" signature="[C" isStatic="false">
+      <SourceLine classname="gestioPeticions.Peticio" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Field>
+    <SourceLine classname="gestioPeticions.Peticio" start="73" end="73" startBytecode="4" endBytecode="4" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    <SourceLine classname="gestioPeticions.Peticio" start="73" end="73" startBytecode="4" endBytecode="4" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" first="1">
+    <Class classname="gestioPeticions.Peticio">
+      <SourceLine classname="gestioPeticions.Peticio" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Class>
+    <Method classname="gestioPeticions.Peticio" name="getMaskHores" signature="()[[I" isStatic="false">
+      <SourceLine classname="gestioPeticions.Peticio" start="69" end="69" startBytecode="0" endBytecode="46" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Method>
+    <Field classname="gestioPeticions.Peticio" name="maskHores" signature="[[I" isStatic="false">
+      <SourceLine classname="gestioPeticions.Peticio" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Field>
+    <SourceLine classname="gestioPeticions.Peticio" start="69" end="69" startBytecode="4" endBytecode="4" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    <SourceLine classname="gestioPeticions.Peticio" start="69" end="69" startBytecode="4" endBytecode="4" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" first="1">
+    <Class classname="gestioPeticions.Peticio">
+      <SourceLine classname="gestioPeticions.Peticio" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Class>
+    <Method classname="gestioPeticions.Peticio" name="&lt;init&gt;" signature="(Ljava/lang/String;Ljava/lang/String;[I[I[C[[I)V" isStatic="false">
+      <SourceLine classname="gestioPeticions.Peticio" start="46" end="56" startBytecode="0" endBytecode="231" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Method>
+    <Field classname="gestioPeticions.Peticio" name="diaFi" signature="[I" isStatic="false">
+      <SourceLine classname="gestioPeticions.Peticio" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Field>
+    <LocalVariable name="diaFi" register="4" pc="62" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="gestioPeticions.Peticio" start="53" end="53" startBytecode="62" endBytecode="62" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    <SourceLine classname="gestioPeticions.Peticio" start="53" end="53" startBytecode="62" endBytecode="62" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" first="1">
+    <Class classname="gestioPeticions.Peticio">
+      <SourceLine classname="gestioPeticions.Peticio" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Class>
+    <Method classname="gestioPeticions.Peticio" name="&lt;init&gt;" signature="(Ljava/lang/String;Ljava/lang/String;[I[I[C[[I)V" isStatic="false">
+      <SourceLine classname="gestioPeticions.Peticio" start="46" end="56" startBytecode="0" endBytecode="231" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Method>
+    <Field classname="gestioPeticions.Peticio" name="diaIni" signature="[I" isStatic="false">
+      <SourceLine classname="gestioPeticions.Peticio" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Field>
+    <LocalVariable name="diaIni" register="3" pc="56" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="gestioPeticions.Peticio" start="52" end="52" startBytecode="56" endBytecode="56" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    <SourceLine classname="gestioPeticions.Peticio" start="52" end="52" startBytecode="56" endBytecode="56" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" first="1">
+    <Class classname="gestioPeticions.Peticio">
+      <SourceLine classname="gestioPeticions.Peticio" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Class>
+    <Method classname="gestioPeticions.Peticio" name="&lt;init&gt;" signature="(Ljava/lang/String;Ljava/lang/String;[I[I[C[[I)V" isStatic="false">
+      <SourceLine classname="gestioPeticions.Peticio" start="46" end="56" startBytecode="0" endBytecode="231" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Method>
+    <Field classname="gestioPeticions.Peticio" name="maskDies" signature="[C" isStatic="false">
+      <SourceLine classname="gestioPeticions.Peticio" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Field>
+    <LocalVariable name="maskDies" register="5" pc="68" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="gestioPeticions.Peticio" start="54" end="54" startBytecode="68" endBytecode="68" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    <SourceLine classname="gestioPeticions.Peticio" start="54" end="54" startBytecode="68" endBytecode="68" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" first="1">
+    <Class classname="gestioPeticions.Peticio">
+      <SourceLine classname="gestioPeticions.Peticio" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Class>
+    <Method classname="gestioPeticions.Peticio" name="&lt;init&gt;" signature="(Ljava/lang/String;Ljava/lang/String;[I[I[C[[I)V" isStatic="false">
+      <SourceLine classname="gestioPeticions.Peticio" start="46" end="56" startBytecode="0" endBytecode="231" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Method>
+    <Field classname="gestioPeticions.Peticio" name="maskHores" signature="[[I" isStatic="false">
+      <SourceLine classname="gestioPeticions.Peticio" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Field>
+    <LocalVariable name="maskHores" register="6" pc="74" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="gestioPeticions.Peticio" start="55" end="55" startBytecode="74" endBytecode="74" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    <SourceLine classname="gestioPeticions.Peticio" start="55" end="55" startBytecode="74" endBytecode="74" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE" first="1">
+    <Class classname="gestioPeticions.Peticio">
+      <SourceLine classname="gestioPeticions.Peticio" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Class>
+    <Method classname="gestioPeticions.Peticio" name="&lt;init&gt;" signature="(Ljava/lang/String;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="gestioPeticions.Peticio" start="58" end="63" startBytecode="0" endBytecode="152" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Method>
+    <Field classname="gestioPeticions.Peticio" name="cont" signature="I" isStatic="true">
+      <SourceLine classname="gestioPeticions.Peticio" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Field>
+    <SourceLine classname="gestioPeticions.Peticio" start="60" end="60" startBytecode="41" endBytecode="41" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    <SourceLine classname="gestioPeticions.Peticio" start="60" end="60" startBytecode="41" endBytecode="41" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE" first="1">
+    <Class classname="gestioPeticions.Peticio">
+      <SourceLine classname="gestioPeticions.Peticio" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Class>
+    <Method classname="gestioPeticions.Peticio" name="&lt;init&gt;" signature="(Ljava/lang/String;Ljava/lang/String;[I[I[C[[I)V" isStatic="false">
+      <SourceLine classname="gestioPeticions.Peticio" start="46" end="56" startBytecode="0" endBytecode="231" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Method>
+    <Field classname="gestioPeticions.Peticio" name="cont" signature="I" isStatic="true">
+      <SourceLine classname="gestioPeticions.Peticio" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    </Field>
+    <SourceLine classname="gestioPeticions.Peticio" start="49" end="49" startBytecode="41" endBytecode="41" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+    <SourceLine classname="gestioPeticions.Peticio" start="49" end="49" startBytecode="41" endBytecode="41" sourcefile="Peticio.java" sourcepath="gestioPeticions/Peticio.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="gestioPeticions.ServeisPeticio">
+      <SourceLine classname="gestioPeticions.ServeisPeticio" sourcefile="ServeisPeticio.java" sourcepath="gestioPeticions/ServeisPeticio.java"/>
+    </Class>
+    <Method classname="gestioPeticions.ServeisPeticio" name="checkMaskDies" signature="([C)[C" isStatic="true">
+      <SourceLine classname="gestioPeticions.ServeisPeticio" start="157" end="204" startBytecode="0" endBytecode="144" sourcefile="ServeisPeticio.java" sourcepath="gestioPeticions/ServeisPeticio.java"/>
+    </Method>
+    <LocalVariable name="configuracio" register="1" pc="10" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="gestioPeticions.ServeisPeticio" start="157" end="157" startBytecode="9" endBytecode="9" sourcefile="ServeisPeticio.java" sourcepath="gestioPeticions/ServeisPeticio.java"/>
+    <SourceLine classname="gestioPeticions.ServeisPeticio" start="157" end="157" startBytecode="9" endBytecode="9" sourcefile="ServeisPeticio.java" sourcepath="gestioPeticions/ServeisPeticio.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="configuracio"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="gestioPeticions.ServeisPeticio">
+      <SourceLine classname="gestioPeticions.ServeisPeticio" sourcefile="ServeisPeticio.java" sourcepath="gestioPeticions/ServeisPeticio.java"/>
+    </Class>
+    <Method classname="gestioPeticions.ServeisPeticio" name="checkMesIniMesFi" signature="([I[I)I" isStatic="true">
+      <SourceLine classname="gestioPeticions.ServeisPeticio" start="90" end="116" startBytecode="0" endBytecode="76" sourcefile="ServeisPeticio.java" sourcepath="gestioPeticions/ServeisPeticio.java"/>
+    </Method>
+    <LocalVariable name="maxDies" register="3" pc="19" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="gestioPeticions.ServeisPeticio" start="91" end="91" startBytecode="18" endBytecode="18" sourcefile="ServeisPeticio.java" sourcepath="gestioPeticions/ServeisPeticio.java"/>
+    <SourceLine classname="gestioPeticions.ServeisPeticio" start="91" end="91" startBytecode="18" endBytecode="18" sourcefile="ServeisPeticio.java" sourcepath="gestioPeticions/ServeisPeticio.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="maxDies"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="gestioPeticions.ServeisPeticio">
+      <SourceLine classname="gestioPeticions.ServeisPeticio" sourcefile="ServeisPeticio.java" sourcepath="gestioPeticions/ServeisPeticio.java"/>
+    </Class>
+    <Method classname="gestioPeticions.ServeisPeticio" name="disponibilitatAgendaPeticio" signature="(LgestioPeticions/Peticio;LgestioPeticions/Agenda;)Z" isStatic="true">
+      <SourceLine classname="gestioPeticions.ServeisPeticio" start="305" end="352" startBytecode="0" endBytecode="134" sourcefile="ServeisPeticio.java" sourcepath="gestioPeticions/ServeisPeticio.java"/>
+    </Method>
+    <LocalVariable name="hora" register="5" pc="27" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="gestioPeticions.ServeisPeticio" start="309" end="309" startBytecode="25" endBytecode="25" sourcefile="ServeisPeticio.java" sourcepath="gestioPeticions/ServeisPeticio.java"/>
+    <SourceLine classname="gestioPeticions.ServeisPeticio" start="309" end="309" startBytecode="25" endBytecode="25" sourcefile="ServeisPeticio.java" sourcepath="gestioPeticions/ServeisPeticio.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="hora"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="gestioPeticions.ServeisPeticio">
+      <SourceLine classname="gestioPeticions.ServeisPeticio" sourcefile="ServeisPeticio.java" sourcepath="gestioPeticions/ServeisPeticio.java"/>
+    </Class>
+    <Method classname="gestioPeticions.ServeisPeticio" name="disponibilitatAgendaPeticio" signature="(LgestioPeticions/Peticio;LgestioPeticions/Agenda;)Z" isStatic="true">
+      <SourceLine classname="gestioPeticions.ServeisPeticio" start="305" end="352" startBytecode="0" endBytecode="134" sourcefile="ServeisPeticio.java" sourcepath="gestioPeticions/ServeisPeticio.java"/>
+    </Method>
+    <LocalVariable name="reserva" register="7" pc="33" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="gestioPeticions.ServeisPeticio" start="311" end="311" startBytecode="31" endBytecode="31" sourcefile="ServeisPeticio.java" sourcepath="gestioPeticions/ServeisPeticio.java"/>
+    <SourceLine classname="gestioPeticions.ServeisPeticio" start="311" end="311" startBytecode="31" endBytecode="31" sourcefile="ServeisPeticio.java" sourcepath="gestioPeticions/ServeisPeticio.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="reserva"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="gestioPeticions.ServeisPeticio">
+      <SourceLine classname="gestioPeticions.ServeisPeticio" sourcefile="ServeisPeticio.java" sourcepath="gestioPeticions/ServeisPeticio.java"/>
+    </Class>
+    <Method classname="gestioPeticions.ServeisPeticio" name="getNovaPeticio" signature="(Ljava/lang/String;)LgestioPeticions/Peticio;" isStatic="true">
+      <SourceLine classname="gestioPeticions.ServeisPeticio" start="30" end="83" startBytecode="0" endBytecode="100" sourcefile="ServeisPeticio.java" sourcepath="gestioPeticions/ServeisPeticio.java"/>
+    </Method>
+    <LocalVariable name="arrayDataTmp" register="4" pc="22" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="gestioPeticions.ServeisPeticio" start="52" end="52" startBytecode="20" endBytecode="20" sourcefile="ServeisPeticio.java" sourcepath="gestioPeticions/ServeisPeticio.java"/>
+    <SourceLine classname="gestioPeticions.ServeisPeticio" start="52" end="52" startBytecode="20" endBytecode="20" sourcefile="ServeisPeticio.java" sourcepath="gestioPeticions/ServeisPeticio.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.KILLED_BY_SUBSEQUENT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="arrayDataTmp"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="gestioPeticions.ServeisPeticio">
+      <SourceLine classname="gestioPeticions.ServeisPeticio" sourcefile="ServeisPeticio.java" sourcepath="gestioPeticions/ServeisPeticio.java"/>
+    </Class>
+    <Method classname="gestioPeticions.ServeisPeticio" name="reservarAgendaPeticio" signature="(LgestioPeticions/Peticio;LgestioPeticions/Agenda;)V" isStatic="true">
+      <SourceLine classname="gestioPeticions.ServeisPeticio" start="366" end="399" startBytecode="0" endBytecode="110" sourcefile="ServeisPeticio.java" sourcepath="gestioPeticions/ServeisPeticio.java"/>
+    </Method>
+    <LocalVariable name="hora" register="4" pc="24" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="gestioPeticions.ServeisPeticio" start="369" end="369" startBytecode="22" endBytecode="22" sourcefile="ServeisPeticio.java" sourcepath="gestioPeticions/ServeisPeticio.java"/>
+    <SourceLine classname="gestioPeticions.ServeisPeticio" start="369" end="369" startBytecode="22" endBytecode="22" sourcefile="ServeisPeticio.java" sourcepath="gestioPeticions/ServeisPeticio.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="hora"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED" priority="1" rank="3" abbrev="RV" category="CORRECTNESS" first="1">
+    <Class classname="gestioPeticions.ServeisPeticio">
+      <SourceLine classname="gestioPeticions.ServeisPeticio" sourcefile="ServeisPeticio.java" sourcepath="gestioPeticions/ServeisPeticio.java"/>
+    </Class>
+    <Method classname="gestioPeticions.ServeisPeticio" name="gestionarLlistesPeticions" signature="(LgestioPeticions/Agenda;Ljava/util/List;)V" isStatic="true">
+      <SourceLine classname="gestioPeticions.ServeisPeticio" start="273" end="287" startBytecode="0" endBytecode="294" sourcefile="ServeisPeticio.java" sourcepath="gestioPeticions/ServeisPeticio.java"/>
+    </Method>
+    <Method classname="gestioPeticions.ExceptionVarPeticions" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="gestioPeticions.ExceptionVarPeticions" start="16" end="20" startBytecode="0" endBytecode="68" sourcefile="ExceptionVarPeticions.java" sourcepath="gestioPeticions/ExceptionVarPeticions.java"/>
+    </Method>
+    <SourceLine classname="gestioPeticions.ServeisPeticio" start="281" end="281" startBytecode="95" endBytecode="95" sourcefile="ServeisPeticio.java" sourcepath="gestioPeticions/ServeisPeticio.java"/>
+    <SourceLine classname="gestioPeticions.ServeisPeticio" start="281" end="281" startBytecode="95" endBytecode="95" sourcefile="ServeisPeticio.java" sourcepath="gestioPeticions/ServeisPeticio.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="gestioPeticions.SistemaPeticions">
+      <SourceLine classname="gestioPeticions.SistemaPeticions" sourcefile="SistemaPeticions.java" sourcepath="gestioPeticions/SistemaPeticions.java"/>
+    </Class>
+    <Method classname="gestioPeticions.SistemaPeticions" name="inicialitzarSysPeticions" signature="()Ljava/util/List;" isStatic="false">
+      <SourceLine classname="gestioPeticions.SistemaPeticions" start="61" end="153" startBytecode="0" endBytecode="90" sourcefile="SistemaPeticions.java" sourcepath="gestioPeticions/SistemaPeticions.java"/>
+    </Method>
+    <LocalVariable name="arrayReservesXSala" register="9" pc="78" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="gestioPeticions.SistemaPeticions" start="95" end="95" startBytecode="76" endBytecode="76" sourcefile="SistemaPeticions.java" sourcepath="gestioPeticions/SistemaPeticions.java"/>
+    <SourceLine classname="gestioPeticions.SistemaPeticions" start="95" end="95" startBytecode="76" endBytecode="76" sourcefile="SistemaPeticions.java" sourcepath="gestioPeticions/SistemaPeticions.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="arrayReservesXSala"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="gestioPeticions.SistemaPeticions">
+      <SourceLine classname="gestioPeticions.SistemaPeticions" sourcefile="SistemaPeticions.java" sourcepath="gestioPeticions/SistemaPeticions.java"/>
+    </Class>
+    <Method classname="gestioPeticions.SistemaPeticions" name="inicialitzarSysPeticions" signature="()Ljava/util/List;" isStatic="false">
+      <SourceLine classname="gestioPeticions.SistemaPeticions" start="61" end="153" startBytecode="0" endBytecode="90" sourcefile="SistemaPeticions.java" sourcepath="gestioPeticions/SistemaPeticions.java"/>
+    </Method>
+    <LocalVariable name="llistaPrioritzadaDeLaSala" register="15" pc="149" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="gestioPeticions.SistemaPeticions" start="114" end="114" startBytecode="147" endBytecode="147" sourcefile="SistemaPeticions.java" sourcepath="gestioPeticions/SistemaPeticions.java"/>
+    <SourceLine classname="gestioPeticions.SistemaPeticions" start="114" end="114" startBytecode="147" endBytecode="147" sourcefile="SistemaPeticions.java" sourcepath="gestioPeticions/SistemaPeticions.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.KILLED_BY_SUBSEQUENT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="llistaPrioritzadaDeLaSala"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="MS_CANNOT_BE_FINAL" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="main.Config">
+      <SourceLine classname="main.Config" sourcefile="Config.java" sourcepath="main/Config.java"/>
+    </Class>
+    <Field classname="main.Config" name="anyo" signature="I" isStatic="true">
+      <SourceLine classname="main.Config" sourcefile="Config.java" sourcepath="main/Config.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="MS_CANNOT_BE_FINAL" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="main.Config">
+      <SourceLine classname="main.Config" sourcefile="Config.java" sourcepath="main/Config.java"/>
+    </Class>
+    <Field classname="main.Config" name="mes" signature="I" isStatic="true">
+      <SourceLine classname="main.Config" sourcefile="Config.java" sourcepath="main/Config.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="main.Config">
+      <SourceLine classname="main.Config" sourcefile="Config.java" sourcepath="main/Config.java"/>
+    </Class>
+    <Field classname="main.Config" name="idiomaIn" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="main.Config" sourcefile="Config.java" sourcepath="main/Config.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="main.Config">
+      <SourceLine classname="main.Config" sourcefile="Config.java" sourcepath="main/Config.java"/>
+    </Class>
+    <Field classname="main.Config" name="idiomaOut" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="main.Config" sourcefile="Config.java" sourcepath="main/Config.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="main.EntradaLog">
+      <SourceLine classname="main.EntradaLog" sourcefile="EntradaLog.java" sourcepath="main/EntradaLog.java"/>
+    </Class>
+    <Method classname="main.EntradaLog" name="leerLog" signature="()V" isStatic="true">
+      <SourceLine classname="main.EntradaLog" start="21" end="38" startBytecode="0" endBytecode="252" sourcefile="EntradaLog.java" sourcepath="main/EntradaLog.java"/>
+    </Method>
+    <Class classname="java.io.InputStream" role="CLASS_REFTYPE">
+      <SourceLine classname="java.io.InputStream" sourcefile="InputStream.java" sourcepath="java/io/InputStream.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="main.EntradaLog" start="23" end="23" startBytecode="15" endBytecode="15" sourcefile="EntradaLog.java" sourcepath="main/EntradaLog.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="main.EntradaLog" start="27" end="27" startBytecode="19" endBytecode="19" sourcefile="EntradaLog.java" sourcepath="main/EntradaLog.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.EntradaLog" start="32" end="32" startBytecode="47" endBytecode="47" sourcefile="EntradaLog.java" sourcepath="main/EntradaLog.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.EntradaLog" start="33" end="33" startBytecode="48" endBytecode="48" sourcefile="EntradaLog.java" sourcepath="main/EntradaLog.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.EntradaLog" start="38" end="38" startBytecode="64" endBytecode="64" sourcefile="EntradaLog.java" sourcepath="main/EntradaLog.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{InputStream x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" first="1">
+    <Class classname="main.Idioma">
+      <SourceLine classname="main.Idioma" sourcefile="Idioma.java" sourcepath="main/Idioma.java"/>
+    </Class>
+    <Method classname="main.Idioma" name="getDiasSemana" signature="()[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="main.Idioma" start="46" end="46" startBytecode="0" endBytecode="46" sourcefile="Idioma.java" sourcepath="main/Idioma.java"/>
+    </Method>
+    <Field classname="main.Idioma" name="diasSemana" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="main.Idioma" sourcefile="Idioma.java" sourcepath="main/Idioma.java"/>
+    </Field>
+    <SourceLine classname="main.Idioma" start="46" end="46" startBytecode="4" endBytecode="4" sourcefile="Idioma.java" sourcepath="main/Idioma.java"/>
+    <SourceLine classname="main.Idioma" start="46" end="46" startBytecode="4" endBytecode="4" sourcefile="Idioma.java" sourcepath="main/Idioma.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" first="1">
+    <Class classname="main.Idioma">
+      <SourceLine classname="main.Idioma" sourcefile="Idioma.java" sourcepath="main/Idioma.java"/>
+    </Class>
+    <Method classname="main.Idioma" name="getEstado" signature="()[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="main.Idioma" start="38" end="38" startBytecode="0" endBytecode="46" sourcefile="Idioma.java" sourcepath="main/Idioma.java"/>
+    </Method>
+    <Field classname="main.Idioma" name="estado" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="main.Idioma" sourcefile="Idioma.java" sourcepath="main/Idioma.java"/>
+    </Field>
+    <SourceLine classname="main.Idioma" start="38" end="38" startBytecode="4" endBytecode="4" sourcefile="Idioma.java" sourcepath="main/Idioma.java"/>
+    <SourceLine classname="main.Idioma" start="38" end="38" startBytecode="4" endBytecode="4" sourcefile="Idioma.java" sourcepath="main/Idioma.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" first="1">
+    <Class classname="main.Idioma">
+      <SourceLine classname="main.Idioma" sourcefile="Idioma.java" sourcepath="main/Idioma.java"/>
+    </Class>
+    <Method classname="main.Idioma" name="getInicialesSemana" signature="()[C" isStatic="false">
+      <SourceLine classname="main.Idioma" start="50" end="50" startBytecode="0" endBytecode="46" sourcefile="Idioma.java" sourcepath="main/Idioma.java"/>
+    </Method>
+    <Field classname="main.Idioma" name="inicialesSemana" signature="[C" isStatic="false">
+      <SourceLine classname="main.Idioma" sourcefile="Idioma.java" sourcepath="main/Idioma.java"/>
+    </Field>
+    <SourceLine classname="main.Idioma" start="50" end="50" startBytecode="4" endBytecode="4" sourcefile="Idioma.java" sourcepath="main/Idioma.java"/>
+    <SourceLine classname="main.Idioma" start="50" end="50" startBytecode="4" endBytecode="4" sourcefile="Idioma.java" sourcepath="main/Idioma.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" first="1">
+    <Class classname="main.Idioma">
+      <SourceLine classname="main.Idioma" sourcefile="Idioma.java" sourcepath="main/Idioma.java"/>
+    </Class>
+    <Method classname="main.Idioma" name="getMeses" signature="()[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="main.Idioma" start="54" end="54" startBytecode="0" endBytecode="46" sourcefile="Idioma.java" sourcepath="main/Idioma.java"/>
+    </Method>
+    <Field classname="main.Idioma" name="meses" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="main.Idioma" sourcefile="Idioma.java" sourcepath="main/Idioma.java"/>
+    </Field>
+    <SourceLine classname="main.Idioma" start="54" end="54" startBytecode="4" endBytecode="4" sourcefile="Idioma.java" sourcepath="main/Idioma.java"/>
+    <SourceLine classname="main.Idioma" start="54" end="54" startBytecode="4" endBytecode="4" sourcefile="Idioma.java" sourcepath="main/Idioma.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" first="1">
+    <Class classname="main.Idioma">
+      <SourceLine classname="main.Idioma" sourcefile="Idioma.java" sourcepath="main/Idioma.java"/>
+    </Class>
+    <Method classname="main.Idioma" name="getOtros" signature="()[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="main.Idioma" start="30" end="30" startBytecode="0" endBytecode="46" sourcefile="Idioma.java" sourcepath="main/Idioma.java"/>
+    </Method>
+    <Field classname="main.Idioma" name="otros" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="main.Idioma" sourcefile="Idioma.java" sourcepath="main/Idioma.java"/>
+    </Field>
+    <SourceLine classname="main.Idioma" start="30" end="30" startBytecode="4" endBytecode="4" sourcefile="Idioma.java" sourcepath="main/Idioma.java"/>
+    <SourceLine classname="main.Idioma" start="30" end="30" startBytecode="4" endBytecode="4" sourcefile="Idioma.java" sourcepath="main/Idioma.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="main.Principal">
+      <SourceLine classname="main.Principal" sourcefile="Principal.java" sourcepath="main/Principal.java"/>
+    </Class>
+    <Method classname="main.Principal" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="main.Principal" start="19" end="51" startBytecode="0" endBytecode="66" sourcefile="Principal.java" sourcepath="main/Principal.java"/>
+    </Method>
+    <LocalVariable name="resultado" register="11" pc="130" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="main.Principal" start="41" end="41" startBytecode="128" endBytecode="128" sourcefile="Principal.java" sourcepath="main/Principal.java"/>
+    <SourceLine classname="main.Principal" start="41" end="41" startBytecode="128" endBytecode="128" sourcefile="Principal.java" sourcepath="main/Principal.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.KILLED_BY_SUBSEQUENT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="resultado"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="main.SalidaLog">
+      <SourceLine classname="main.SalidaLog" sourcefile="SalidaLog.java" sourcepath="main/SalidaLog.java"/>
+    </Class>
+    <Method classname="main.SalidaLog" name="escribirLog" signature="(Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="main.SalidaLog" start="12" end="24" startBytecode="0" endBytecode="231" sourcefile="SalidaLog.java" sourcepath="main/SalidaLog.java"/>
+    </Method>
+    <Method classname="java.io.PrintStream" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintStream" start="135" end="136" startBytecode="0" endBytecode="34" sourcefile="PrintStream.java" sourcepath="java/io/PrintStream.java"/>
+    </Method>
+    <SourceLine classname="main.SalidaLog" start="12" end="12" startBytecode="18" endBytecode="18" sourcefile="SalidaLog.java" sourcepath="main/SalidaLog.java"/>
+    <SourceLine classname="main.SalidaLog" start="12" end="12" startBytecode="18" endBytecode="18" sourcefile="SalidaLog.java" sourcepath="main/SalidaLog.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="tests.Config">
+      <SourceLine classname="tests.Config" sourcefile="Config.java" sourcepath="tests/Config.java"/>
+    </Class>
+    <Field classname="tests.Config" name="anyo" signature="I" isStatic="true">
+      <SourceLine classname="tests.Config" sourcefile="Config.java" sourcepath="tests/Config.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="tests.Config">
+      <SourceLine classname="tests.Config" sourcefile="Config.java" sourcepath="tests/Config.java"/>
+    </Class>
+    <Field classname="tests.Config" name="idiomaIn" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="tests.Config" sourcefile="Config.java" sourcepath="tests/Config.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="tests.Config">
+      <SourceLine classname="tests.Config" sourcefile="Config.java" sourcepath="tests/Config.java"/>
+    </Class>
+    <Field classname="tests.Config" name="idiomaOut" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="tests.Config" sourcefile="Config.java" sourcepath="tests/Config.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE" first="1">
+    <Class classname="tests.Config">
+      <SourceLine classname="tests.Config" sourcefile="Config.java" sourcepath="tests/Config.java"/>
+    </Class>
+    <Field classname="tests.Config" name="mes" signature="I" isStatic="true">
+      <SourceLine classname="tests.Config" sourcefile="Config.java" sourcepath="tests/Config.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="tests.SalidaLog">
+      <SourceLine classname="tests.SalidaLog" sourcefile="SalidaLog.java" sourcepath="tests/SalidaLog.java"/>
+    </Class>
+    <Method classname="tests.SalidaLog" name="escribirLog" signature="(Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="tests.SalidaLog" start="12" end="24" startBytecode="0" endBytecode="231" sourcefile="SalidaLog.java" sourcepath="tests/SalidaLog.java"/>
+    </Method>
+    <Method classname="java.io.PrintStream" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintStream" start="135" end="136" startBytecode="0" endBytecode="34" sourcefile="PrintStream.java" sourcepath="java/io/PrintStream.java"/>
+    </Method>
+    <SourceLine classname="tests.SalidaLog" start="12" end="12" startBytecode="18" endBytecode="18" sourcefile="SalidaLog.java" sourcepath="tests/SalidaLog.java"/>
+    <SourceLine classname="tests.SalidaLog" start="12" end="12" startBytecode="18" endBytecode="18" sourcefile="SalidaLog.java" sourcepath="tests/SalidaLog.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="tests.TestData">
+      <SourceLine classname="tests.TestData" sourcefile="TestData.java" sourcepath="tests/TestData.java"/>
+    </Class>
+    <Method classname="tests.TestData" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="tests.TestData" start="168" end="178" startBytecode="0" endBytecode="58" sourcefile="TestData.java" sourcepath="tests/TestData.java"/>
+    </Method>
+    <LocalVariable name="config" register="1" pc="10" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="tests.TestData" start="168" end="168" startBytecode="9" endBytecode="9" sourcefile="TestData.java" sourcepath="tests/TestData.java"/>
+    <SourceLine classname="tests.TestData" start="168" end="168" startBytecode="9" endBytecode="9" sourcefile="TestData.java" sourcepath="tests/TestData.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="config"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="tests.TestData">
+      <SourceLine classname="tests.TestData" sourcefile="TestData.java" sourcepath="tests/TestData.java"/>
+    </Class>
+    <Method classname="tests.TestData" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="tests.TestData" start="168" end="178" startBytecode="0" endBytecode="58" sourcefile="TestData.java" sourcepath="tests/TestData.java"/>
+    </Method>
+    <LocalVariable name="data2" register="3" pc="35" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="tests.TestData" start="171" end="171" startBytecode="34" endBytecode="34" sourcefile="TestData.java" sourcepath="tests/TestData.java"/>
+    <SourceLine classname="tests.TestData" start="171" end="171" startBytecode="34" endBytecode="34" sourcefile="TestData.java" sourcepath="tests/TestData.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="data2"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="tests.TestData">
+      <SourceLine classname="tests.TestData" sourcefile="TestData.java" sourcepath="tests/TestData.java"/>
+    </Class>
+    <Method classname="tests.TestData" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="tests.TestData" start="168" end="178" startBytecode="0" endBytecode="58" sourcefile="TestData.java" sourcepath="tests/TestData.java"/>
+    </Method>
+    <LocalVariable name="data3" register="4" pc="48" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="tests.TestData" start="172" end="172" startBytecode="46" endBytecode="46" sourcefile="TestData.java" sourcepath="tests/TestData.java"/>
+    <SourceLine classname="tests.TestData" start="172" end="172" startBytecode="46" endBytecode="46" sourcefile="TestData.java" sourcepath="tests/TestData.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="data3"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="tests.TestData">
+      <SourceLine classname="tests.TestData" sourcefile="TestData.java" sourcepath="tests/TestData.java"/>
+    </Class>
+    <Method classname="tests.TestData" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="tests.TestData" start="168" end="178" startBytecode="0" endBytecode="58" sourcefile="TestData.java" sourcepath="tests/TestData.java"/>
+    </Method>
+    <LocalVariable name="data4" register="5" pc="59" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="tests.TestData" start="173" end="173" startBytecode="57" endBytecode="57" sourcefile="TestData.java" sourcepath="tests/TestData.java"/>
+    <SourceLine classname="tests.TestData" start="173" end="173" startBytecode="57" endBytecode="57" sourcefile="TestData.java" sourcepath="tests/TestData.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="data4"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="tests.TestIdioma">
+      <SourceLine classname="tests.TestIdioma" sourcefile="TestIdioma.java" sourcepath="tests/TestIdioma.java"/>
+    </Class>
+    <Method classname="tests.TestIdioma" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="tests.TestIdioma" start="180" end="195" startBytecode="0" endBytecode="57" sourcefile="TestIdioma.java" sourcepath="tests/TestIdioma.java"/>
+    </Method>
+    <LocalVariable name="config" register="1" pc="10" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="tests.TestIdioma" start="180" end="180" startBytecode="9" endBytecode="9" sourcefile="TestIdioma.java" sourcepath="tests/TestIdioma.java"/>
+    <SourceLine classname="tests.TestIdioma" start="180" end="180" startBytecode="9" endBytecode="9" sourcefile="TestIdioma.java" sourcepath="tests/TestIdioma.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="config"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="tests.TestIdioma">
+      <SourceLine classname="tests.TestIdioma" sourcefile="TestIdioma.java" sourcepath="tests/TestIdioma.java"/>
+    </Class>
+    <Method classname="tests.TestIdioma" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="tests.TestIdioma" start="180" end="195" startBytecode="0" endBytecode="57" sourcefile="TestIdioma.java" sourcepath="tests/TestIdioma.java"/>
+    </Method>
+    <LocalVariable name="idioma3" register="4" pc="42" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="tests.TestIdioma" start="184" end="184" startBytecode="40" endBytecode="40" sourcefile="TestIdioma.java" sourcepath="tests/TestIdioma.java"/>
+    <SourceLine classname="tests.TestIdioma" start="184" end="184" startBytecode="40" endBytecode="40" sourcefile="TestIdioma.java" sourcepath="tests/TestIdioma.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="idioma3"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" first="1">
+    <Class classname="tests.TestIdioma">
+      <SourceLine classname="tests.TestIdioma" sourcefile="TestIdioma.java" sourcepath="tests/TestIdioma.java"/>
+    </Class>
+    <Method classname="tests.TestIdioma" name="getDiasSemana" signature="()[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="tests.TestIdioma" start="46" end="46" startBytecode="0" endBytecode="46" sourcefile="TestIdioma.java" sourcepath="tests/TestIdioma.java"/>
+    </Method>
+    <Field classname="tests.TestIdioma" name="diasSemana" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="tests.TestIdioma" sourcefile="TestIdioma.java" sourcepath="tests/TestIdioma.java"/>
+    </Field>
+    <SourceLine classname="tests.TestIdioma" start="46" end="46" startBytecode="4" endBytecode="4" sourcefile="TestIdioma.java" sourcepath="tests/TestIdioma.java"/>
+    <SourceLine classname="tests.TestIdioma" start="46" end="46" startBytecode="4" endBytecode="4" sourcefile="TestIdioma.java" sourcepath="tests/TestIdioma.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" first="1">
+    <Class classname="tests.TestIdioma">
+      <SourceLine classname="tests.TestIdioma" sourcefile="TestIdioma.java" sourcepath="tests/TestIdioma.java"/>
+    </Class>
+    <Method classname="tests.TestIdioma" name="getEstado" signature="()[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="tests.TestIdioma" start="38" end="38" startBytecode="0" endBytecode="46" sourcefile="TestIdioma.java" sourcepath="tests/TestIdioma.java"/>
+    </Method>
+    <Field classname="tests.TestIdioma" name="estado" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="tests.TestIdioma" sourcefile="TestIdioma.java" sourcepath="tests/TestIdioma.java"/>
+    </Field>
+    <SourceLine classname="tests.TestIdioma" start="38" end="38" startBytecode="4" endBytecode="4" sourcefile="TestIdioma.java" sourcepath="tests/TestIdioma.java"/>
+    <SourceLine classname="tests.TestIdioma" start="38" end="38" startBytecode="4" endBytecode="4" sourcefile="TestIdioma.java" sourcepath="tests/TestIdioma.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" first="1">
+    <Class classname="tests.TestIdioma">
+      <SourceLine classname="tests.TestIdioma" sourcefile="TestIdioma.java" sourcepath="tests/TestIdioma.java"/>
+    </Class>
+    <Method classname="tests.TestIdioma" name="getInicialesSemana" signature="()[C" isStatic="false">
+      <SourceLine classname="tests.TestIdioma" start="50" end="50" startBytecode="0" endBytecode="46" sourcefile="TestIdioma.java" sourcepath="tests/TestIdioma.java"/>
+    </Method>
+    <Field classname="tests.TestIdioma" name="inicialesSemana" signature="[C" isStatic="false">
+      <SourceLine classname="tests.TestIdioma" sourcefile="TestIdioma.java" sourcepath="tests/TestIdioma.java"/>
+    </Field>
+    <SourceLine classname="tests.TestIdioma" start="50" end="50" startBytecode="4" endBytecode="4" sourcefile="TestIdioma.java" sourcepath="tests/TestIdioma.java"/>
+    <SourceLine classname="tests.TestIdioma" start="50" end="50" startBytecode="4" endBytecode="4" sourcefile="TestIdioma.java" sourcepath="tests/TestIdioma.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" first="1">
+    <Class classname="tests.TestIdioma">
+      <SourceLine classname="tests.TestIdioma" sourcefile="TestIdioma.java" sourcepath="tests/TestIdioma.java"/>
+    </Class>
+    <Method classname="tests.TestIdioma" name="getMeses" signature="()[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="tests.TestIdioma" start="54" end="54" startBytecode="0" endBytecode="46" sourcefile="TestIdioma.java" sourcepath="tests/TestIdioma.java"/>
+    </Method>
+    <Field classname="tests.TestIdioma" name="meses" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="tests.TestIdioma" sourcefile="TestIdioma.java" sourcepath="tests/TestIdioma.java"/>
+    </Field>
+    <SourceLine classname="tests.TestIdioma" start="54" end="54" startBytecode="4" endBytecode="4" sourcefile="TestIdioma.java" sourcepath="tests/TestIdioma.java"/>
+    <SourceLine classname="tests.TestIdioma" start="54" end="54" startBytecode="4" endBytecode="4" sourcefile="TestIdioma.java" sourcepath="tests/TestIdioma.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE" first="1">
+    <Class classname="tests.TestIdioma">
+      <SourceLine classname="tests.TestIdioma" sourcefile="TestIdioma.java" sourcepath="tests/TestIdioma.java"/>
+    </Class>
+    <Method classname="tests.TestIdioma" name="getOtros" signature="()[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="tests.TestIdioma" start="30" end="30" startBytecode="0" endBytecode="46" sourcefile="TestIdioma.java" sourcepath="tests/TestIdioma.java"/>
+    </Method>
+    <Field classname="tests.TestIdioma" name="otros" signature="[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="tests.TestIdioma" sourcefile="TestIdioma.java" sourcepath="tests/TestIdioma.java"/>
+    </Field>
+    <SourceLine classname="tests.TestIdioma" start="30" end="30" startBytecode="4" endBytecode="4" sourcefile="TestIdioma.java" sourcepath="tests/TestIdioma.java"/>
+    <SourceLine classname="tests.TestIdioma" start="30" end="30" startBytecode="4" endBytecode="4" sourcefile="TestIdioma.java" sourcepath="tests/TestIdioma.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 18 Feb 2015 12:27:39 +0100" total_classes="28" referenced_classes="83" total_bugs="95" total_size="1423" num_packages="6" java_version="1.8.0_25" vm_version="25.25-b02" cpu_seconds="18.35" clock_seconds="9.61" peak_mbytes="342.87" alloc_mbytes="455.50" gc_seconds="0.86" priority_2="69" priority_1="26">
+    <PackageStats package="SortidaDades" total_bugs="19" total_types="3" total_size="249" priority_2="12" priority_1="7">
+      <ClassStats class="SortidaDades.HTML" sourceFile="HTML.java" interface="true" size="110" bugs="1" priority_2="1"/>
+      <ClassStats class="SortidaDades.Imprime" sourceFile="Imprime.java" interface="false" size="92" bugs="8" priority_2="2" priority_1="6"/>
+      <ClassStats class="SortidaDades.Sortida" sourceFile="Sortida.java" interface="false" size="47" bugs="10" priority_2="9" priority_1="1"/>
+    </PackageStats>
+    <PackageStats package="Utils" total_bugs="6" total_types="3" total_size="98" priority_2="5" priority_1="1">
+      <ClassStats class="Utils.FicheroSortida" sourceFile="FicheroSortida.java" interface="false" size="22" bugs="1" priority_2="1"/>
+      <ClassStats class="Utils.UtilsFitxers" sourceFile="UtilsFitxers.java" interface="false" size="28" bugs="1" priority_1="1"/>
+      <ClassStats class="Utils.UtilsStrings" sourceFile="UtilsStrings.java" interface="false" size="48" bugs="4" priority_2="4"/>
+    </PackageStats>
+    <PackageStats package="dummies" total_bugs="10" total_types="3" total_size="145" priority_2="10">
+      <ClassStats class="dummies.DummyConfig" sourceFile="DummyConfig.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="dummies.DummyFecha" sourceFile="DummyFecha.java" interface="false" size="50" bugs="0"/>
+      <ClassStats class="dummies.DummyIdioma" sourceFile="DummyIdioma.java" interface="false" size="63" bugs="10" priority_2="10"/>
+    </PackageStats>
+    <PackageStats package="gestioPeticions" total_bugs="32" total_types="8" total_size="360" priority_2="22" priority_1="10">
+      <ClassStats class="gestioPeticions.Agenda" sourceFile="Agenda.java" interface="false" size="47" bugs="4" priority_2="3" priority_1="1"/>
+      <ClassStats class="gestioPeticions.ExceptionVarPeticions" sourceFile="ExceptionVarPeticions.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="gestioPeticions.MainDummy" sourceFile="MainDummy.java" interface="false" size="8" bugs="3" priority_2="2" priority_1="1"/>
+      <ClassStats class="gestioPeticions.OrdenadorPerPrioritats" sourceFile="OrdenadorPerPrioritats.java" interface="false" size="34" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="gestioPeticions.Peticio" sourceFile="Peticio.java" interface="false" size="49" bugs="14" priority_2="10" priority_1="4"/>
+      <ClassStats class="gestioPeticions.Sala" sourceFile="Sala.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="gestioPeticions.ServeisPeticio" sourceFile="ServeisPeticio.java" interface="false" size="147" bugs="7" priority_2="5" priority_1="2"/>
+      <ClassStats class="gestioPeticions.SistemaPeticions" sourceFile="SistemaPeticions.java" interface="false" size="45" bugs="2" priority_2="1" priority_1="1"/>
+    </PackageStats>
+    <PackageStats package="main" total_bugs="12" total_types="6" total_size="277" priority_2="11" priority_1="1">
+      <ClassStats class="main.Config" sourceFile="Config.java" interface="false" size="57" bugs="4" priority_2="4"/>
+      <ClassStats class="main.Data" sourceFile="Data.java" interface="false" size="77" bugs="0"/>
+      <ClassStats class="main.EntradaLog" sourceFile="EntradaLog.java" interface="false" size="17" bugs="1" priority_2="1"/>
+      <ClassStats class="main.Idioma" sourceFile="Idioma.java" interface="false" size="99" bugs="5" priority_2="5"/>
+      <ClassStats class="main.Principal" sourceFile="Principal.java" interface="false" size="16" bugs="1" priority_2="1"/>
+      <ClassStats class="main.SalidaLog" sourceFile="SalidaLog.java" interface="false" size="11" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <PackageStats package="tests" total_bugs="16" total_types="5" total_size="294" priority_2="9" priority_1="7">
+      <ClassStats class="tests.Config" sourceFile="Config.java" interface="false" size="57" bugs="4" priority_2="4"/>
+      <ClassStats class="tests.SalidaLog" sourceFile="SalidaLog.java" interface="false" size="11" bugs="1" priority_1="1"/>
+      <ClassStats class="tests.TestData" sourceFile="TestData.java" interface="false" size="95" bugs="4" priority_1="4"/>
+      <ClassStats class="tests.TestIdioma" sourceFile="TestIdioma.java" interface="false" size="113" bugs="7" priority_2="5" priority_1="2"/>
+      <ClassStats class="tests.TestsDummyGestioPeticions" sourceFile="TestsDummyGestioPeticions.java" interface="false" size="18" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="764" invocations="2" avgMicrosecondsPerInvocation="382437" maxMicrosecondsPerInvocation="490133" standardDeviationMircosecondsPerInvocation="107696"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="480" invocations="634" avgMicrosecondsPerInvocation="758" maxMicrosecondsPerInvocation="55113" standardDeviationMircosecondsPerInvocation="2673"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="395" invocations="235" avgMicrosecondsPerInvocation="1680" maxMicrosecondsPerInvocation="237899" standardDeviationMircosecondsPerInvocation="15494"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="336" invocations="235" avgMicrosecondsPerInvocation="1433" maxMicrosecondsPerInvocation="150364" standardDeviationMircosecondsPerInvocation="9933"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindFieldSelfAssignment" totalMilliseconds="221" invocations="28" avgMicrosecondsPerInvocation="7927" maxMicrosecondsPerInvocation="209243" standardDeviationMircosecondsPerInvocation="38744"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="186" invocations="83" avgMicrosecondsPerInvocation="2252" maxMicrosecondsPerInvocation="34959" standardDeviationMircosecondsPerInvocation="4675"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="182" invocations="523" avgMicrosecondsPerInvocation="348" maxMicrosecondsPerInvocation="6862" standardDeviationMircosecondsPerInvocation="666"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="181" invocations="83" avgMicrosecondsPerInvocation="2185" maxMicrosecondsPerInvocation="19916" standardDeviationMircosecondsPerInvocation="3617"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="163" invocations="241" avgMicrosecondsPerInvocation="678" maxMicrosecondsPerInvocation="15993" standardDeviationMircosecondsPerInvocation="1653"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="157" invocations="239" avgMicrosecondsPerInvocation="657" maxMicrosecondsPerInvocation="18193" standardDeviationMircosecondsPerInvocation="1778"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="154" invocations="235" avgMicrosecondsPerInvocation="658" maxMicrosecondsPerInvocation="14873" standardDeviationMircosecondsPerInvocation="1647"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindPuzzlers" totalMilliseconds="145" invocations="28" avgMicrosecondsPerInvocation="5214" maxMicrosecondsPerInvocation="128254" standardDeviationMircosecondsPerInvocation="23684"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="133" invocations="235" avgMicrosecondsPerInvocation="566" maxMicrosecondsPerInvocation="18171" standardDeviationMircosecondsPerInvocation="1986"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="90" invocations="99" avgMicrosecondsPerInvocation="912" maxMicrosecondsPerInvocation="9416" standardDeviationMircosecondsPerInvocation="1340"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="89" invocations="636" avgMicrosecondsPerInvocation="140" maxMicrosecondsPerInvocation="3484" standardDeviationMircosecondsPerInvocation="154"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="82" invocations="116" avgMicrosecondsPerInvocation="713" maxMicrosecondsPerInvocation="24431" standardDeviationMircosecondsPerInvocation="3000"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="78" invocations="235" avgMicrosecondsPerInvocation="334" maxMicrosecondsPerInvocation="51092" standardDeviationMircosecondsPerInvocation="3324"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="67" invocations="83" avgMicrosecondsPerInvocation="807" maxMicrosecondsPerInvocation="27227" standardDeviationMircosecondsPerInvocation="3088"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="65" invocations="592" avgMicrosecondsPerInvocation="110" maxMicrosecondsPerInvocation="11359" standardDeviationMircosecondsPerInvocation="573"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="65" invocations="83" avgMicrosecondsPerInvocation="787" maxMicrosecondsPerInvocation="10138" standardDeviationMircosecondsPerInvocation="1446"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="62" invocations="28" avgMicrosecondsPerInvocation="2249" maxMicrosecondsPerInvocation="36133" standardDeviationMircosecondsPerInvocation="6577"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="60" invocations="83" avgMicrosecondsPerInvocation="723" maxMicrosecondsPerInvocation="27494" standardDeviationMircosecondsPerInvocation="3129"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="58" invocations="235" avgMicrosecondsPerInvocation="249" maxMicrosecondsPerInvocation="3604" standardDeviationMircosecondsPerInvocation="569"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FormatStringChecker" totalMilliseconds="54" invocations="28" avgMicrosecondsPerInvocation="1930" maxMicrosecondsPerInvocation="40194" standardDeviationMircosecondsPerInvocation="7373"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="48" invocations="83" avgMicrosecondsPerInvocation="589" maxMicrosecondsPerInvocation="14704" standardDeviationMircosecondsPerInvocation="1720"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="41" invocations="83" avgMicrosecondsPerInvocation="503" maxMicrosecondsPerInvocation="14042" standardDeviationMircosecondsPerInvocation="1583"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="40" invocations="28" avgMicrosecondsPerInvocation="1447" maxMicrosecondsPerInvocation="14042" standardDeviationMircosecondsPerInvocation="2567"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1426238279940" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>
